@@ -25,7 +25,7 @@ Labiba Alam, Haiqi Zhou, Adriana Romero, and Lynn Tieu make up the Fantastic Fou
   - Blurb: Adriana Romero is a senior majoring in Sociology and minoring in Public Affairs. Adriana’s field of study and lived experiences have made her passionate about dismantling institutional racism which produces inequalities that negatively impact marginalized communities. In the past few years she has studied the patterns of institutional anti-Asian actions in the United States. She is disgusted by the rise in hate crimes directed towards Asian communities and believes that it is important to address the numerous historical and present factors that contribute to it. 
 - Lynn Tieu
     <br>
-    <img src = "Profile Pics/Lynn.jpg" width = "200">
+    <img src = "Profile Pics/Lynn.JPG" width = "200">
     </br>
   - Role: Contributor
   - Blurb: Lynn Tieu is in her final year as an Economics major and Digital Humanities minor. As a Chinese Vietnamese American, she has a personal interest in the patterns of Asian hate and discrimination. 
