@@ -37,6 +37,9 @@ We plan on investigating the different patterns of Asian American hate crimes th
 ## Methodology
 Since the purpose of this course is to implement and examine web-based technologies. We plan on developing our skills further so we can publish a web-based digital map focusing on the recent spike of Asian American hate crimes. An important medium for data collection is social media which reports these incidents. However, much of social media is overstimulating. Web-mapping allows for a more user-friendly experience to understand the key takeaways. With regards to our topic on Asian American hate crime, for example, Leaflet can be used to correlate the time and location of these instances to map out certain major events that affect the rise or fall of hate crimes. 
 
+## Geographic Scope
+We were planning to focus on Asian American hate crimes in the United States. It will depend on the data we end up collecting. If we end up with more detailed data pertaining Los Angeles County, then we will focus on LA County.
+
 ## Workflow
 <table>
   <tr>
