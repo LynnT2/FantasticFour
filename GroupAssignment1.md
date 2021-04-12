@@ -10,31 +10,22 @@ Labiba Alam, Haiqi Zhou, Adriana Romero, and Lynn Tieu make up the Fantastic Fou
     <img src = "Profile Pics/Labiba.jpg" width = "200">
     </br>
   - Role: Contributor
-<<<<<<< HEAD
   - Blurb: Labiba is a senior majoring in Bioengineering with a technical breadth in Digital Humanities. As a person who is more exposed to the effects of Covid-19 from a scientific point-of-view, she wants to tackle Covid-19’s correlation to the rise of Asian American hate incidents as a humanities topic for a change of perspective.
-=======
   - Labiba is a senior majoring in Bioengineering with a technical breadth in Digital Humanities. As a person who is more exposed to the effects of Covid-19 from a scientific point-of-view, she wants to tackle Covid-19’s correlation to the rise of Asian American hate crimes as a humanities topic for a change of perspective.
->>>>>>> ae70b4cbe16d480401e5a090ec5e9f048e7bb68f
 - Haiqi Zhou
     <br>
     <img src = "Profile Pics/Haiqi.jpg" width = "200">
     </br>
   - Role: Contributor 
-<<<<<<< HEAD
   - Blurb: Haiqi is a junior double majoring in Art History and French and minoring in Digital Humanities. She is interested in topics related to the environment and human rights. As someone born and raised in Shenzhen, China, she is very concerned about the rising incidents of anti-Asian hate incidents and would like to learn more about different factors that could have contributed to the increase in anti-Asian hate incidents. 
-=======
   - Haiqi is a junior double majoring in Art History and French and minoring in Digital Humanities. She is interested in topics related to the environment and human rights. As someone born and raised in Shenzhen, China, she is very concerned about the rising incidents of anti-Asian hate crimes and would like to learn more about different factors that could have contributed to the increase in anti-Asian hate crimes. 
->>>>>>> ae70b4cbe16d480401e5a090ec5e9f048e7bb68f
 - Adriana Romero
     <br>
     <img src = "Profile Pics/Adriana.jpg" width = "200">
     </br>
   - Role: Contributor 
-<<<<<<< HEAD
   - Blurb: Adriana Romero is a senior majoring in Sociology and minoring in Public Affairs. Adriana’s field of study and lived experiences have made her passionate about dismantling institutional racism which produces inequalities that negatively impact marginalized communities. In the past few years she has studied the patterns of institutional anti-Asian actions in the United States. She is disgusted by the rise in hate incidents directed towards Asian communities and believes that it is important to address the numerous historical and present factors that contribute to it. 
-=======
   - Adriana Romero is a senior majoring in Sociology and minoring in Public Affairs. Adriana’s field of study and lived experiences have made her passionate about dismantling institutional racism which produces inequalities that negatively impact marginalized communities. In the past few years she has studied the patterns of institutional anti-Asian actions in the United States. She is disgusted by the rise in hate crimes directed towards Asian communities and believes that it is important to address the numerous historical and present factors that contribute to it. 
->>>>>>> ae70b4cbe16d480401e5a090ec5e9f048e7bb68f
 - Lynn Tieu
     <br>
     <img src = "Profile Pics/Lynn.JPG" width = "200">
