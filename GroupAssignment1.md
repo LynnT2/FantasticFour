@@ -1,7 +1,7 @@
 # FantasticFour
 
 ## Introduction
-COVID 19 has led to an uptick in Asian American attacks. The Fantastic Four group is utilizing web mapping to illustrate the patterns in these hate crimes.
+COVID 19 has led to an uptick in Asian American attacks. The Fantastic Four group is utilizing web mapping to illustrate the patterns in these hate incidents.
 
 ## Team Members
 Labiba Alam, Haiqi Zhou, Adriana Romero, and Lynn Tieu make up the Fantastic Four team. 
@@ -10,19 +10,19 @@ Labiba Alam, Haiqi Zhou, Adriana Romero, and Lynn Tieu make up the Fantastic Fou
     <img src = "Profile Pics/Labiba.jpg" width = "200">
     </br>
   - Role: Contributor
-  - Blurb: Labiba is a senior majoring in Bioengineering with a technical breadth in Digital Humanities. As a person who is more exposed to the effects of Covid-19 from a scientific point-of-view, she wants to tackle Covid-19’s correlation to the rise of Asian American hate crimes as a humanities topic for a change of perspective.
+  - Blurb: Labiba is a senior majoring in Bioengineering with a technical breadth in Digital Humanities. As a person who is more exposed to the effects of Covid-19 from a scientific point-of-view, she wants to tackle Covid-19’s correlation to the rise of Asian American hate incidents as a humanities topic for a change of perspective.
 - Haiqi Zhou
     <br>
     <img src = "Profile Pics/Haiqi.jpg" width = "200">
     </br>
   - Role: Contributor 
-  - Blurb: Haiqi is a junior double majoring in Art History and French and minoring in Digital Humanities. She is interested in topics related to the environment and human rights. As someone born and raised in Shenzhen, China, she is very concerned about the rising incidents of anti-Asian hate crimes and would like to learn more about different factors that could have contributed to the increase in anti-Asian hate crimes. 
+  - Blurb: Haiqi is a junior double majoring in Art History and French and minoring in Digital Humanities. She is interested in topics related to the environment and human rights. As someone born and raised in Shenzhen, China, she is very concerned about the rising incidents of anti-Asian hate incidents and would like to learn more about different factors that could have contributed to the increase in anti-Asian hate incidents. 
 - Adriana Romero
     <br>
     <img src = "Profile Pics/Adriana.jpg" width = "200">
     </br>
   - Role: Contributor 
-  - Blurb: Adriana Romero is a senior majoring in Sociology and minoring in Public Affairs. Adriana’s field of study and lived experiences have made her passionate about dismantling institutional racism which produces inequalities that negatively impact marginalized communities. In the past few years she has studied the patterns of institutional anti-Asian actions in the United States. She is disgusted by the rise in hate crimes directed towards Asian communities and believes that it is important to address the numerous historical and present factors that contribute to it. 
+  - Blurb: Adriana Romero is a senior majoring in Sociology and minoring in Public Affairs. Adriana’s field of study and lived experiences have made her passionate about dismantling institutional racism which produces inequalities that negatively impact marginalized communities. In the past few years she has studied the patterns of institutional anti-Asian actions in the United States. She is disgusted by the rise in hate incidents directed towards Asian communities and believes that it is important to address the numerous historical and present factors that contribute to it. 
 - Lynn Tieu
     <br>
     <img src = "Profile Pics/Lynn.JPG" width = "200">
@@ -32,13 +32,13 @@ Labiba Alam, Haiqi Zhou, Adriana Romero, and Lynn Tieu make up the Fantastic Fou
 
 ## Overview
 The COVID 19 pandemic has raised verbal and physical attacks against primarily East Asian people, due to the initial detection of the virus in Wuhan, China. However, racism towards Asian communities has existed since the establishment of the United States, with explicitly anti-Asian policies and laws defining the experience of Asian people in the country. Societal narratives about Asian communities have transformed over time and influenced peoples positive and negative perceptions, but discrimination directed towards Asian communities has all but disappeared. 
-We plan on investigating the different patterns of Asian American hate crimes throughout the United States in the past three decades. Patterns of interest include the rates of Asian hate crimes during each decade, important events that sparked an increase in Asian hate crimes, and differences in the prevalence of Asian hate crimes across regions. The spikes in Asian hate crimes over the past few years demonstrate the continuation of historical anti-Asian sentiments in the country. It is important to recognize the patterns and consistency of Asian discrimination. 
+We plan on investigating the different patterns of Asian American hate incidents throughout the United States in the past three decades. Patterns of interest include the rates of Asian hate incidents during each decade, important events that sparked an increase in Asian hate incidents, and differences in the prevalence of Asian hate incidents across regions. The spikes in Asian hate incidents over the past few years demonstrate the continuation of historical anti-Asian sentiments in the country. It is important to recognize the patterns and consistency of Asian discrimination. 
 
 ## Methodology
-Since the purpose of this course is to implement and examine web-based technologies. We plan on developing our skills further so we can publish a web-based digital map focusing on the recent spike of Asian American hate crimes. An important medium for data collection is social media which reports these incidents. However, much of social media is overstimulating. Web-mapping allows for a more user-friendly experience to understand the key takeaways. With regards to our topic on Asian American hate crime, for example, Leaflet can be used to correlate the time and location of these instances to map out certain major events that affect the rise or fall of hate crimes. 
+Since the purpose of this course is to implement and examine web-based technologies. We plan on developing our skills further so we can publish a web-based digital map focusing on the recent spike of Asian American hate incidents. An important medium for data collection is social media which reports these incidents. However, much of social media is overstimulating. Web-mapping allows for a more user-friendly experience to understand the key takeaways. With regards to our topic on Asian American hate incidents, for example, Leaflet can be used to correlate the time and location of these instances to map out certain major events that affect the rise or fall of hate incidents. 
 
 ## Geographic Scope
-We were planning to focus on Asian American hate crimes in the United States. It will depend on the data we end up collecting. If we end up with more detailed data pertaining Los Angeles County, then we will focus on LA County.
+We were planning to focus on Asian American hate incidents in the United States. It will depend on the data we end up collecting. If we end up with more detailed data pertaining Los Angeles County, then we will focus on LA County.
 
 ## Workflow
 <table>
