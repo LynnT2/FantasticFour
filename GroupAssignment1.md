@@ -10,7 +10,7 @@ Labiba Alam, Haiqi Zhou, Adriana Romero, and Lynn Tieu make up the Fantastic Fou
     <img src = "Profile Pics/Labiba.jpg" width = "200">
     </br>
   - Role: Contributor
-  - Blurb: Labiba is a senior majoring in Bioengineering with a technical breadth in Digital Humanities. As a person who is more exposed to the effects of Covid-19 from a scientific point-of-view, she wants to tackle Covid-19’s correlation to the rise of Asian American hate crimes as a humanities topic for a change of perspective.
+  - Labiba is a senior majoring in Bioengineering with a technical breadth in Digital Humanities. As a person who is more exposed to the effects of Covid-19 from a scientific point-of-view, she wants to tackle Covid-19’s correlation to the rise of Asian American hate crimes as a humanities topic for a change of perspective.
 - Haiqi Zhou
     <br>
     <img src = "Profile Pics/Haiqi.jpg" width = "200">
