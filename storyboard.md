@@ -46,7 +46,7 @@ Lynn's Mind Map
 
 Haiqi's Crazy Eights
  <br>
-    <img src = "Crazy Eights/Haiqi Crazy Eights.jpg" width = "400">
+    <img src = "Crazy Eights/Haiqi Crazy Eights .jpg" width = "400">
     </br>
 - Haiqi reactions:
     - Adriana: I think it would be cool to associate different time periods with different colors and shapes! 
