@@ -88,4 +88,4 @@ Reactions
 
 
 ### Storyboard (wireframes)
-[Please go to our Figma page to view our storyboard!]("https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F10H05OCoEiaMyHV84fwcbY%2FDH-151-Fantastic-Four%3Fnode-id%3D0%253A1")
+[Please go to our Figma page to view our storyboard!](https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F10H05OCoEiaMyHV84fwcbY%2FDH-151-Fantastic-Four%3Fnode-id%3D0%253A1)
