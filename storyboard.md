@@ -4,7 +4,7 @@
 
 Haiqi's Mind Map
  <br>
-    <img src = "Mindmaps/Haiqimindmap.jpg" width = "400">
+    <img src = "Haiqimindmap .jpg width = "400">
     </br>
 - Haiqi reactions:
     - Adriana: I love the idea of a welcome page and how the timeline could be interactive with the map!
