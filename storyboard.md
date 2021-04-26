@@ -46,11 +46,12 @@ Lynn's Mind Map
 
 Haiqi's Crazy Eights
  <br>
-    <img src = "Crazy Eights/Haiqi Crazy Eights .jpg" width = "400">
+    <img src = "Crazy Eights/Haiqi Crazy Eights.PNG" width = "400">
     </br>
 - Haiqi reactions:
     - Adriana: I think it would be cool to associate different time periods with different colors and shapes! 
     - Labiba: I love the idea of image flipping! Hopefully that’s something we can do. About music, my concern is similar to the use of color – for certain parts we might want to avoid happy music.
+    - Lynn: this is so cool!! I love the idea of a bar chart popup and I love how you envision our website’s format!
 
 
 Labiba's Crazy Eights 
