@@ -4,7 +4,7 @@
 
 Haiqi's Mind Map
  <br>
-    <img src = "Mindmaps/Haiqimindmap.PNG" width = "400">
+    <img src = "Mindmaps/Haiqimindmap.jpg" width = "400">
     </br>
 - Haiqi reactions:
     - Adriana: I love the idea of a welcome page and how the timeline could be interactive with the map!
@@ -46,7 +46,7 @@ Lynn's Mind Map
 
 Haiqi's Crazy Eights
  <br>
-    <img src = "Crazy Eights/Haiqi Crazy Eights.PNG" width = "400">
+    <img src = "Crazy Eights/Haiqi Crazy Eights.jpg" width = "400">
     </br>
 - Haiqi reactions:
     - Adriana: I think it would be cool to associate different time periods with different colors and shapes! 
