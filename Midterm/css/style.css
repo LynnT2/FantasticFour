@@ -1,0 +1,67 @@
+body,html {
+	margin:0;
+	height:100%;
+	width:100%;
+}
+
+#map {
+	height: 100%;
+}
+
+body {
+    display: grid;
+	grid-template-rows: 80px 1fr;
+	grid-template-columns: 250px 1fr;
+	grid-template-areas: 
+	"header navigation"
+	"sidebar content";
+}
+
+.header {
+	grid-area: header;
+	padding:10px;
+    background-color: #C4C4C4;
+    font-family: 'Roboto';
+    font-size: 35px
+}
+.sidebar {
+	grid-area: sidebar;
+	padding:10px;
+    background-color: #555;
+}
+.navigation {
+    overflow: hidden;
+    background-color: #C4C4C4;
+  }
+
+.navigation a {
+    float:right;
+    text-align: center;
+    cursor:pointer;
+	font-family: 'Roboto';
+	font-size: 25px;
+	font-weight:bold;
+	text-decoration:none;
+    background-color: #C4C4C4;
+    display:block;
+    padding: 14px 16px
+}
+
+.navigation a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navigation a:visited { 
+    text-decoration: none; 
+    color: black; 
+   }
+
+.navigation a:active {
+    text-decoration: none;
+    color: yellow
+}
+
+.content {
+	grid-area: content;
+}
