@@ -36,18 +36,105 @@
         <div class="row">
             <div class="column">
                 <img src='img/Adriana.jpg' alt='Avatar'>
-                <span class="caption">Adriana</span>
+                <button type="button" class="caption">Adriana</button>
+                    <div class="content">
+                        <center>Roles:</center>
+                        <ul>
+                            <li></li>
+                            <li>Coder for About Us page</li>
+                            <li></li>
+                        </ul>
+                        <center>Blurb</center>
+                        <p>Adriana Romero is a senior majoring in Sociology and 
+                            minoring in Public Affairs. Adriana’s field of 
+                            study and lived experiences have made her passionate 
+                            about dismantling institutional racism which produces 
+                            inequalities that negatively impact marginalized 
+                            communities. In the past few years she has studied 
+                            the patterns anti-Asian policies and practices in the 
+                            United States. She is disgusted by the rise in hate 
+                            crimes directed towards Asian communities and believes 
+                            that it is important to address the numerous historical 
+                            and present factors that contribute to it. 
+                        </p>
+                    </div>
                 <img src='img/Haiqi.jpg'  alt='Avatar'>
-                <span class="caption">Haiqi</span>
+                <button type="button" class="caption">Haiqi</button>
+                    <div class="content">
+                        <center>Roles:</center>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <center>Blurb</center>
+                        <p>Haiqi is a junior double majoring in Art History and 
+                            French and minoring in Digital Humanities. She is 
+                            interested in topics related to the environment and 
+                            human rights. As someone born and raised in Shenzhen, China, 
+                            she is very concerned about the rising incidents of anti-Asian 
+                            hate crimes and would like to learn more about different factors 
+                            that could have contributed to the 
+                            increase in anti-Asian hate crimes. </p>
+                    </div>
             </div>
 
             <div class="column">
                 <img src='img/Labiba.jpg' alt='Avatar'>
-                <span class="caption">Labiba</span>
+                <button type="button" class="caption">Labiba</button>
+                    <div class="content">
+                        <center>Roles:</center>
+                        <ul>
+                            <li>Powerpoint Designer</li>
+                            <li>Coder for About Us page</li>
+                            <li>Email Correspondent</li>
+                        </ul>
+                        <center>Blurb</center>
+                        <p>Labiba is a senior majoring 
+                            in Bioengineering with a technical breadth 
+                            in Digital Humanities. As a person 
+                            who is more exposed to the effects 
+                            of Covid-19 from a scientific point-of-view, 
+                            she wants to tackle Covid-19’s correlation 
+                            to the rise of Asian American hate incidents as 
+                            a humanities topic for a change of perspective.
+                        </p>
+                        </div>
                 <img src='img/Lynn.JPG' alt='Avatar'>
-                <span class="caption">Lynn</span>
+                <button type="button" class="caption">Lynn</button>
+                    <div class="content">
+                        <center>Roles:</center>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <center>Blurb</center>
+                        <p> Lynn Tieu is in her final year as an Economics major and 
+                            Digital Humanities minor. As a Chinese Vietnamese American, 
+                            she has a personal interest in the patterns of Asian hate and 
+                            discrimination. </p>
+                    </div>
             </div>
+        
         </div>
         
     </div>
-   
+    <script>
+        var coll = document.getElementsByClassName("caption");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+</body>
+</html>

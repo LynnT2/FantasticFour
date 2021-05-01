@@ -62,9 +62,6 @@ body,html {
     color: yellow
 }
 
-.content {
-	grid-area: content;
-}
 
 #about {
     display: grid;
@@ -76,7 +73,7 @@ body,html {
 }
 
 .bio {
-    float: left;
+    float: center;
     font-family: 'Roboto';
     font-size: 25px;
     grid-area: bio;
@@ -90,14 +87,18 @@ body,html {
     float: right;
     padding: 15px;
     grid-area: project;
+    
 }
 
 .bio img {
     border-radius: 50%;
     width: 50%;
+    border-style:ridge;
+    border-color: rgb(116, 10, 10);
 }
 
-.row {
+
+div.row {
     display: flex;
   }
   
@@ -106,8 +107,8 @@ div.column {
     padding: 5px;
     display: block;
     text-align: center;
-  }
-
+}
+/*buttons under pics*/
 .caption {
     font-family: 'Roboto';
     font-size: 20px;
@@ -116,9 +117,23 @@ div.column {
     background-color: #C4C4C4;
     display: block;
     transform: translateX(50%);
-    width: 40%;
+    width: 50%;
     text-align: center;
     cursor: pointer;
+}
+
+/*collapsibles for each person-Labiba*/
+.content {
+	grid-area: content;
+    grid-template:max-content;
+    color: #000;
+    font-size: small;
+    text-align: left;
+    background-color: darkcyan;
+    padding: 10px;
+}
+.active, .caption:hover {
+  background-color: #555;
 }
 
 
@@ -126,3 +141,7 @@ div.column {
 /*display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-gap: 15px;*/
+
+
+
+
