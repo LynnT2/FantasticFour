@@ -131,8 +131,10 @@ div.column {
     text-align: left;
     background-color: darkcyan;
     padding: 10px;
+    display: none;
+    overflow:hidden;
 }
-.active, .caption:hover {
+.caption:hover {
   background-color: #555;
 }
 
