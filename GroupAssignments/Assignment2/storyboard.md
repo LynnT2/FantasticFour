@@ -4,7 +4,7 @@
 
 <b>Haiqi's Mind Map</b>
  <br>
-    <img src = "GroupAssignments/Assignment2/Mindmaps/Haiqimindmap .jpg">
+    <img src = "Mindmaps/Haiqimindmap .jpg">
     </br>
 Reactions:
 - Labiba: Hopefully, we’ll soon acquire the skills to implement a choropleth map with popup graphs!
@@ -14,7 +14,7 @@ Reactions:
 
 <b>Labiba's Mind Map</b>
  <br>
-    <img src = "GroupAssignments/Assignment2/Mindmaps/Labiba mindmap.jpg">
+    <img src = "Mindmaps/Labiba mindmap.jpg">
     </br>
 Reactions:
 - Haiqi: The idea that clicking on timeline brings users to different parts of the page sounds really nice! I also think it is nice to figure out a visual theme for the web page and the gradient background sounds really cool! My concern would be that some topics that we touch on might be heavy, so we might want to avoid using bright colors.
@@ -24,7 +24,7 @@ Reactions:
 
 <b>Adriana's Mind Map</b>
  <br>
-    <img src = "GroupAssignments/Assignment2/Mindmaps/adrianamindmap.jpg">
+    <img src = "Mindmaps/adrianamindmap.jpg">
     </br>
 Reactions:
 - Haiqi: I love the idea of a welcome page and how the timeline could be interactive with the map!
@@ -34,7 +34,7 @@ Reactions:
 
 <b>Lynn's Mind Map</b>
  <br>
-    <img src = "GroupAssignments/Assignment2/Mindmaps/Lynn Mindmap.jpg">
+    <img src = "Mindmaps/Lynn Mindmap.jpg">
     </br>
 Reactions:
 - Haiqi: Similar to Labiba’s and Adrianna’s idea, Lynn also suggests an interactive timeline, which is definitely something that we can work on!
@@ -47,7 +47,7 @@ ___
 
 <b>Haiqi's Crazy Eights</b>
  <br>
-    <img src = "GroupAssignments/Assignment2/Crazy Eights/Haiqi Crazy Eights.PNG">
+    <img src = "Crazy Eights/Haiqi Crazy Eights.PNG">
     </br>
 Reactions
 - Labiba: Hopefully, we’ll soon acquire the skills to implement a choropleth map with popup graphs!
@@ -57,7 +57,7 @@ Reactions
 
 <b>Labiba's Crazy Eights</b>
  <br>
-    <img src = "GroupAssignments/Assignment2/Crazy Eights/Labiba Crazy Eights.jpg">
+    <img src = "Crazy Eights/Labiba Crazy Eights.jpg">
     </br>
 Reactions
 - Haiqi:  I love the idea of image flipping! Hopefully that’s something we can do. About music, my concern is similar to the use of color – for certain parts we might want to avoid happy music. 
@@ -69,7 +69,7 @@ Reactions
 
 <b>Adriana's Crazy Eights</b>
  <br>
-    <img src = "GroupAssignments/Assignment2/Crazy%20Eights/adrianacrazy8.jpeg">
+    <img src = "Crazy Eights/adrianacrazy8.jpeg">
     </br>
 Reactions
 - Haiqi: I think it would be cool to associate different time periods with different colors and shapes! 
@@ -79,7 +79,7 @@ Reactions
 
 <b>Lynn's Crazy Eights</b>
  <br>
-    <img src = "GroupAssignments/Assignment2/Crazy Eights/Lynn Crazy Eights.jpg">
+    <img src = "Crazy Eights/Lynn Crazy Eights.jpg">
     </br>
 Reactions
 - Haiqi: This is so cool!! I love the idea of a bar chart popup and I love how you envision our website’s format!
