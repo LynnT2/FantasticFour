@@ -69,7 +69,7 @@ Reactions
 
 <b>Adriana's Crazy Eights</b>
  <br>
-    <img src = "adrianacrazy8.jpeg">
+    <img src = "Crazy Eights/adrianacrazy8.jpeg">
     </br>
 Reactions
 - Haiqi: I think it would be cool to associate different time periods with different colors and shapes! 
