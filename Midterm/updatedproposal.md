@@ -29,7 +29,7 @@ The COVID-19 pandemic has sparked an uptick in Asian American attacks throughout
 Adriana Romero is a senior majoring in Sociology and minoring in Public Affairs. Adriana’s field of study and lived experiences have made her passionate about dismantling institutional forms of racism that produce inequalities that negatively impact marginalized communities. In the past few years, she has studied the patterns anti-Asian policies and practices in the United States. She is disgusted by the rise in hate crimes directed towards Asian communities and believes that it is important to address the numerous historical and present factors that contribute to it. 
 
 ### Lynn Tieu
-    <img src = "img/Lynn.JPG" width = "200">
+<img src = "img/Lynn.JPG" width = "200">
 <br>
     Role: UX Designer, Data Analyst
 <br>
