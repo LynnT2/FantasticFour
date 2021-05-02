@@ -88,26 +88,28 @@ body,html {
     float: right;
     padding: 15px;
     grid-area: project;
+    text-align: center;
     
 }
 
 .bio img {
     border-radius: 50%;
-    width: 50%;
+    width: 270px;
     border-style:ridge;
-    border-color: rgb(116, 10, 10);
+    border-color: #C4C4C4;
+    margin: 0 auto;
+    margin-top: 8px;
 }
 
 
 
-div.row {
+.row {
     display: flex;
   }
   
-div.column {
+.column {
     flex: 50%;
     padding: 5px;
-    display: block;
     text-align: center;
 }
 /*buttons under pics*/
@@ -136,6 +138,7 @@ div.column {
     display: none;
     overflow:hidden;
 }
+
 .caption:hover {
   background-color: #555;
 }
@@ -148,17 +151,14 @@ div.column {
 
 
 /*flipping images*/
-
 .flip-box {
     background-color: transparent;
-    width: 150px;
-    height: 150px;
-    border: 1px solid #f1f1f1;
     perspective: 1000px;
+    border-radius: 50%;
   }
   
   .flip-box-inner {
-    position: relative;
+    /*position: relative;*/
     width: 100%;
     height: 100%;
     text-align: center;
@@ -171,7 +171,6 @@ div.column {
   }
   
   .flip-box-front, .flip-box-back {
-    position: absolute;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
@@ -179,13 +178,19 @@ div.column {
   }
   
   .flip-box-front {
-    background-color: #bbb;
     color: black;
+    border-radius: 50%;
   }
   
   .flip-box-back {
-    background-color: #555;
-    color: white;
+    background-color:transparent;
+    color: #c76f0a;
     transform: rotateY(180deg);
     font-stretch: semi-condensed;
+    font-size: small;
+    border-radius: 50%;
+    position:absolute;
+    background-size: cover;
+    width:330px;
+    top:10px
   }
