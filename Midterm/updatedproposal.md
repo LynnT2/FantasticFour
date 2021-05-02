@@ -20,6 +20,7 @@ The COVID-19 pandemic has sparked an uptick in Asian American attacks throughout
         <br>
         Role: Contributer
         <br>
+        <br>
         Haiqi is a junior double majoring in Art History and French and minoring in Digital Humanities. She is interested in topics related to the environment and human rights. As someone born and raised in Shenzhen, China, she is very concerned about the rising incidents of anti-Asian hate crimes and would like to learn more about different factors that could have contributed to the increase in anti-Asian hate crimes.
     </td>
     <td style="width:25%; vertical-align: top;"> <center>Adriana Romero</center>
@@ -27,6 +28,7 @@ The COVID-19 pandemic has sparked an uptick in Asian American attacks throughout
         <br>
         <br>
         Role: Data Analyst, Coder for About Us Page
+        <br>
         <br>
         Adriana Romero is a senior majoring in Sociology and minoring in Public Affairs. Adriana’s field of study and lived experiences have made her passionate about dismantling institutional forms of racism that produce inequalities that negatively impact marginalized communities. In the past few years, she has studied the patterns anti-Asian policies and practices in the United States. She is disgusted by the rise in hate crimes directed towards Asian communities and believes that it is important to address the numerous historical and present factors that contribute to it. 
     </td>
