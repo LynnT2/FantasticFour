@@ -7,12 +7,6 @@
 	<!-- style sheets -->
 	<link rel="stylesheet" href="css/style.css">
 
-    <!-- leaflet -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-
 </head>
 <body id='home'>
 
@@ -20,30 +14,13 @@
 		<a href='index.html' >Title</a>
 	</div>
         <div class="navigation">
-            <a href='about.html' >About Us</a>
-            <a href='resources.html' >Resources</a>
+            <a href='timeline.html'>Timeline</a>
             <a href='data.html' >Data</a>
-            <a href='timeline.html'>Timeline </a>
+            <a href='resources.html' >Resources</a>
+            <a href='about.html' >About Us</a>
             
         </div>
-	<div class="sidebar">
-		<b>My Sidebar</b>
-        <a href='about.html'>About Us</a>
-	</div>
-	<div class="content">
-		<div id="map"></div>
-	</div>
-
     <script>
-        var map = L.map('map').setView([34.0697,-118.4432], 17);
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        var marker = L.marker([34.0697,-118.4432]).addTo(map)
-                .bindPopup('The Technology Sandbox<br> Where Yoh is sitting this very moment')
-                .openPopup();	
     </script>
 
 </body>
