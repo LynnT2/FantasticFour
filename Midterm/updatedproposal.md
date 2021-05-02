@@ -5,7 +5,7 @@ The COVID-19 pandemic has sparked an uptick in Asian American attacks throughout
 ## Team Members
 <table>
   <tr>
-    <td style="width:25%;text-align:center;"> Labiba Alam
+    <td style= "width:25%; text-align:center;"> Labiba Alam
     <img src = "img/Labiba.jpg" width = "200">
     <br>
     <br>
