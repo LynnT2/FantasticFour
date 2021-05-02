@@ -1,10 +1,10 @@
 # Fantastic Four
 
-[Project Proposal](GroupAssignment1.md)
+[Project Proposal](GroupAssignments/Assignment1/GroupAssignment1.md)
 
-[Storyboard](storyboard.md)
+[Storyboard](GroupAssignments/Assignment2/storyboard.md)
 
-[Data Plan Update](dataplanupdate.md)
+[Data Plan Update](GroupAssignments/Assignment2/dataplanupdate.md)
 
 [Midterm Website](Midterm/about.html)
 
