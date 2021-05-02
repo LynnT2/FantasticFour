@@ -8,7 +8,7 @@ The COVID-19 pandemic has sparked an uptick in Asian American attacks throughout
 ### Labiba Alam
 <img src = "img/Labiba.jpg" width = "200">
 <br>
-    Role: Powerpoint designer, coder for about us page, email correspondent
+    Role: Coder for About Us page, Email Correspondent
 <br>
 <br>
     Labiba is a senior majoring in Bioengineering with a technical breadth in Digital Humanities. As a person who is more exposed to the effects of Covid-19 from a scientific point-of-view, she wants to tackle Covid-19’s correlation to the rise of Asian American hate crimes as a humanities topic for a change of perspective.
