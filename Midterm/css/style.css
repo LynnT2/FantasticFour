@@ -2,6 +2,16 @@ body,html {
 	margin:0;
 	height:100%;
 	width:100%;
+	font-size: 100%;
+}
+body {
+    display: grid;
+	grid-template-rows: 80px auto 80px;
+	grid-template-columns: 50px auto 50px;
+	grid-template-areas: 
+	"header . navigation"
+	"content content content"
+	"footer footer footer";
 }
 
 #map {
@@ -20,18 +30,38 @@ body,html {
 .header {
 	grid-area: header;
 	padding:10px;
-    background-color: #C4C4C4;
+    background-color: #1B1B1B;
     font-family: 'Roboto';
-    font-size: 35px
+    font-size: 35px;
+    color: #C4C4C4;
 }
-.sidebar {
-	grid-area: sidebar;
+
+.footer {
+	grid-area: footer;
 	padding:10px;
-    background-color: #555;
+	background-color: #1B1B1B;
+	color: white;
 }
+
 .navigation {
     overflow: hidden;
-    background-color: #C4C4C4;
+    background-color: #1B1B1B;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
   }
 
 .navigation a {

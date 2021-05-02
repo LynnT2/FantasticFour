@@ -2,15 +2,14 @@
 let map;
 let lat = 0;
 let lon = 0;
-let zl = 2; //zoom level 
-let path = "data/asian.csv";
-let markers = L.featureGroup();
-
+let zl = 3;
+let path = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRnVOK4HkRT25vJ0OSiibELheQHSsQKf7CYy4TZ2r0N_AO_4UKcmHZIxQMa16sBxeNfqkyh80Dm0Drd/pub?gid=0&single=true&output=csv"; // path to csv data
+let markers = L.featureGroup(); // global variables
 
 // initialize
 $( document ).ready(function() {
     createMap(lat,lon,zl);
-    readCSV(path);
+	readCSV(path);
 });
 
 // create the map
@@ -22,63 +21,53 @@ function createMap(lat,lon,zl){
 	}).addTo(map);
 }
 
+
 // function to read csv data
 function readCSV(path){
 	Papa.parse(path, {
-		header: true, //has header row
-		download: true, 
+		header: true,
+		download: true,
 		complete: function(data) {
-			console.log(data); //dump data into the console
+			console.log(data);
 			
-			// map the data
-			mapCSV(data);
+			mapCSV(data); // map the data
 
 		}
 	});
 }
 
-
 function mapCSV(data){
+	
+	// circle options
 	let circleOptions = {
-        radius:5,
-        weight:1,
-        color:'white',
-        fillColor:"dodgerblue",
-        fillOpacity:1,
-    }
-    var month = "March 2020";
-    $('.sidebar').append(`<div class="note"><b>Move cursor over event to see location on map!</b></div><div class="month"><b>March 2020</b></div>`);
+		radius: 10,
+		weight: 1,
+		color: 'white',
+		fillColor: 'dodgerblue',
+		fillOpacity: 1,
+	}
+
 	// loop through each entry
 	data.data.forEach(function(item,index){
-		// create marker
-		let marker = L.circleMarker([item.lat,item.lon],circleOptions)
-        .on('mouseover',function(){
-			this.bindPopup(`${item.Description}<br><a href=${item.Link} target="_blank">Link to article</a>`).openPopup()
-		}) //binds popup to marker, adds a title and an image to the popup
-
-        // add entry to sidebar
-        if (item.Month!==month) {
-            $('.sidebar').append(`<div class="month"><b>${item.Month}</b><br></div>`);
-            month = item.Month;
-        }
-		$('.sidebar').append(`<div onmousemove="panToImage(${index})"><br>${item.Description}<br><br></div>`)
-        
-
-		// add marker to featuregroup
+		let marker = L.circleMarker([item.latitude,item.longitude],circleOptions) // create marker
+		.on('mouseover',function(){
+			this.bindPopup("<h3>" + item.title + " (" + item.date + ")" + "</h3>" + "<center><img src ='" + item.reference_url + "'width=100%'/></center>" +
+			item.description).openPopup()
+		})
+		// add marker to featuregroup		
 		markers.addLayer(marker)
+
 	})
 
-	// add featuregroup to map
-	markers.addTo(map)
+	markers.addTo(map); // add featuregroup to map
 
-	// fit markers to map
-	map.fitBounds(markers.getBounds())
+	map.fitBounds(markers.getBounds()); // fit markers to map
 }
 
-function panToImage(index){
-	// zoom to level 17 first
+function flyToIndex(index){
+	// zoom to level 12 first
 	map.setZoom(12);
 	// pan to the marker
-	map.panTo(markers.getLayers()[index]._latlng);
-    //how to open the popup????
+	map.flyTo(markers.getLayers()[index]._latlng);
+	markers.getLayers()[index].openPopup();
 }
