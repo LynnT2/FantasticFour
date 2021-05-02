@@ -69,7 +69,8 @@ body,html {
 	grid-template-columns: 50% 50%;
 	grid-template-areas: 
 	"header navigation"
-	"bio project";
+	"bio project"
+    
 }
 
 .bio {
@@ -96,6 +97,7 @@ body,html {
     border-style:ridge;
     border-color: rgb(116, 10, 10);
 }
+
 
 
 div.row {
