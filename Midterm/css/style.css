@@ -123,25 +123,11 @@ body,html {
     transform: translateX(50%);
     width: 50%;
     text-align: center;
-    cursor: pointer;
+
 }
 
-/*collapsibles for each person-Labiba*/
-.content {
-	grid-area: content;
-    grid-template:max-content;
-    color: #000;
-    font-size: small;
-    text-align: left;
-    background-color: darkcyan;
-    padding: 10px;
-    display: none;
-    overflow:hidden;
-}
 
-.caption:hover {
-  background-color: #555;
-}
+
 /*display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-gap: 15px;*/
