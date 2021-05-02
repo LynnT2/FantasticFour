@@ -6,8 +6,11 @@ The COVID-19 pandemic has sparked an uptick in Asian American attacks throughout
 <table>
   <tr>
     <th>Labiba Alam</th>
-    <th>Haiqi Zhou<th>
+    <th>Haiqi Zhou</th>
+    <th>Adriana Romero</th>
+    <th>Lynn Tieu</th>
   </tr>
+  </table>
 ### Labiba Alam
 Role: Powerpoint designer, coder for about us page, email correspondent
 Labiba is a senior majoring in Bioengineering with a technical breadth in Digital Humanities. As a person who is more exposed to the effects of Covid-19 from a scientific point-of-view, she wants to tackle Covid-19’s correlation to the rise of Asian American hate crimes as a humanities topic for a change of perspective.
@@ -31,7 +34,7 @@ Web mapping is our main methodology to visualizing our data. Asian American hate
 <table>
   <tr>
     <th>Milestone</th>
-    <th>Phase<th>
+    <th>Phase</th>
   </tr>
   <tr>
     <td>Week 2</td>
