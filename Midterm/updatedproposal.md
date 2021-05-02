@@ -6,34 +6,33 @@ The COVID-19 pandemic has sparked an uptick in Asian American attacks throughout
 ## Team Members
 
 ### Labiba Alam
-<br>
-    <img src = "img/Labiba.jpg" width = "200">
+<img src = "img/Labiba.jpg" width = "200">
 <br>
     Role: Powerpoint designer, coder for about us page, email correspondent
+<br>
 <br>
     Labiba is a senior majoring in Bioengineering with a technical breadth in Digital Humanities. As a person who is more exposed to the effects of Covid-19 from a scientific point-of-view, she wants to tackle Covid-19’s correlation to the rise of Asian American hate crimes as a humanities topic for a change of perspective.
 
 ### Haiqi Zhou
-<br>
-    <img src = "img/Haiqi.jpg" width = "200">
+<img src = "img/Haiqi.jpg" width = "200">
 <br>
     Role: Contributor 
+<br>
 <br>
     Haiqi is a junior double majoring in Art History and French and minoring in Digital Humanities. She is interested in topics related to the environment and human rights. As someone born and raised in Shenzhen, China, she is very concerned about the rising incidents of anti-Asian hate crimes and would like to learn more about different factors that could have contributed to the increase in anti-Asian hate crimes.
   
 ### Adriana Romero
-<br>
-    <img src = "img/Adriana.jpg" width = "200">
-<br>
+<img src = "img/Adriana.jpg" width = "200">
     Role: Data Analyst, Coder for About Us Page
+<br>
 <br>
 Adriana Romero is a senior majoring in Sociology and minoring in Public Affairs. Adriana’s field of study and lived experiences have made her passionate about dismantling institutional forms of racism that produce inequalities that negatively impact marginalized communities. In the past few years, she has studied the patterns anti-Asian policies and practices in the United States. She is disgusted by the rise in hate crimes directed towards Asian communities and believes that it is important to address the numerous historical and present factors that contribute to it. 
 
 ### Lynn Tieu
-<br>
     <img src = "img/Lynn.JPG" width = "200">
 <br>
     Role: UX Designer, Data Analyst
+<br>
 <br>
     Lynn Tieu is in her final year as an Economics major and Digital Humanities minor. As a Chinese Vietnamese American, she has a personal interest in the patterns of Asian hate and discrimination. She aims to use her technical skills in UX design and data analytics to create a useful resource for those who want to understand more about the hate crimes committed against Asian Americans.
 
