@@ -123,9 +123,8 @@ body,html {
     transform: translateX(50%);
     width: 50%;
     text-align: center;
-    cursor: pointer;
-}
 
+<<<<<<< HEAD
 /*collapsibles for each person-Labiba*/
 .content {
 	grid-area: content;
@@ -141,7 +140,12 @@ body,html {
 
 .caption:hover {
   background-color: #555;
+=======
+>>>>>>> ee5884df867693e24057f546463ce989e810b266
 }
+
+
+
 /*display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-gap: 15px;*/
