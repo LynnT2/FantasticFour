@@ -124,7 +124,6 @@ body,html {
     width: 50%;
     text-align: center;
 
-<<<<<<< HEAD
 /*collapsibles for each person-Labiba*/
 .content {
 	grid-area: content;
@@ -140,8 +139,6 @@ body,html {
 
 .caption:hover {
   background-color: #555;
-=======
->>>>>>> ee5884df867693e24057f546463ce989e810b266
 }
 
 
