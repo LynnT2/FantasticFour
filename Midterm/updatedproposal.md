@@ -5,8 +5,8 @@ The COVID-19 pandemic has sparked an uptick in Asian American attacks throughout
 ## Team Members
 <table>
   <tr>
-    <td style= "width:25%; text-align:center;"> Labiba Alam
-    <img src = "img/Labiba.jpg" width = "200">
+    <td style= "width:25%; vertical-align: top;"> <center><b>Labiba Alam</b></center>
+    <img src = "img/Labiba.jpg" width = "200px">
     <br>
     <br>
     Role: Powerpoint designer, coder for about us page, email correspondent
@@ -14,26 +14,24 @@ The COVID-19 pandemic has sparked an uptick in Asian American attacks throughout
     <br>
     Labiba is a senior majoring in Bioengineering with a technical breadth in Digital Humanities. As a person who is more exposed to the effects of Covid-19 from a scientific point-of-view, she wants to tackle Covid-19’s correlation to the rise of Asian American hate crimes as a humanities topic for a change of perspective.
     </td>
-    <td style="width:25%">Haiqi Zhou
-        <img src = "img/Haiqi.jpg" width = "200">
+    <td style="width:25%; vertical-align: top;"> <center>Haiqi Zhou</center>
+        <img src = "img/Haiqi.jpg" width = "200px">
         <br>
         <br>
         Role: Contributer
         <br>
-        <br>
         Haiqi is a junior double majoring in Art History and French and minoring in Digital Humanities. She is interested in topics related to the environment and human rights. As someone born and raised in Shenzhen, China, she is very concerned about the rising incidents of anti-Asian hate crimes and would like to learn more about different factors that could have contributed to the increase in anti-Asian hate crimes.
     </td>
-    <td style="width:25%">Adriana Romero
-    <img src = "img/Adriana.jpg" width = "200">
+    <td style="width:25%; vertical-align: top;"> <center>Adriana Romero</center>
+    <img src = "img/Adriana.jpg" width = "200px">
         <br>
         <br>
         Role: Data Analyst, Coder for About Us Page
         <br>
-        <br>
         Adriana Romero is a senior majoring in Sociology and minoring in Public Affairs. Adriana’s field of study and lived experiences have made her passionate about dismantling institutional forms of racism that produce inequalities that negatively impact marginalized communities. In the past few years, she has studied the patterns anti-Asian policies and practices in the United States. She is disgusted by the rise in hate crimes directed towards Asian communities and believes that it is important to address the numerous historical and present factors that contribute to it. 
     </td>
-    <td style="width:25%;">Lynn Tieu
-    <img src = "img/Lynn.JPG" width = "200">
+    <td style="width:25%; vertical-align: top;"> <center>Lynn Tieu</center>
+    <img src = "img/Lynn.JPG" width = "200px">
         <br>
         <br>
         Role: UX Designer, Data Analyst
@@ -99,6 +97,7 @@ Web mapping is our main methodology to visualizing our data. Asian American hate
     <td>Finalize project website and presentation layout.</td>
   </tr>
 </table>
+<br>
 
 ## Technical Scope 
 Our website is based from GitHub, and is created with HTML, Javascript, and CSS. We are collaborating remotely with the help of Git. Leaflet is our map source for our mapping visualizations, and our additional visualizations are created with Tableau or Python. 
