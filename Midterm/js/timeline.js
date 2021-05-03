@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function(){
       svg.append('line').attr('class', 'timeline-base')
         .attr("x1", 0)
         .attr("y1", 100)
-        .attr("x2", '90%')
+        .attr("x2", '95%')
         .attr("y2", 100);
       // Get the value of the svg to for scaleLinear
       function getLineVal(val) {
@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', function(){
       }
   
       let scaleLine = d3.scaleLinear()
-        .domain([-3997310822, Date.now()])
-        .range([getLineVal('min') - 100 , getLineVal('max') - 100]); // OFFSET = 20
+        .domain([-4102373222, Date.now()])
+        .range([getLineVal('min') + 900 , getLineVal('max') - 200]); // OFFSET = 20
   
       let scaleCircle = d3.scaleLinear()
         .domain([moment.duration(3,'d').asMilliseconds(), moment.duration(10,'y').asMilliseconds()])
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function(){
           d3.select(this.parentNode).selectAll('text').style('opacity', 1);
           d3.select(this.parentNode).selectAll('.text-place').classed('hovered', true).style('opacity', 0);
           d3.select(this.parentNode).selectAll('.text-desc').classed('hovered', true).style('opacity', 0);
-          d3.select(this.parentNode).selectAll('.text-date-end').classed('hovered', true).style('opacity', 0);
+          
         })
         // When click a circle
         .on('click', function(d, i){
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function(){
         })
         // When un-hover a circle
         .on('mouseout', function(d, i){
-          d3.select(this).attr('r', function(data) {return scaleCircle(convertToTimeStamp(data.date) - convertToTimeStamp(data.startDate));});
+          d3.select(this).attr('r', function(data) {return scaleCircle(convertToTimeStamp(data.date) - convertToTimeStamp(data.date));});
           d3.select(this).classed('circle-hovered', false);
           d3.select(this.parentNode).selectAll('text').style('opacity', 0);
         });

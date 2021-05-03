@@ -37,7 +37,7 @@ body {
 .footer {
 	grid-area: footer;
 	padding:20px;
-	background-color:#f55e61;
+	background-color:white;
 	color: white;
   position:relative;
 }
@@ -92,12 +92,10 @@ body {
 
  #timelineChart {
    position:absolute;
-   width:100%;
+   width: 100%;
    height: 100%;
-   bottom: 50px;
-  
+   bottom: 60px;
  }
-
   .timeline-base {
     stroke: #444;
     stroke-width: 0.2;
@@ -124,20 +122,20 @@ body {
   .circle-immigration,
   .circle-immigration ~ .text-position,
   .details-immigration .text-position {
-    color: #78e08f;
-    fill: #78e08f;
+    color: #011936;
+    fill: #011936;
   }
   .circle-strike,
   .circle-strike ~ .text-position,
   .details-strike .text-position {
-    color: #78e08f;
-    fill: #78e08f;
+    color: #662E9B;
+    fill: #662E9B;
   }
   .circle-violence,
   .circle-violence ~ .text-position,
   .details-violence .text-position {
-    color: #78e08f;
-    fill: #78e08f;
+    color: #ED254E;
+    fill: #ED254E;
   }
   
   .circle-hovered {
@@ -154,12 +152,10 @@ body {
     -webkit-transition: opacity 0.7s ease-in-out;
   }
   .text-date {
-    fill: #ffffff;
+    fill: #888;
     font-family: 'Thasadith', sans-serif;
   }
-  .details .text-date {
-    margin-right: 15px;
-  }
+ 
   .text-place {
     font-family: 'Thasadith', sans-serif;
     font-size: 18px;
@@ -168,12 +164,11 @@ body {
   }
   .text-place.hovered,
   .text-desc.hovered,
-  .text-date-end.hovered {
+  .text-date.hovered {
     transition: opacity 1.5s;
   }
   .text-place,
-  .text-desc,
-  .text-date{
+  .text-desc{
     transition: opacity 0.1s;
   }
   .position-title {
