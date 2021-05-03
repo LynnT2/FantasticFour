@@ -36,6 +36,26 @@ body {
     color: #C4C4C4;
 }
 
+.header a:visited { 
+    text-decoration: none; 
+    color: black; 
+   }
+
+.header a:focus {
+    color: black;
+    text-decoration: none; 
+}
+
+.navigation a:visited { 
+    text-decoration: none; 
+    color: black; 
+   }
+
+.navigation a:active {
+    text-decoration: none;
+    color: yellow
+}
+
 .footer {
 	grid-area: footer;
 	padding:10px;
