@@ -38,7 +38,7 @@ function readCSV(path){
     });
 }
 function mapCSV(data){
-    if (data.meta.fields.length === 10) {
+    if (data.meta.fields.length === 10) { //create map for the history data
         // circle options
         let circleOptions1 = {
             radius: 10,
@@ -61,7 +61,7 @@ function mapCSV(data){
         history.addTo(map); // add featuregroup to map
     }
 
-    if (data.meta.fields.length === 14) {
+    if (data.meta.fields.length === 14) { //create map for the recent anti-Asian attacks data
         let circleOptions2 = {
             radius: 8,
             weight: 1,
@@ -73,7 +73,7 @@ function mapCSV(data){
         data.data.forEach(function(item,index){
             let marker = L.circleMarker([item.latitude,item.longitude],circleOptions2) // create marker
             .on('mouseover',function(){
-                this.bindPopup(`${item.Description}<br><a href=${item.Link} target="_blank">Link to article</a>`).openPopup()
+                this.bindPopup(`<h3>Incident</h3><a href=${item.Link} target="_blank">${item.Description}</a>`).openPopup()
             })
             // add marker to featuregroup
             recent.addLayer(marker)
@@ -81,19 +81,10 @@ function mapCSV(data){
         recent.addTo(map); // add featuregroup to map
     }
     map.fitBounds(recent.getBounds()); // fit markers to map
-    let addedlayers = {
+    let toggle = {
         "Asian American History": history,
 		"Recent anti-Asian attacks": recent
 	}
-    L.control.layers(null,addedlayers).addTo(map);
-}
-
-
-function flyToIndex(index){
-    // zoom to level 12 first
-    map.setZoom(12);
-    // pan to the marker
-    map.flyTo(markers.getLayers()[index]._latlng);
-    markers.getLayers()[index].openPopup();
+    L.control.layers(null,toggle).addTo(map);
 }
 
