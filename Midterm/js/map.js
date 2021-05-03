@@ -73,7 +73,7 @@ function mapCSV(data){
         data.data.forEach(function(item,index){
             let marker = L.circleMarker([item.latitude,item.longitude],circleOptions2) // create marker
             .on('mouseover',function(){
-                this.bindPopup(`<h3>Incident</h3><a href=${item.Link} target="_blank">${item.Description}</a>`).openPopup()
+                this.bindPopup(`<h3>Incident</h3><a href=${item.Link} target="_blank">${item.Description}</a><br>Date: ${item.Month}`).openPopup()
             })
             // add marker to featuregroup
             recent.addLayer(marker)
