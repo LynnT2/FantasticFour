@@ -73,7 +73,10 @@ document.addEventListener('DOMContentLoaded', function(){
           let details = d3.select('#details-' + currId);
           details.style('display', 'block');
           details.style('opacity', 1);
+          $.getScript('js/map.js',function(){panToMarker(d.id);
+          });
         })
+
         // When un-hover a circle
         .on('mouseout', function(d, i){
           d3.select(this).attr('r', function(data) {return scaleCircle(convertToTimeStamp(data.date) - convertToTimeStamp(data.date));});
