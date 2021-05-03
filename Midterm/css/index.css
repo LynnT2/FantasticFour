@@ -35,6 +35,7 @@ top: 10em;
 }*/
 
 .header {
+  grid-area: header;
 	padding: 10px;
   background-color: black;
   font-family:'PLayfair-Display';
