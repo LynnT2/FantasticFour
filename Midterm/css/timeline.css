@@ -35,9 +35,11 @@ body {
 
 .footer {
 	grid-area: footer;
-	padding:0px;
+	padding:20px;
 	background-color:#f55e61;
 	color: white;
+  position:relative;
+  height: 100px;
 }
 
 /*navigation*/
@@ -87,6 +89,16 @@ body {
  }
 
  /*timeline*/
+
+ #timelineChart {
+   position:absolute;
+   width:100%;
+   height: 100%;
+   top:0;
+   left:0;
+   margin-left: 10px;
+ }
+
   .timeline-base {
     stroke: #444;
     stroke-width: 0.2;
