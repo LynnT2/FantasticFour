@@ -12,6 +12,8 @@
 
 ## Midterm
 
+[Updated Project Proposal](Midterm/updatedproposal.md)
+
 [Website](Midterm/about.html)
 
 
