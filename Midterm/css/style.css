@@ -28,7 +28,7 @@ body {
 	grid-area: header;
 	padding: 10px;
     background-color: white;
-    font-family:'PLayfair-Display, sans-serif';
+    font-family:'PLayfair-Display';
     font-weight: bold;
     font-size: 2.5em;
     color: #db3e34ff;
