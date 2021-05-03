@@ -1,203 +1,420 @@
 [
     {
-    "id": 0,
-    "name": "Bachelor degree in Japanese and English languages",
-    "category": "Education",
-    "placeName": "Université de Grenoble (Stendhal)",
-    "country": "France",
-    "startDate": "2010-09",
-    "endDate": "2013-07",
-    "description":["Japanese (Kanji, Grammar, History, Language practise)",
-      "English (British and American history, Grammar, Language practise)",
-     "Economy, Accounting, Law, International law",
-     "Introduction to computer Science (Javascript, Adobe Flash Player, Microsoft Access, CMS)"],
-    "skills": [
-      "english",
-      "japanese",
-      "law",
-      "economics"
-    ]
-  },
-  {
-    "id": 1,
-    "name": "Exchange Student",
-    "category": "Education",
-    "placeName": "Nagoya University of Foreign Studies",
-    "country": "Japan",
-    "startDate": "2012-09",
-    "endDate": "2013-07",
-    "description": ["Japanese language classes JLPT N3, JLPT N2",
-    "Tourism & Hospitality",
-    "Economy",
-    "British law",
-    "Sociology"],
-    "skills": [
-      "english",
-      "japanese",
-      "law",
-      "economics",
-      "sociology",
-      "tourism industry"
-    ]
-  },
-  {
-    "id": 2,
-    "name": "Master degree in Computer Science",
-    "category": "Education",
-    "placeName": "Université de Grenoble",
-    "country": "France",
-    "startDate": "2016-09",
-    "endDate": "2018-07",
-    "description": ["Algorithms",
-    "Java",
-    "Web Dev",
-    "Systems & Networks",
-    "DB (SQL)",
-    "HCI",
-    "AI"],
-    "skills": [
-      "java",
-      "algorithms",
-      "javascript",
-      "php",
-      ".NET",
-      "SQL"
-    ]
-  },
-  {
-    "id": 3,
-    "name": "Project Manager and Front-End Engineer",
-    "category": "Work",
-    "placeName": "Studio Umi",
-    "country": "Japan",
-    "startDate": "2015-02",
-    "endDate": "2016-07",
-    "description": ["Web project planning",
-    "Budget prevision",
-    "Team and deadlines management",
-    "HTML",
-    "CSS",
-    "SCSS",
-    "Sass",
-    "Gulp",
-    "jQuery",
-    "GitLab",
-    "Drupal(7)",
-    "Events & Talks : CMS Summer Festival Osaka, Start Up Week End Nagahama Shiga, Drupal Cafe, Code for Shiga"],
-    "skills": [
-      "html",
-      "css",
-      "scss",
-      "javascript",
-      "jQuery",
-      "php",
-      "Drupal"
-    ]
-  },
-  {
-    "id": 4,
-    "name": "Data Vizualisation Internship",
-    "category": "Work",
-    "placeName": "Atos Bull",
-    "country": "France",
-    "startDate": "2018-01",
-    "endDate": "2018-07",
-    "description": "Design and development of graphical solutions for HPC data analysis (D3.js)",
-    "skills": [
-      "html",
-      "css",
-      "sass",
-      "javascript",
-      "d3.js",
-      "Symfony"
-    ]
-  },
-  {
-    "id": 5,
-    "name": "Software Engineer at Schneider Electric",
-    "category": "Work",
-    "placeName": "Thales Services",
-    "country": "France",
-    "startDate": "2018-09",
-    "endDate": "2019-01",
-    "description": "Development of an application for electrical pannels (Spring, Angular, MongoDB)",
-    "skills": [
-      "java",
-      "angular",
-      "mongoDB",
-      "mongoshell"
-    ]
-  },
-  {
-    "id": 6,
-    "name": "Research for version upgrade at Richemont",
-    "category": "Work",
-    "placeName": "Thales Services",
-    "country": "France",
-    "startDate": "2019-01",
-    "endDate": "2019-02",
-    "description": "Study to evaluate the impact of an application upgrade (SQL)",
-    "skills": [
-      "SQL"
-    ]
-  },
-  {
-    "id": 7,
-    "name": "Introduction to Data Science in Python",
-    "category": "Education",
-    "placeName": "Coursera",
-    "country": "France",
-    "startDate": "2018-10",
-    "endDate": "2018-11-29",
-    "description": "Courses : What is Data Science, Open tools for Data Science, Data Science Methodology, Databases and SQL for Data Science",
-    "skills": [
-      "Python",
-      "Jupyter Notebooks",
-      "SQL"
-    ]
-  },
-  {
-    "id": 8,
-    "name": "IBM Data Science Courses",
-    "category": "Education",
-    "placeName": "Coursera",
-    "country": "France",
-    "startDate": "2018-11-20",
-    "endDate": "2019-01-25",
-    "description": "Python for Data Science, Data Analysis with Python, Data Visualization with Python",
-    "skills": [
-      "Python",
-      "Jupyter Notebooks",
-      "Matplotlib",
-      "Numpy",
-      "Seaborn"
-    ]
-  },
-  {
-    "id": 9,
-    "name": "Managing Data Analysis",
-    "category": "Education",
-    "placeName": "Coursera",
-    "country": "France",
-    "startDate": "2018-12-23",
-    "endDate": "2019-01-08",
-    "description": "Course about the process of managing data analysis and EDA",
-    "skills": [
-      "Data Analysis"
-    ]
-  },
-  {
-    "id": 10,
-    "name": "Interactivity with JavaScript",
-    "category": "Education",
-    "placeName": "Coursera",
-    "country": "France",
-    "startDate": "2016-01-24",
-    "endDate": "2016-02-17",
-    "description": "Basics of Javascript language",
-    "skills": [
-      "Javascript"
-    ]
-  }
-  ]
-  
+        "id": 0,
+        "date": "1843-05-07",
+        "description": "A 14-year-old fisherman named Manjiro becomes the first official U.S. Japanese immigrant after being adopted by American Capt. William Whitfield who rescued the boy and his crew after a shipwreck 300 miles from Japan's coast. Years later, Manjiro returned to his home country, where he was named a samurai and worked as a political emissary with the West.",
+        "title": "First US Japanese Immigrant",
+        "category": "Immigration",
+        "location": "Fairhaven, Massachusetts",
+        "latitude": 41.6376043,
+        "longitude": -70.9036486999999
+    },
+    {
+        "id": 1,
+        "date": "1875-03-03",
+        "description": "The Page Act of 1875 is enacted, prohibiting the recruitment of laborers from “China, Japan or any Oriental country” who were not brought to the United States of their own will or who were brought for “lewd and immoral purposes.” The law explicitly bars “the importation of women for the purposes of prostitution.” The act, based on stereotypes and scapegoating, is enforced by invasive and humiliating interrogations at the Angel Island Immigration Station outside San Francisco. It effectively blocks Chinese women from entering the country and stifles the ability of Chinese American men to start families in America.",
+        "title": "Page Act of 1875",
+        "category": "Immigration",
+        "location": "USA",
+        "latitude": 37.09024,
+        "longitude": -95.712891
+    },
+    {
+        "id": 2,
+        "date": "1882-05-06",
+        "description": "Facing hostile, and often violent treatment from locals, Chinese immigrants are targeted by Congress with the passage of the Chinese Exclusion Act, signed into law by President Chester Arthur. The act bans Chinese workers from entering the country and excludes Chinese immigrants from American citizenship. Every 10 years, Congress extends its provision until 1943, when World War II labor shortage pressure and increased anti-Japanese sentiment leads to its demise and Chinese immigrants are allowed to become naturalized citizens.",
+        "title": "Chinese Exclusion Act",
+        "category": "Immigration",
+        "location": "USA",
+        "latitude": 37.09024,
+        "longitude": -95.712891
+    },
+    {
+        "id": 3,
+        "date": "1885-03-03",
+        "description": "In the case Tape v. Hurley, California's Supreme Court rules that the state entitles \"all children\" access to public education. The case centers on Mamie Tape, then 8, an American-born daughter of Chinese immigrants whose family sued the San Francisco Board of Education for denying her admission because of her race.",
+        "title": "Tape v Hurley",
+        "category": "Government",
+        "location": "1451 Jackson St, San Francisco, CA 94109",
+        "latitude": 37.7944390539994,
+        "longitude": -122.41884338723,
+        "referenceurl": "https://www.history.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_700/MTY0MDM0NTU5MTk5OTQ2NTc3/mamie-tape-gettyimages-622953774.webp",
+        "caption": "Portrait of the Tape family (left to right): Joseph Tape, Emily Tape, Frank Tape, Mamie Tape, and Mary Tape, c. 1884. Smith Collection/Gado/Getty Images"
+    },
+    {
+        "id": 4,
+        "date": "1885-09-02",
+        "description": "Angered that they’re taking away “white” jobs, white coal miners attack Chinese laborers in the Wyoming territory during what comes to be known as the Rock Springs Massacre. Twenty-eight Chinese are killed, with 15 more injured by the mob, which also looted and set fire to all of the homes in the area’s Chinatown. Federal troops are brought in to return Chinese miners, who had fled, to Rock Springs, and Congress eventually agrees to compensate the workers for their losses.",
+        "title": "Rock Springs Massacre",
+        "category": "Violence",
+        "location": "Rock Springs, Wyoming",
+        "latitude": 41.5874643999999,
+        "longitude": -109.2029043,
+        "referenceurl": "https://www.history.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_1400/MTc5NzgyNzY1NzI4NzY5MzA0/rock-springs-massacre-gettyimages-517359520.webp",
+        "caption": "An illustration of the Rock Springs Massacre, published in Harper's Weekly, September 26, 1885. Bettmann Archive/Getty Images"
+    },
+    {
+        "id": 5,
+        "date": "1887-05-27",
+        "description": "Seven white horse thieves ambush a group of Chinese miners who had set up camp along the Snake River in Oregon, murdering all 34 men and mutilating their bodies before dumping them in the river. Three members of the gang stand trial in the Hells Canyon Massacre, with one testifying for the state, and all are found not guilty by an all-white jury.",
+        "title": "Hells Canyon Massacre",
+        "category": "Violence",
+        "location": "Snake River, Oregon",
+        "latitude": 43.8041334,
+        "longitude": -120.5542012
+    },
+    {
+        "id": 6,
+        "date": "1905-01-22",
+        "description": "Following the discovery of gold in California, Chinese miners head to California seeking riches, with 25,000 arriving by 1851, according to the Library of Congress. With uncertain work and hostile locals, not to mention a language barrier, many Chinese laborers (including more than 10,000 with the Central Pacific Railroad alone) take dangerous work, for little pay, building the transcontinental railroad, which is completed on May 10, 1869.",
+        "title": "Gold Rush Lures New Wave of Immigrants",
+        "category": "Immigration",
+        "location": "San Francisco, California",
+        "latitude": 37.7749295,
+        "longitude": -122.4194155
+    },
+    {
+        "id": 7,
+        "date": "1910-01-21",
+        "description": "The immigration station Angel Island opens in California’s San Francisco Bay, serving as the country’s major port of entry for Asian immigrants, with some 100,000 Chinese and 70,000 Japanese being processed through the station over the next 30 years. Known as the “Ellis Island of the West” and located 6 miles off San Francisco’s coast, the island was a military reserve during the Civil War. Immigrants without proper documentation were quarantined there for days to years in a “prison-like environment,” according to the National Parks Service. Closed in 1940, it’s now a California state park.",
+        "title": "Angel Island",
+        "category": "Immigration",
+        "location": "San Francisco, California",
+        "latitude": 37.7749295,
+        "longitude": -122.4194155
+    },
+    {
+        "id": 8,
+        "date": "1917-02-05",
+        "description": "Congress passes the Immigration Act of 1917, which includes an \"Asiatic Barred Zone,\" banning Chinese, Asian Indians, Burmese, Thai, Maylays and others. Japan is not on the list of those excluded, as prohibitions against immigrants from that country are already in place, nor is the Philippines, as it is a U.S. territory.",
+        "title": "Immigration Act of 1917",
+        "category": "Immigration",
+        "location": "USA",
+        "latitude": 37.09024,
+        "longitude": -95.712891
+    },
+    {
+        "id": 9,
+        "date": "1941-12-07",
+        "description": "The Japanese bomb Pearl Harbor. Two months later, President Franklin D. Roosevelt, fearing Japanese immigrants or those with Japanese ancestry had taken part in planning the attack, issues an executive order that forces more than 120,000 Japanese Americans living on the West Coast into internment camps. According to the National Archives, approximately 70,000 of those targeted are U.S. citizens, and no charges are made against any of them. Most lose their homes, businesses and belongings, and are held until the war ends. In 1988, President Ronald Reagan signs a law apologizing for the civil liberty injustice with the order to pay $20,000 to each person interned.",
+        "title": "Japanese Internment",
+        "category": "Violence",
+        "location": "Pearl Harbor, Hawaii",
+        "latitude": 21.3511958,
+        "longitude": -157.9801523
+    },
+    {
+        "id": 10,
+        "date": "1957-01-03",
+        "description": "Dalip Saund of California is sworn in as a U.S. Representative, becoming the first Asian-American, first Indian American and first Sikh to serve in Congress. An immigrant from India, he became an American citizen in 1949, eventually earning a Ph.D. and being elected as a judge before serving three terms in the House. According to the U.S. House of Representatives History, Art & Archives, he was vocal on issues such as communism and civil rights, including desegregation. “The problem of man’s injustice to man is a world problem,\" he said in response to the case in Little Rock, Arkansas. \"Let one who is innocent and pure throw the first stone.”",
+        "title": "First Asian-American to Serve in Congress",
+        "category": "Government",
+        "location": "Sacramento, California",
+        "latitude": 38.5815719,
+        "longitude": -121.4943996
+    },
+    {
+        "id": 11,
+        "date": "1959-08-24",
+        "description": "Born in Honolulu the son of poor Chinese immigrants, Hiram L. Fong is sworn in as Hawaii's first U.S. Senator, becoming the first Asian American elected to the chamber. The only Republican senator ever elected from the state, he defended President Richard Nixon's Vietnam policies, and, according to the U.S. House of Representatives History, Art & Archives, saw himself as an Asian American spokesman. “I feel sometimes they think I am their senator,” he once said. “I try to interpret America to them and to interpret them to America.”",
+        "title": "Hawaii's First US Senator",
+        "category": "Government",
+        "location": "Hawaii",
+        "latitude": 19.8967662,
+        "longitude": -155.5827818
+    },
+    {
+        "id": 12,
+        "date": "1965-01-04",
+        "description": "U.S. Representative Patsy T. Mink of Hawaii is sworn in as the first Asian American woman, and first woman of color, to serve in Congress. A supporter of women’s and civil rights and an advocate for education, children and labor unions, Mink opposed the Vietnam War, supported Head Start and the Women's Educational Equity Act and was a co-author and sponsor of Title IX of the Education Amendments of 1972, outlawing sex discrimination in any education program or activity receiving federal funding. She also co-founds the Congressional Asian Pacific American Caucus in 1994.",
+        "title": "First Asian-American Woman to Serve in Congress",
+        "category": "Government",
+        "location": "Hawaii",
+        "latitude": 19.8967662,
+        "longitude": -155.5827818
+    },
+    {
+        "id": 13,
+        "date": "1965-09-08",
+        "description": "Facing the threat of pay cuts and demanding improved working conditions, the Agricultural Workers Organizing Committee, made up mostly of Filipino farmworkers, begins the five-year-long Delano Grape strike in California that prompts a global grape boycott. Led by Filipino-American Larry Itliong, the workers are soon joined by Cesar Chavez and Latino workers, and the two unions ultimately join to form United Farm Workers.",
+        "title": "Delano Grape Strike",
+        "category": "Strike",
+        "location": "Delano, California",
+        "latitude": 35.7688425,
+        "longitude": -119.2470536,
+        "referenceurl": "https://www.history.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_1400/MTYzODc3NTIzMzg0NTc1NzEz/delano-grape-strike-gettyimages-526266334.webp",
+        "caption": "Larry Itliong (UFW director, center) with Julio Hernandez (UFW officer, left) and Cesar Chavez at Chevez's Huelga Day March in San Francisco, 1966. Gerald L French/Corbis/Getty Images"
+    },
+    {
+        "id": 14,
+        "date": "1965-10-03",
+        "description": "President Lyndon B. Johnson signs the Immigration and Nationality Act into law. Also known as the Hart-Celler Act, it puts an end to immigration policies based on ethnicity and race and quota systems, resulting in a wave of Asian immigrants who had been barred from entry.",
+        "title": "Hart-Celler Act",
+        "category": "Immigration",
+        "location": "USA",
+        "latitude": 37.09024,
+        "longitude": -95.712891
+    },
+    {
+        "id": 15,
+        "date": "1973-08-19",
+        "description": "Martial arts movie Enter the Dragon premieres, three weeks after its action star, Bruce Lee, dies from an allergic reaction to pain medication in Hong Kong. In his first starring role in a Hollywood film, the box office hit cements Lee, born in 1940 in San Francisco and raised in Hong Kong, as a film icon.",
+        "title": "Enter the Dragon Premiere",
+        "category": "Art",
+        "location": "Hollywood, California",
+        "latitude": 34.0928092,
+        "longitude": -118.3286614
+    },
+    {
+        "id": 16,
+        "date": "1979-03-28",
+        "description": "President Jimmy Carter proclaims a week in May is to be designated Asian/Pacific American Heritage Week, which would be continued by Presidents Ronald Reagan and George H.W. Bush. In 1990, Bush broadens the observance to cover the month of May and, in 1992, Congress passes a law permanently designating May as Asian/Pacific American Heritage Month. May is chosen in honor of the first official Japanese immigrant's arrival in the U.S. on May 7, 1843, and because May 10, 1869, marks the completion of the transcontinental railroad.",
+        "title": "Start of Asian/Pacific American Heritage Week",
+        "category": "Government",
+        "location": "USA",
+        "latitude": 37.09024,
+        "longitude": -95.712891
+    },
+    {
+        "id": 17,
+        "date": "1982-06-23",
+        "description": "Four days after being held down and beaten in the head with a baseball bat by two white autoworkers in Detroit, Vincent Chin dies. The Chinese American and his friends were confronted during his bachelor party by Ronald Ebens and his stepson, Michael Nitz, who, according to witnesses, blamed their unemployment on the rise of Japanese car imports. Ebens and Nitz, convicted of manslaughter in a plea deal, were sentenced to three years probation and a $3,000 fine with no jail time. The verdict—called “a license to kill for $3,000, provided you have a steady job or are a student and the victim is Chinese,'' according to Kin Yee, president of the Detroit Chinese Welfare Council—leads to protests and outrage in the Asian American community.",
+        "title": "Death of Vincent Chin",
+        "category": "Violence",
+        "location": "Detroit, Michigan",
+        "latitude": 42.331427,
+        "longitude": -83.0457538
+    },
+    {
+        "id": 18,
+        "date": "1982-06-24",
+        "description": "More than 20,000 garment workers, most of whom are female immigrants from China and Hong Kong, rally in New York’s Chinatown after labor union negotiations stall. A second rally is held the next month, with a one-day strike taking place July 15, the largest in the history of Chinatown that ends with employers accepting the union’s contract demands.",
+        "title": "1982 Garment Worker's Strike",
+        "category": "Strike",
+        "location": "Chinatown, New York City",
+        "latitude": 40.7157509,
+        "longitude": -73.9970307
+    },
+    {
+        "id": 19,
+        "date": "1982-11-13",
+        "description": "The Vietnam War Memorial is dedicated in Washington, D.C. Designed by Maya Lin, the daughter of Chinese immigrants, the simple, black-granite wall is inscribed with 57,939 names of Americans killed in the conflict. Lin, as an architecture student at Yale, bested more than 1,400 entries in a national competition to design the memorial in a unanimous decision by the jurors. At first considered controversial, it quickly becomes a powerful symbol of honor and sacrifice.",
+        "title": "Vietnam War Memorial",
+        "category": "Art",
+        "location": "Washington, DC",
+        "latitude": 38.9071923,
+        "longitude": -77.0368707,
+        "referenceurl": "https://www.history.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_1400/MTU5MDU0MDk5ODIyNjgzOTI4/gettyimages-515354622.webp",
+        "caption": "Maya Lin (center) displaying the final design for the Vietnam Memorial alongside Jan C. Scruggs (L), President of the Vietnam Veteran's Memorial Fund, and Project Director Bob Doubek (R), 1981. Bettmann Archive/Getty Images"
+    },
+    {
+        "id": 20,
+        "date": "2000-07-21",
+        "description": "President Bill Clinton swears in Norman Mineta as the U.S. secretary of commerce, making him the first Asian American to serve in a presidential cabinet. Mineta, a Japanese American who had been sent to a World War II internment camp in 1942, was the first Asian American mayor of a major city, San Jose, Calif., served in the U.S. House of Representatives from 1975 to 1999 and, in 2001, was named transportation secretary under George W. Bush. Bush also appoints Elaine Chao secretary of labor, the first female Asian American to serve in a presidential cabinet. President Donald Trump names her secretary of transportation in 2017.",
+        "title": "First Asian-American to Serve in a Presidential Cabinet",
+        "category": "Government",
+        "location": "Washington, DC",
+        "latitude": 38.9071923,
+        "longitude": -77.0368707
+    },
+    {
+        "id": 21,
+        "date": "2018-10-01",
+        "description": "Director Jon M. Chu's Crazy Rich Asians breaks box office records, becoming North America's highest-earning romantic comedy in a decade. It's also the first Hollywood studio movie since 1993's Joy Luck Club starring an \"all-Westernized Asian American cast,\" according to the Hollywood Reporter. Based on the novel by Kevin Kwan, the film, made for $30 million, has grossed more than $238 million.",
+        "title": "Crazy Rich Asians",
+        "category": "Art",
+        "location": "Hollywood, California",
+        "latitude": 34.0928092,
+        "longitude": -118.3286614
+    },
+    {
+        "id": 22,
+        "date": "2021-01-20",
+        "description": "Kamala D. Harris is sworn in as the first female, first Black and first Asian American vice president of the United States. Serving with President Joe Biden, the former U.S. senator from California is the daughter of an Indian mother and Jamaican father and is sworn in by U.S. Supreme Court Justice Elena Sotomayor, the court's first female Latina justice. In 2019, Harris, tech entrepreneur Andrew Yang and Hawaii Rep. Tulsi Gabbard became the first Asian Americans to run for president on the Democrat ticket (Gabbard has Pacific Islander heritage).",
+        "title": "First Asian American Vice President",
+        "category": "Government",
+        "location": "Washington, DC",
+        "latitude": 38.9071923,
+        "longitude": -77.0368707
+    },
+    {
+        "id": 23,
+        "date": "1850-04-13",
+        "description": "California imposes Foreign Miner's Tax and enforces it mainly against Chinese miners, who were often forced to pay more than once.",
+        "title": "Foreign Miner's Tax",
+        "category": "Government",
+        "location": "Sacremento, California",
+        "latitude": 38.5816,
+        "longitude": -121.4944,
+        "referenceurl": "https://immigrationtounitedstates.org/uploads/posts/2011-11/1322680419_chinese-mine-workers.png",
+        "caption": "http://www.cetel.org/timeline.html"
+    },
+    {
+        "id": 24,
+        "date": "1867-06-25",
+        "description": "Two thousand Chinese railroad workers strike for a week, demanding an end to beatings, increased wages and work hours equal with whites. Central Pacific breaks the strike when they withhold food supplies to the Chinese, isolated as they were in the high mountains of the Sierras.",
+        "title": "Chinese Railroad Workers strike",
+        "category": "Strike",
+        "location": "Sierra County, California",
+        "latitude": 39.514295,
+        "longitude": -120.05148,
+        "referenceurl": "https://media1.s-nbcnews.com/j/newscms/2017_25/2046086/chinese_celebration_railroad_a0532e1ab8a4fd2728f0e5471669d928.fit-560w.jpg",
+        "caption": "https://www.pbs.org/ancestorsintheamericas/time_17.html#:~:text=In%20June%20of%201867%2C%20two,high%20mountains%20of%20the%20Sierras."
+    },
+    {
+        "id": 25,
+        "date": "1868-06-19",
+        "description": "Eugene Van Reed illegally ships 149 Japanese laborers to Hawaii. These were the first Japanese immigrants to Hawaii, known as the gannen mono (first-year arrivals).",
+        "title": "Illegal Transport of Japanese Laborers",
+        "category": "Immigration",
+        "location": "Honolulu, Hawaii",
+        "latitude": 21.3069,
+        "longitude": -157.8583,
+        "referenceurl": "http://searchcollection.asianart.org/internal/media/dispatcher/4142/resize:format=preview",
+        "caption": "https://publishing.cdlib.org/ucpressebooks/view?docId=ft9290090n&chunk.id=d0e378&toc.id=&brand=ucpress"
+    },
+    {
+        "id": 26,
+        "date": "1877-02-01",
+        "description": "White gunmen shot and killed four Chinese men in Chico, California in February 1877 and later unsuccessfully attempted to burn the town's Chinatown to the ground.",
+        "title": "Anti-Chinese Violence",
+        "category": "Violence",
+        "location": "Chico, California",
+        "latitude": 39.7285,
+        "longitude": -121.8375,
+        "referenceurl": "https://remezcla.com/wp-content/uploads/2017/06/LatinAmerica_Gonzalez.jpg",
+        "caption": "https://cdnc.ucr.edu/?a=d&d=SDU18770329.2.12&e=-------en--20--1--txt-txIN--------1"
+    },
+    {
+        "id": 27,
+        "date": "1878-04-29",
+        "description": "In re Ah Yup was an 1878 landmark court decision in the United States that deemed residents of Asian descent ineligible for naturalization. Since the existing laws allowed only for the naturalization of white people and black people, the Chinese plaintiff Ah Yup attempted to argue that Chinese people were white.",
+        "title": "In re Ah Yup",
+        "category": "Immigration",
+        "location": "San Francisco, California",
+        "latitude": 37.78,
+        "longitude": -122.409722,
+        "referenceurl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Lorenzo_Sawyer.jpg/330px-Lorenzo_Sawyer.jpg",
+        "caption": "http://smithsonianapa.org/now/this-month-in-history-in-re-ah-yup-rules-chinese-ineligible-for-naturalized-citizenship-on-april-29-1878/"
+    },
+    {
+        "id": 28,
+        "date": "1906-10-11",
+        "description": "A policy adopted by the San Francisco Board of Education intended to restrict Japanese students to ‘Oriental schools’ in San Francisco and directed school principals in San Fransisco to send \"all Chinese, Japanese, and Korean children to newly formed Oriental School.\" The policy marked the first time that Japanese students experienced enforced segregation by school officials in the city. ",
+        "title": "Segregation of Japanese School Children in San Francisco",
+        "category": "Government",
+        "location": "San Francisco, California",
+        "latitude": 37.773972,
+        "longitude": -122.431297,
+        "referenceurl": "https://s.hdnux.com/photos/56/54/57/12241914/5/rawImage.jpg",
+        "caption": "http://www.cetel.org/timeline.html#4, https://caselib.stanford.edu/sites/default/files/cases/Eng_case.pdf"
+    },
+    {
+        "id": 29,
+        "date": "1907-02-24",
+        "description": "Japan and the U.S. reach \"Gentlemen's Agreement\" whereby Japan stops issuing passports to laborers desiring to emigrate to the US. President Roosevelt summoned the San Francisco mayor and school board to the White House in February 1907 and persuaded them to rescind the segregation order, promising that the federal government would itself address the question of immigration. On February 24, the Gentlemen’s Agreement with Japan was concluded in the form of a Japanese note agreeing to deny passports to laborers intending to enter the United States and recognizing the U.S. right to exclude Japanese immigrants holding passports originally issued for other countries. ",
+        "title": "Gentlemen's Agreement",
+        "category": "Immigration",
+        "location": "USA",
+        "latitude": 37.809326,
+        "longitude": -122.409981,
+        "referenceurl": "https://immigrationhistory.org/wp-content/uploads/2018/05/111006l.jpg",
+        "caption": "http://www.cetel.org/timeline.html#4, https://www.history.com/topics/immigration/gentlemens-agreement"
+    },
+    {
+        "id": 30,
+        "date": "1922-11-11",
+        "description": "Takao Ozawa v. U.S. declares Japanese ineligible for naturalized citizenship. Takao Ozawa was born in Japan but had lived in the U.S. for 20 years. Ozawa filed for citizenship under the Naturalization Act of 1906, caliming that Japanese people were classified as \"free white persons.\" The Supreme Court asserted that Japanese were not considered to be part of the Caucasian race, and therefor, were not \"free white persons\" under the law. ",
+        "title": "Takao Ozawa v. U.S.",
+        "category": "Immigration",
+        "location": "Hawaii",
+        "latitude": 19.741755,
+        "longitude": -155.844437,
+        "referenceurl": "https://aaregistry.org/wp-content/uploads/2016/02/Takao-Ozawa-web.jpg",
+        "caption": "http://www.cetel.org/timeline.html#4, https://www.law.cornell.edu/supremecourt/text/260/178"
+    },
+    {
+        "id": 31,
+        "date": "1923-02-19",
+        "description": "Bhagat Singh Thind v. U.S. declares Asian Indians ineligible for naturalized citizenship. Although Thind was racially white, the Supreme Court found that he would not be considered “white” in the eyes of the “common man,” despite scientific race categories, and was therefore also ineligible for citizenship. The Thind decision led to the denaturalization of about fifty Asian Indian Americans who had earlier successfully applied for and received U.S. citizenship.\n",
+        "title": "U.S. v. Bhagat Singh Thind",
+        "category": "Immigration",
+        "location": "Oregon",
+        "latitude": 44,
+        "longitude": -120.5,
+        "referenceurl": "https://immigrationhistory.org/wp-content/uploads/2018/05/Bhagatsinghthind-189x300.jpg",
+        "caption": "http://www.cetel.org/timeline.html#4, https://www.pbs.org/rootsinthesand/i_bhagat1.html"
+    },
+    {
+        "id": 32,
+        "date": "1924-05-26",
+        "description": "The Immigration Act of 1924 denies entry to virtually all Asians. Designed to limit all immigration to the United States, the act was particularly restrictive for Eastern and Southern Europeans and Asians. Congress passed the first highly restrictive immigration law in 1917, requiring immigrants over age sixteen to pass literacy tests and excluding immigrants from the “Asiatic Barred Zone.” Immigrants from China had been barred since the Chinese Exclusion Act of 1882, and this law expanded that ban to include many other Asian countries. The Act of 1924 eliminated immigration from Japan, violating the so-called “Gentleman’s Agreement” that had previously protected Japanese immigration from legal restrictions.",
+        "title": "Immigration Act of 1924",
+        "category": "Immigration",
+        "location": "USA",
+        "latitude": 38.889248,
+        "longitude": -77.050636,
+        "referenceurl": "https://i0.wp.com/werehistory.org/wp-content/uploads/2018/05/JohnsonReedAct.jpg?zoom=2&resize=700%2C511",
+        "caption": "http://www.cetel.org/timeline.html#4, https://history.state.gov/milestones/1921-1936/immigration-act"
+    },
+    {
+        "id": 33,
+        "date": "1968-11-06",
+        "description": "Students strike at San Francisco State University to demand establishment of ethnic studies programs. In 1968 and 1969 the Black Student Union, Third World Liberation Front, select staff and faculty, and members from the larger Bay Area community, organized and lead a series of actions against systematic discrimination. Protestors spoke out against lack of access, misrepresentation, and the overall neglect of indigenous peoples and people of color within the university's curriculum and programs\n",
+        "title": "Ethnic Studies Strike",
+        "category": "Strike",
+        "location": "San Francisco, California",
+        "latitude": 37.720663784,
+        "longitude": -122.474498102,
+        "referenceurl": "https://ethnicstudies.sfsu.edu/sites/default/files/assets/images/strike_1.jpg",
+        "caption": "http://www.cetel.org/timeline.html#4, https://ethnicstudies.sfsu.edu/history"
+    },
+    {
+        "id": 34,
+        "date": "1905-05-28",
+        "description": "More than 130,000 refugees enter the U.S. from Vietnam, Kampuchea, and Laos as Communist governments are established there following the end of the Indochina War. (Indochina Refugee Crisis)",
+        "title": "New Wave of Immigrants after Communist Governments Established",
+        "category": "Immigration",
+        "location": "USA",
+        "latitude": 33.3178,
+        "longitude": -117.3205,
+        "referenceurl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Vietnamese_refugees_on_US_carrier%2C_Operation_Frequent_Wind.jpg/240px-Vietnamese_refugees_on_US_carrier%2C_Operation_Frequent_Wind.jpg",
+        "caption": "http://www.cetel.org/timeline.html#4,"
+    },
+    {
+        "id": 35,
+        "date": "1987-05-03",
+        "description": "President Reagan completes formal signing of the Proclamation of Asian Pacific American Heritage Week by the White House.",
+        "title": "Asian Pacific American Heritage Week",
+        "category": "Government",
+        "location": "USA",
+        "latitude": 38.897957,
+        "longitude": -77.03656,
+        "referenceurl": "https://www.vietnam.ttu.edu/exhibits/apahm/images/Picture1_thumb.jpg",
+        "caption": "http://www.cetel.org/timeline.html#4,"
+    },
+    {
+        "id": 36,
+        "date": "1988-08-10",
+        "description": "The U.S. House of Representatives votes 243 to 141 to make an official apology to Japanese Americans and to pay each surviving internee $20,000 in reparations.",
+        "title": "Civil Liberties Act of 1988",
+        "category": "Government",
+        "location": "USA",
+        "latitude": 38.8977,
+        "longitude": -77.0365,
+        "referenceurl": "https://www.saturdayeveningpost.com/wp-content/uploads/satevepost/2018-08-10-civil-rights-act-1988-banner.jpg",
+        "caption": "http://www.cetel.org/timeline.html#4,"
+    },
+    {
+        "id": 37,
+        "date": "1992-04-29",
+        "description": "Korean businesses looted and burned as a result of riots in Los Angeles due to outrage over Rodney King verdict.",
+        "title": "Rodney King Riots ",
+        "category": "Violence ",
+        "location": "Los Angeles, California",
+        "latitude": 34.0597,
+        "longitude": -118.3009,
+        "referenceurl": "https://static.rogerebert.com/redactor_assets/pictures/59061039e9fbc3f4810000b6/SaIGu.jpg",
+        "caption": "http://www.cetel.org/timeline.html#4,"
+    }
+]

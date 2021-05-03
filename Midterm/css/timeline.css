@@ -5,6 +5,7 @@ body,html {
 	font-family:'Lato';
 	font-size: 100%;
 }
+
 body {
   display: grid;
   grid-template-rows: 60px 1fr 100px;
@@ -39,7 +40,6 @@ body {
 	background-color:#f55e61;
 	color: white;
   position:relative;
-  height: 100px;
 }
 
 /*navigation*/
@@ -94,9 +94,8 @@ body {
    position:absolute;
    width:100%;
    height: 100%;
-   top:0;
-   left:0;
-   margin-left: 10px;
+   bottom: 50px;
+  
  }
 
   .timeline-base {
@@ -110,18 +109,37 @@ body {
     transition: fill-opacity 0.2s, r 0.5s;
     -webkit-transition: fill-opacity 0.2s, r 0.5s;
   }
-  .circle-education,
-  .circle-education ~ .text-position,
-  .details-education .text-position {
+  .circle-art,
+  .circle-art ~ .text-position,
+  .details-art .text-position {
     color: #f6b93b;
     fill: #f6b93b;
   }
-  .circle-work,
-  .circle-work ~ .text-position,
-  .details-work .text-position {
+  .circle-government,
+  .circle-government ~ .text-position,
+  .details-government .text-position {
     color: #78e08f;
     fill: #78e08f;
   }
+  .circle-immigration,
+  .circle-immigration ~ .text-position,
+  .details-immigration .text-position {
+    color: #78e08f;
+    fill: #78e08f;
+  }
+  .circle-strike,
+  .circle-strike ~ .text-position,
+  .details-strike .text-position {
+    color: #78e08f;
+    fill: #78e08f;
+  }
+  .circle-violence,
+  .circle-violence ~ .text-position,
+  .details-violence .text-position {
+    color: #78e08f;
+    fill: #78e08f;
+  }
+  
   .circle-hovered {
     fill-opacity: 0.2;
   }
@@ -136,7 +154,7 @@ body {
     -webkit-transition: opacity 0.7s ease-in-out;
   }
   .text-date {
-    fill: #888;
+    fill: #ffffff;
     font-family: 'Thasadith', sans-serif;
   }
   .details .text-date {
@@ -155,7 +173,7 @@ body {
   }
   .text-place,
   .text-desc,
-  .text-date-end {
+  .text-date{
     transition: opacity 0.1s;
   }
   .position-title {
