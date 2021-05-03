@@ -8,7 +8,7 @@ The COVID-19 pandemic has sparked an uptick in Asian American attacks throughout
 ### Labiba Alam
 <img src = "img/Labiba.jpg" width = "200">
 <br>
-    Role: Coder for About Us page, Email Correspondent
+    Role: About Us Web Programmer, Email Correspondent
 <br>
 <br>
     Labiba is a senior majoring in Bioengineering with a technical breadth in Digital Humanities. As a person who is more exposed to the effects of Covid-19 from a scientific point-of-view, she wants to tackle Covid-19’s correlation to the rise of Asian American hate crimes as a humanities topic for a change of perspective.
@@ -16,14 +16,14 @@ The COVID-19 pandemic has sparked an uptick in Asian American attacks throughout
 ### Haiqi Zhou
 <img src = "img/Haiqi.jpg" width = "200">
 <br>
-    Role: Contributor 
+    Role:  Web Programmer, Data Analyst
 <br>
 <br>
     Haiqi is a junior double majoring in Art History and French and minoring in Digital Humanities. She is interested in topics related to the environment and human rights. As someone born and raised in Shenzhen, China, she is very concerned about the rising incidents of anti-Asian hate crimes and would like to learn more about different factors that could have contributed to the increase in anti-Asian hate crimes.
   
 ### Adriana Romero
 <img src = "img/Adriana.jpg" width = "200">
-    Role: Data Analyst, Coder for About Us Page
+    Role: Data Analyst, About Us Web Programmer
 <br>
 <br>
 Adriana Romero is a senior majoring in Sociology and minoring in Public Affairs. Adriana’s field of study and lived experiences have made her passionate about dismantling institutional forms of racism that produce inequalities that negatively impact marginalized communities. In the past few years, she has studied the patterns anti-Asian policies and practices in the United States. She is disgusted by the rise in hate crimes directed towards Asian communities and believes that it is important to address the numerous historical and present factors that contribute to it. 
@@ -38,8 +38,8 @@ Adriana Romero is a senior majoring in Sociology and minoring in Public Affairs.
 
 ## Overview
 The United States has witnessed an increase in violence against Asian communities since the beginning of the COVID-19 pandemic, a result of the initial detection of the virus in Wuhan, China. Although the recent escalation of hate crimes is substantial, racism directed towards Asians has been prevalent in the U.S since the 19th century. Anti-Asian policies, ideologies, and varying forms of violent actions are defining features of American history. Identifying and acknowledging important historical events related to Asian-Americans allows us to frame the current brutality of hate crimes faced by Asian communities.
-
 Our goal is to investigate different patterns of Asian American hate crimes throughout the U.S. in the past two years; specifically considering the location of the hate crime and the age, gender, and nationality of victims. We intend on using our historical data to understand past patterns of institutional and personal discrimination against Asians in the U.S. Historical patterns of interest include the rates of Asian discrimination during each century, specific events that sparked an increase in anti-Asian sentiment, and differences in the prevalence of Asian hate crimes across regions. The spikes in Asian hate crimes over the past few years demonstrate the continuation of historical anti-Asian sentiments in the country. It is important to recognize the patterns and consistency of Asian discrimination. 
+
 ## Methodology 
 Web mapping is our main methodology to visualizing our data. Asian American hate attacks are unfortunately high in frequency and span across the US, making the data hard to understand without visualization. Web mapping is essential to understanding the scope of these crimes, and to illustrate the Asian American presence in the US. Web-mapping allows for a more user-friendly experience to understand the key takeaways. 
 ## Workflow
@@ -107,3 +107,9 @@ Notable historical events in Asian American history have been manually pulled fr
 https://www.nytimes.com/interactive/2021/04/03/us/anti-asian-attacks.html
 
 The New York Times reported over 100 anti-Asian attacks in the article, “"Swelling Anti-Asian Violence: Who Is Being Attacked Where". Although it is not a full account of all of the Anti-Asian violence in the US, it provides an overview of these events in the past year. Because we do not have a specific coordinate of the place where the attack happened, however, the coordinates shown on our map might not be precisely pinned. We will create a timeline based on the date given by the data. We will also create a bar chart that shows the victims by gender, age, and ethnicity.
+<br>
+
+## Storyboard
+
+Our storyboard includes the main components of our UX Design design elemnts. <br>
+https://www.figma.com/file/10H05OCoEiaMyHV84fwcbY/DH-151-Fantastic-Four?node-id=0%3A1
