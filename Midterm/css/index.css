@@ -99,10 +99,12 @@ top: 10em;
 /*button*/
 .button { 
   text-decoration: none;
+  font-family: 'Roboto';
   display: inline-block;
-  padding: 16px 24px;
-  margin-top: 5.5em;
-  font-size: 5em;
+  padding: 25px;
+  margin-left: 1em;
+  margin-top: 1.5em;
+  font-size: 10em;
   animation: fadeIn ease 10s;
   -webkit-animation: fadeIn ease 10s;
   -moz-animation: fadeIn ease 10s;
@@ -169,54 +171,75 @@ top: 10em;
 
 /*text*/
 
- .fade-in {
-  animation: fadeIn ease 10s;
-  -webkit-animation: fadeIn ease 10s;
-  -moz-animation: fadeIn ease 10s;
-  -o-animation: fadeIn ease 10s;
-  -ms-animation: fadeIn ease 10s;
+.fade-in-text {
+  display: inline;
+  margin-top: 1em;
+  margin-left:1em;
+  font-family: 'Roboto';
+  font-size: 5em;
+  color: #db3e34ff;
+  animation: fadeIn linear 7s;
+  -webkit-animation: fadeIn linear 7s;
+  -moz-animation: fadeIn linear 7s;
+  -o-animation: fadeIn linear 7s;
+  -ms-animation: fadeIn linear 7s;
 }
+
 @keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
 
 @-moz-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
 
 @-webkit-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
 
 @-o-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
 
 @-ms-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
+
+/*highlight*/
+.arrow-highlight{
+  position:relative;
+  margin:0 0.5em;
+  padding:0 0.2em;
+}
+.arrow-highlight:before{
+  content:"";
+  z-index:-1;
+  left:-0.5em;
+  top:0.1em;
+  border-width:0.5em;
+  border-style:solid;
+  border-color:orange;
+  position:absolute;
+  width:calc(100% - 0.5em);
+  border-left-color:transparent;
+}
+.arrow-highlight:after{
+  content:"";
+  z-index:-1;
+  right:0;
+  top:0.1em;
+  border-width:0.5em;
+  border-style:solid;
+  border-color:orange;
+  position:absolute;
+  border-top-color:transparent;
+  border-bottom-color:transparent;
+  border-left-color:transparent;
+  transform:rotate(180deg);
+  transform-origin:center right;
 }
