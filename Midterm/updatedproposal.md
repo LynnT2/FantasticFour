@@ -97,8 +97,6 @@ Web mapping is our main methodology to visualizing our data. Asian American hate
 ## Technical Scope 
 Our website is based from GitHub, and is created with HTML, Javascript, and CSS. We are collaborating remotely with the help of Git. Leaflet is our map source for our mapping visualizations, and our additional visualizations are created with Tableau or Python. 
 ## Data Plan
-### Survey Data
-We are surveying people of Asian ethnicity to understand their experiences in the US. Data is collected via Google Forms. The data is used to visualize the patterns in our survey takers’ accounts, through bar and line charts that tell us the experience (first-hand or witness) of people in recent times. Because we haven't designed our survey yet, our results are to be determined. Nevertheless, the survey will give us useful information on people's opinions and experiences.
 
 ### Historical Data
 https://www.history.com/topics/immigration/asian-american-timeline
