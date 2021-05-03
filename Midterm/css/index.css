@@ -1,3 +1,5 @@
+*{cursor: url(FlashingWhite.cur),default;}
+
 body,html {
 	margin:0;
 	height:100%;
@@ -9,16 +11,16 @@ body {
   display: grid;
   grid-template-rows: 60px 1fr 100px;
   grid-template-columns: 50% 50%;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   grid-template-areas: 
   "header navigation"
   "content content"
   "footer footer";
 }
-/*middle text*/
+/*middle text
 .content {
   grid-area: content;
-  color: #f55e61;
+  color: #c0c760;
 }
 img{
 display:block;
@@ -30,16 +32,17 @@ top: 10em;
 
 #map {
 	height: 100%;
-}
+}*/
 
 .header {
 	grid-area: header;
 	padding: 10px;
     background-color: black;
-    font-family:'PLayfair-Display, sans-serif';
+    font-family:'PLayfair Display';
     font-weight: bold;
     font-size: 2.5em;
-    color: #db3e34ff;
+    color: rgb(119, 160, 85);
+    margin: 10px
 }
 
 .footer {
@@ -52,8 +55,7 @@ top: 10em;
 }
 
 /*navigation*/
-  ul
-   {
+  ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -122,54 +124,34 @@ top: 10em;
   color: white;
 }
 
-
+/*button fade*/
 @keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
 
 @-moz-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
 
 @-webkit-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
 
 @-o-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
 
 @-ms-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-}
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
 
 
-/*text*/
+/*text fade*/
 
 .fade-in-text {
   display: inline;
@@ -210,36 +192,3 @@ top: 10em;
   100% {opacity:1;}
 }
 
-/*highlight*/
-.arrow-highlight{
-  position:relative;
-  margin:0 0.5em;
-  padding:0 0.2em;
-}
-.arrow-highlight:before{
-  content:"";
-  z-index:-1;
-  left:-0.5em;
-  top:0.1em;
-  border-width:0.5em;
-  border-style:solid;
-  border-color:orange;
-  position:absolute;
-  width:calc(100% - 0.5em);
-  border-left-color:transparent;
-}
-.arrow-highlight:after{
-  content:"";
-  z-index:-1;
-  right:0;
-  top:0.1em;
-  border-width:0.5em;
-  border-style:solid;
-  border-color:orange;
-  position:absolute;
-  border-top-color:transparent;
-  border-bottom-color:transparent;
-  border-left-color:transparent;
-  transform:rotate(180deg);
-  transform-origin:center right;
-}
