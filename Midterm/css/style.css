@@ -45,7 +45,7 @@ body {
 
 .navigation a:visited { 
     text-decoration: none; 
-    color: black; 
+    color: rgb(160, 20, 20); 
    }
 
 .navigation a:active {
@@ -154,7 +154,7 @@ a:active {
   float: right;
   padding: 15px;
   grid-area: project;
-  text-align: center;
+  text-align: justify;
     
 }
 
@@ -188,9 +188,11 @@ a:active {
   display: block;
   transform: translateX(50%);
   width: 50%;
-  text-align: center;
+  text-align: left;
 
 }
+
+
 /*display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-gap: 15px;*/
