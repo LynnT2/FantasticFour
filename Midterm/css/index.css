@@ -11,16 +11,16 @@ body {
   display: grid;
   grid-template-rows: 60px 1fr 100px;
   grid-template-columns: 50% 50%;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   grid-template-areas: 
   "header navigation"
   "content content"
   "footer footer";
 }
-/*middle text*/
+/*middle text
 .content {
   grid-area: content;
-  color: #f55e61;
+  color: #c0c760;
 }
 img{
 display:block;
@@ -32,16 +32,17 @@ top: 10em;
 
 #map {
 	height: 100%;
-}
+}*/
 
 .header {
 	grid-area: header;
 	padding: 10px;
     background-color: black;
-    font-family:'PLayfair-Display, sans-serif';
+    font-family:'PLayfair Display';
     font-weight: bold;
     font-size: 2.5em;
-    color: #db3e34ff;
+    color: rgb(119, 160, 85);
+    margin: 10px
 }
 
 .footer {
