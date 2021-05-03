@@ -107,5 +107,9 @@ Notable historical events in Asian American history have been manually pulled fr
 https://www.nytimes.com/interactive/2021/04/03/us/anti-asian-attacks.html
 
 The New York Times reported over 100 anti-Asian attacks in the article, “"Swelling Anti-Asian Violence: Who Is Being Attacked Where". Although it is not a full account of all of the Anti-Asian violence in the US, it provides an overview of these events in the past year. Because we do not have a specific coordinate of the place where the attack happened, however, the coordinates shown on our map might not be precisely pinned. We will create a timeline based on the date given by the data. We will also create a bar chart that shows the victims by gender, age, and ethnicity.
-Storyboard
+<br>
+
+## Storyboard
+
+Our storyboard includes the main components of our UX Design design elemnts. <br>
 https://www.figma.com/file/10H05OCoEiaMyHV84fwcbY/DH-151-Fantastic-Four?node-id=0%3A1
