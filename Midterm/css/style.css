@@ -65,13 +65,16 @@ body {
 ul
   {
   list-style-type: none;
-  margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
 li {
-  float: right;
+  float: left;
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  margin-left: 1em;
 }
 
 li a {
