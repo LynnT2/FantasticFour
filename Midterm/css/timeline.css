@@ -35,7 +35,7 @@ body {
 
 .footer {
 	grid-area: footer;
-	padding:10px;
+	padding:0px;
 	background-color:#f55e61;
 	color: white;
 }
@@ -91,6 +91,8 @@ body {
     stroke: #444;
     stroke-width: 0.2;
     vertical-align: top;
+    position: absolute;
+    top: 20px;
   }
   .circle-category {
     transition: fill-opacity 0.2s, r 0.5s;
