@@ -63,28 +63,26 @@ body {
 /*navigation bar*/
 
 ul
-  {
-  list-style-type: none;
-  padding: 0;
-  overflow: hidden;
+{
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
 }
 
 li {
-  float: left;
-  list-style-type: none;
-  padding: 0;
-  overflow: hidden;
-  margin-left: 1em;
+ float: right;
 }
 
 li a {
-  display: block;
-  color: white;
-  text-align: #f55e61;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 1.5em;
+ display: block;
+ color: white;
+ text-align: #f55e61;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 1.5em;
 }
+
 
 a:link {
   text-decoration: none;
