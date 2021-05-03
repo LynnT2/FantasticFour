@@ -88,3 +88,9 @@ function mapCSV(data){
     L.control.layers(null,toggle).addTo(map);
 }
 
+function panToMarker(index){
+	map.setZoom(10);
+	// pan to the marker
+	map.panTo(history.getLayers()[index]._latlng);
+    //how to open the popup????    
+}
