@@ -34,14 +34,16 @@ Adriana Romero is a senior majoring in Sociology and minoring in Public Affairs.
     Role: UX Designer, Data Analyst
 <br>
 <br>
-    Lynn Tieu is in her final year as an Economics major and Digital Humanities minor. As a Chinese Vietnamese American, she has a personal interest in the patterns of Asian hate and discrimination. She aims to use her technical skills in UX design and data analytics to create a useful resource for those who want to understand more about the hate crimes committed against Asian Americans.
+Lynn Tieu is in her final year as an Economics major and Digital Humanities minor. As a Chinese Vietnamese American, she has a personal interest in the patterns of Asian hate and discrimination. She aims to use her technical skills in UX design and data analytics to create a useful resource for those who want to understand more about the hate crimes committed against Asian Americans.
 
 ## Overview
 The United States has witnessed an increase in violence against Asian communities since the beginning of the COVID-19 pandemic, a result of the initial detection of the virus in Wuhan, China. Although the recent escalation of hate crimes is substantial, racism directed towards Asians has been prevalent in the U.S since the 19th century. Anti-Asian policies, ideologies, and varying forms of violent actions are defining features of American history. Identifying and acknowledging important historical events related to Asian-Americans allows us to frame the current brutality of hate crimes faced by Asian communities.
+
 Our goal is to investigate different patterns of Asian American hate crimes throughout the U.S. in the past two years; specifically considering the location of the hate crime and the age, gender, and nationality of victims. We intend on using our historical data to understand past patterns of institutional and personal discrimination against Asians in the U.S. Historical patterns of interest include the rates of Asian discrimination during each century, specific events that sparked an increase in anti-Asian sentiment, and differences in the prevalence of Asian hate crimes across regions. The spikes in Asian hate crimes over the past few years demonstrate the continuation of historical anti-Asian sentiments in the country. It is important to recognize the patterns and consistency of Asian discrimination. 
 
 ## Methodology 
-Web mapping is our main methodology to visualizing our data. Asian American hate attacks are unfortunately high in frequency and span across the US, making the data hard to understand without visualization. Web mapping is essential to understanding the scope of these crimes, and to illustrate the Asian American presence in the US. Web-mapping allows for a more user-friendly experience to understand the key takeaways. 
+Web mapping is our main methodology to visualizing our data. Asian American hate attacks are unfortunately high in frequency and span across the US, making the data hard to understand without visualization. Web mapping is essential to understanding the scope of these crimes, and to illustrate the Asian American presence in the US. Web mapping will provide our users the opportunity to relate to the people we are highlighting on the site, whether they come from the same hometown or whether they share the same last name.
+
 ## Workflow
 <table>
   <tr>
@@ -95,8 +97,6 @@ Web mapping is our main methodology to visualizing our data. Asian American hate
 ## Technical Scope 
 Our website is based from GitHub, and is created with HTML, Javascript, and CSS. We are collaborating remotely with the help of Git. Leaflet is our map source for our mapping visualizations, and our additional visualizations are created with Tableau or Python. 
 ## Data Plan
-### Survey Data
-We are surveying people of Asian ethnicity to understand their experiences in the US. Data is collected via Google Forms. The data is used to visualize the patterns in our survey takers’ accounts, through bar and line charts that tell us the experience (first-hand or witness) of people in recent times. Because we haven't designed our survey yet, our results are to be determined. Nevertheless, the survey will give us useful information on people's opinions and experiences.
 
 ### Historical Data
 https://www.history.com/topics/immigration/asian-american-timeline
