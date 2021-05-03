@@ -130,7 +130,7 @@ a:active {
 }
 
 #about {
-    display: grid;
+  display: grid;
 	grid-template-rows: 80px 1fr;
 	grid-template-columns: 50% 50%;
 	grid-template-areas: 
@@ -140,55 +140,55 @@ a:active {
 }
 
 .bio {
-    float: center;
-    font-family: 'Roboto';
-    font-size: 25px;
-    grid-area: bio;
-    font-weight: bold;
-    text-align: center;
+  float: center;
+  font-family: 'Roboto';
+  font-size: 25px;
+  grid-area: bio;
+  font-weight: bold;
+  text-align: center;
 }
 
 .project {
-    font-family: 'Roboto';
-    font-size: 15px;
-    float: right;
-    padding: 15px;
-    grid-area: project;
-    text-align: center;
+  font-family: 'Roboto';
+  font-size: 15px;
+  float: right;
+  padding: 15px;
+  grid-area: project;
+  text-align: center;
     
 }
 
 .bio img {
-    border-radius: 50%;
-    width: 270px;
-    border-style:ridge;
-    border-color: #C4C4C4;
-    margin: 0 auto;
-    margin-top: 8px;
+  border-radius: 50%;
+  width: 270px;
+  border-style:ridge;
+  border-color: #C4C4C4;
+  margin: 0 auto;
+  margin-top: 8px;
 }
 
 
 
 .row {
-    display: flex;
+  display: flex;
   }
   
 .column {
-    flex: 50%;
-    padding: 5px;
-    text-align: center;
+  flex: 50%;
+  padding: 5px;
+  text-align: center;
 }
 /*buttons under pics*/
 .caption {
-    font-family: 'Roboto';
-    font-size: 20px;
-    padding: 10px;
-    margin: 10px;
-    background-color: #C4C4C4;
-    display: block;
-    transform: translateX(50%);
-    width: 50%;
-    text-align: center;
+  font-family: 'Roboto';
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #C4C4C4;
+  display: block;
+  transform: translateX(50%);
+  width: 50%;
+  text-align: center;
 
 }
 /*display: grid;
@@ -201,45 +201,49 @@ a:active {
 
 /*flipping images*/
 .flip-box {
-    background-color: transparent;
-    perspective: 1000px;
-    border-radius: 50%;
-  }
+  background-color: transparent;
+  perspective: 1000px;
+  border-radius: 50%;
+}
   
-  .flip-box-inner {
-    /*position: relative;*/
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
   
-  .flip-box:hover .flip-box-inner {
-    transform: rotateY(180deg);
-  }
+.flip-box-inner {
+  /*position: relative;*/
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+ }
   
-  .flip-box-front, .flip-box-back {
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
   
-  .flip-box-front {
-    color: black;
-    border-radius: 50%;
-  }
+.flip-box-front, .flip-box-back {
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
   
-  .flip-box-back {
-    background-color:transparent;
-    color: #c76f0a;
-    transform: rotateY(180deg);
-    font-stretch: semi-condensed;
-    font-size: small;
-    border-radius: 50%;
-    position:absolute;
-    background-size: cover;
-    width:330px;
-    top:10px
-  }
+.flip-box-front {
+  color: black;
+  border-radius: 50%;
+ }
+  
+.flip-box-back {
+  background-color:transparent;
+  color: #c76f0a;
+  transform: rotateY(180deg);
+  font-stretch: semi-condensed;
+  font-size: small;
+  border-radius: 50%;
+  position:absolute;
+  background-size: cover;
+  width:330px;
+  top:10px
+ }
+.dt{
+  float:left
+}
