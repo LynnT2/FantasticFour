@@ -76,8 +76,6 @@ function mapCSV(data){
             .on('mouseover',function(){
                 this.openPopup()
             })
-            // add marker to featuregroup
-            recent.addLayer(marker)
         })
         recent.addTo(map); // add featuregroup to map
         map.fitBounds(recent.getBounds()); // fit markers to map
