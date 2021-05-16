@@ -91,18 +91,10 @@ function mapCSV(data){
     L.control.layers(null,toggle).addTo(map);
 }
 
-<<<<<<< HEAD
-// function to fly to a location by a given id number
-function flyByIndex(index){
-	map.flyTo([data[index].lat,data[index].lon], 18);
-    myMarkers.getLayers()[index].openPopup() // for having popup open up automatically when flying 
-
-=======
 function panToMarker(index){
 	map.setZoom(10);
 	// pan to the marker
 	map.panTo(history.getLayers()[index]._latlng);
     //how to open the popup????    
     history.getLayers()[index].openPopup()
->>>>>>> 81efb5f423993a5bf8978593e85c90105e5b25f2
 }
