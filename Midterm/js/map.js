@@ -46,6 +46,8 @@ function mapCSV(data){
             color: 'white',
             fillColor: 'dodgerblue',
             fillOpacity: 1,
+            iconAnchor:   [23.5, 47], // point of the icon which will correspond to marker's location
+            popupAnchor:  [200, 100] // point from which the popup should open relative to the iconAnchor
         }
 
         // loop through each entry
@@ -88,3 +90,9 @@ function mapCSV(data){
     L.control.layers(null,toggle).addTo(map);
 }
 
+// function to fly to a location by a given id number
+function flyByIndex(index){
+	map.flyTo([data[index].lat,data[index].lon], 18);
+    myMarkers.getLayers()[index].openPopup() // for having popup open up automatically when flying 
+
+}
