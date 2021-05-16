@@ -52,18 +52,18 @@ function mapCSV(data){
 
         // loop through each entry
         data.data.forEach(function(item,index){
-            let marker = L.circleMarker([item.latitude,item.longitude],circleOptions1) // create marker
+            let marker = L.circleMarker([item.latitude,item.longitude],circleOptions1).bindPopup("<h3>" + item.title + " (" + item.date + ")" + "</h3>" + "<center><img src ='" + item.reference_url + "'width=100%'/></center>" +
+                item.description)
             .on('mouseover',function(){
-                this.bindPopup("<h3>" + item.title + " (" + item.date + ")" + "</h3>" + "<center><img src ='" + item.reference_url + "'width=100%'/></center>" +
-                item.description).openPopup()
+                this.openPopup()
             })
             // add marker to featuregroup
             history.addLayer(marker)
         })
         history.addTo(map); // add featuregroup to map
     }
-
-    if (data.meta.fields.length === 14) { //create map for the recent anti-Asian attacks data
+    console.log(data.meta.fields.length)
+    if (data.meta.fields.length === 15) { //create map for the recent anti-Asian attacks data
         let circleOptions2 = {
             radius: 8,
             weight: 1,
@@ -73,16 +73,17 @@ function mapCSV(data){
         }
         // loop through each entry
         data.data.forEach(function(item,index){
-            let marker = L.circleMarker([item.latitude,item.longitude],circleOptions2) // create marker
+            console.log('here')
+            let marker = L.circleMarker([item.latitude,item.longitude],circleOptions2).bindPopup(`<h3>Incident</h3><a href=${item.Link} target="_blank">${item.Description}</a><br>Date: ${item.Month}`)
             .on('mouseover',function(){
-                this.bindPopup(`<h3>Incident</h3><a href=${item.Link} target="_blank">${item.Description}</a><br>Date: ${item.Month}`).openPopup()
+                this.openPopup()
             })
             // add marker to featuregroup
             recent.addLayer(marker)
         })
         recent.addTo(map); // add featuregroup to map
+        map.fitBounds(recent.getBounds()); // fit markers to map
     }
-    map.fitBounds(recent.getBounds()); // fit markers to map
     let toggle = {
         "Asian American History": history,
 		"Recent anti-Asian attacks": recent
@@ -90,9 +91,18 @@ function mapCSV(data){
     L.control.layers(null,toggle).addTo(map);
 }
 
+<<<<<<< HEAD
 // function to fly to a location by a given id number
 function flyByIndex(index){
 	map.flyTo([data[index].lat,data[index].lon], 18);
     myMarkers.getLayers()[index].openPopup() // for having popup open up automatically when flying 
 
+=======
+function panToMarker(index){
+	map.setZoom(10);
+	// pan to the marker
+	map.panTo(history.getLayers()[index]._latlng);
+    //how to open the popup????    
+    history.getLayers()[index].openPopup()
+>>>>>>> 81efb5f423993a5bf8978593e85c90105e5b25f2
 }

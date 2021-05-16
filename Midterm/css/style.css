@@ -25,25 +25,26 @@ body {
 }
 
 .header {
-	grid-area: header;
+  grid-area: header;
 	padding: 10px;
-    background-color: white;
-    font-family:'PLayfair-Display, sans-serif';
-    font-weight: bold;
-    font-size: 2.5em;
-    color: #db3e34ff;
+  color: black;
+  background-color:white;
+  font-family:'PLayfair-Display, sans-serif';
+  font-weight: bold;
+  font-size: 2.5em;
+
 }
 
 .header a:visited { 
     text-decoration: none; 
-    color: black; 
+    color: #db3e34ff; 
    }
 
 .header a:focus {
-    color: black;
+    color: #f55e61;
     text-decoration: none; 
 }
-
+/*
 .navigation a:visited { 
     text-decoration: none; 
     color: rgb(160, 20, 20); 
@@ -52,11 +53,11 @@ body {
 .navigation a:active {
     text-decoration: none;
     color: yellow
-}
+}*/
 
 .footer {
 	grid-area: footer;
-	padding:10px;
+	padding:20px;
 	background-color:#f55e61;
 	color: white;
 }
@@ -162,8 +163,9 @@ a:active {
 .bio img {
   border-radius: 50%;
   width: 270px;
-  border-style:ridge;
-  border-color: #C4C4C4;
+  border-style:double;
+  border-width: 10px;
+  border-color: #f55e61;
   margin: 0 auto;
   margin-top: 8px;
 }
@@ -177,19 +179,6 @@ a:active {
   flex: 50%;
   padding: 5px;
   text-align: center;
-}
-/*buttons under pics*/
-.caption {
-  font-family: 'Roboto';
-  font-size: 20px;
-  padding: 10px;
-  margin: 10px;
-  background-color: #C4C4C4;
-  display: block;
-  transform: translateX(50%);
-  width: 50%;
-  text-align: left;
-
 }
 
 
@@ -216,10 +205,12 @@ a:active {
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  color: #db3e34ff;
  }
   
 .flip-box:hover .flip-box-inner {
   transform: rotateY(180deg);
+  color: #db3e34ff;
 }
   
 .flip-box-front, .flip-box-back {
@@ -227,16 +218,17 @@ a:active {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  color: #db3e34ff;
 }
   
 .flip-box-front {
-  color: black;
+  color: #db3e34ff;
   border-radius: 50%;
  }
   
 .flip-box-back {
   background-color:transparent;
-  color: #c76f0a;
+  color: #db3e34ff;
   transform: rotateY(180deg);
   font-stretch: semi-condensed;
   font-size: small;
