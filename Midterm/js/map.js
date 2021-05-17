@@ -50,10 +50,10 @@ function mapCSV(data){
 
         // loop through each entry
         data.data.forEach(function(item,index){
-            let marker = L.circleMarker([item.latitude,item.longitude],circleOptions1) // create marker
+            let marker = L.circleMarker([item.latitude,item.longitude],circleOptions1).bindPopup("<h3>" + item.title + " (" + item.date + ")" + "</h3>" + "<center><img src ='" + item.reference_url + "'width=100%'/></center>" +
+            item.description) // create marker
             .on('mouseover',function(){
-                this.bindPopup("<h3>" + item.title + " (" + item.date + ")" + "</h3>" + "<center><img src ='" + item.reference_url + "'width=100%'/></center>" +
-                item.description).openPopup()
+                this.openPopup()
             })
             // add marker to featuregroup
             history.addLayer(marker)
