@@ -14,8 +14,7 @@ body {
 	grid-template-columns: 300px 1fr;
 	grid-template-areas: 
 	"header header"
-	"sidebar content"
-	"footer footer";
+	"sidebar content";
 }
 
 .header {
@@ -27,11 +26,12 @@ body {
 }
 
 .sidebar {
-	color: #f55e61;
+	color: #303030;
 	grid-area: sidebar;
 	padding:10px;
 	background-color: white;
 	overflow: auto;
+	font-size: large;
 }
 
 .content {
@@ -52,7 +52,7 @@ body {
 	background: rgba(255,255,255,0.8);
 	box-shadow: 0 0 15px rgba(0,0,0,0.2);
 	border-radius: 5px;
-	min-width: 250px;
+	min-width: 100px;
 	min-height: 50px;
 }
 .info h4 {
@@ -65,7 +65,7 @@ body {
 	color: #555;
 }
 .legend i {
-	width: 18px;
+	width: 15px;
 	height: 18px;
 	float: left;
 	margin-right: 8px;
