@@ -18,7 +18,7 @@
 
 ## Assignment 3
 
-[Choropleth Map](Assignment3/index.html)
+[Choropleth Map](GroupAssignments/Assignment3/index.html)
 
 
 
