@@ -53,11 +53,7 @@ function mapCSV(data){
         // loop through each entry
         data.data.forEach(function(item,index){
             let marker = L.circleMarker([item.latitude,item.longitude],circleOptions1).bindPopup("<h3>" + item.title + " (" + item.date + ")" + "</h3>" + "<center><img src ='" + item.reference_url + "'width=100%'/></center>" +
-<<<<<<< HEAD
-            item.description) // create marker
-=======
                 item.description)
->>>>>>> c31ffb8590433ea1c9db19c04c672b3e7984fd4f
             .on('mouseover',function(){
                 this.openPopup()
             })
