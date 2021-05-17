@@ -69,7 +69,7 @@ function mapGeoJSON(field){
 
 	// set up the "brew" options
 	brew.setSeries(values);
-	brew.setNumClasses(3);
+	brew.setNumClasses(5);
 	brew.setColorCode('Reds');
 	brew.classify('quantiles');
 
