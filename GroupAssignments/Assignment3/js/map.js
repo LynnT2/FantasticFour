@@ -97,32 +97,20 @@ function getStyle(feature){
 	}
 }
 
-// return the color for each feature
-function getColor(d) {
-
-	return d > 1000000000 ? '#800026' :
-		   d > 500000000  ? '#BD0026' :
-		   d > 200000000  ? '#E31A1C' :
-		   d > 100000000  ? '#FC4E2A' :
-		   d > 50000000   ? '#FD8D3C' :
-		   d > 20000000   ? '#FEB24C' :
-		   d > 10000000   ? '#FED976' :
-					  '#FFEDA0';
-}
-
 function createLegend(){
 	legend.onAdd = function (map) {
 		var div = L.DomUtil.create('div', 'info legend'),
 		breaks = brew.getBreaks(),
 		labels = [],
 		from, to;
+		labels.push('Number of Hate Crimes')
 		
 		for (var i = 0; i < breaks.length; i++) {
 			from = breaks[i];
 			to = breaks[i + 1];
 			if(to) {
 				labels.push(
-					'<i style="background:' + brew.getColorInRange(from) + '"></i> ' +
+					'<i style="background:' + brew.getColorInRange(to) + '"></i> ' +
 					from + ' &ndash; ' + to);
 				}
 			}
