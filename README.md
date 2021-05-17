@@ -16,6 +16,8 @@
 
 [Website](Midterm/index.html)
 
+## Assignment 3
+
 [Choropleth Map](Assignment3/index.html)
 
 
