@@ -46,12 +46,18 @@ function mapCSV(data){
             color: 'white',
             fillColor: 'dodgerblue',
             fillOpacity: 1,
+            iconAnchor:   [23.5, 47], // point of the icon which will correspond to marker's location
+            popupAnchor:  [200, 100] // point from which the popup should open relative to the iconAnchor
         }
 
         // loop through each entry
         data.data.forEach(function(item,index){
             let marker = L.circleMarker([item.latitude,item.longitude],circleOptions1).bindPopup("<h3>" + item.title + " (" + item.date + ")" + "</h3>" + "<center><img src ='" + item.reference_url + "'width=100%'/></center>" +
+<<<<<<< HEAD
             item.description) // create marker
+=======
+                item.description)
+>>>>>>> c31ffb8590433ea1c9db19c04c672b3e7984fd4f
             .on('mouseover',function(){
                 this.openPopup()
             })
@@ -60,8 +66,8 @@ function mapCSV(data){
         })
         history.addTo(map); // add featuregroup to map
     }
-
-    if (data.meta.fields.length === 14) { //create map for the recent anti-Asian attacks data
+    console.log(data.meta.fields.length)
+    if (data.meta.fields.length === 15) { //create map for the recent anti-Asian attacks data
         let circleOptions2 = {
             radius: 8,
             weight: 1,
@@ -71,16 +77,17 @@ function mapCSV(data){
         }
         // loop through each entry
         data.data.forEach(function(item,index){
-            let marker = L.circleMarker([item.latitude,item.longitude],circleOptions2) // create marker
+            console.log('here')
+            let marker = L.circleMarker([item.latitude,item.longitude],circleOptions2).bindPopup(`<h3>Incident</h3><a href=${item.Link} target="_blank">${item.Description}</a><br>Date: ${item.Month}`)
             .on('mouseover',function(){
-                this.bindPopup(`<h3>Incident</h3><a href=${item.Link} target="_blank">${item.Description}</a><br>Date: ${item.Month}`).openPopup()
+                this.openPopup()
             })
             // add marker to featuregroup
             recent.addLayer(marker)
         })
         recent.addTo(map); // add featuregroup to map
+        map.fitBounds(recent.getBounds()); // fit markers to map
     }
-    map.fitBounds(recent.getBounds()); // fit markers to map
     let toggle = {
         "Asian American History": history,
 		"Recent anti-Asian attacks": recent
@@ -93,4 +100,5 @@ function panToMarker(index){
 	// pan to the marker
 	map.panTo(history.getLayers()[index]._latlng);
     //how to open the popup????    
+    history.getLayers()[index].openPopup()
 }
