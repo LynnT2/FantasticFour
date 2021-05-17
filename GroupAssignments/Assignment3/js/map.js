@@ -69,7 +69,7 @@ function mapGeoJSON(field){
 
 	// set up the "brew" options
 	brew.setSeries(values);
-	brew.setNumClasses(5);
+	brew.setNumClasses(4);
 	brew.setColorCode('Reds');
 	brew.classify('quantiles');
 
@@ -177,7 +177,7 @@ function createInfoPanel(){
 		// if feature is not highlighted
 		else
 		{
-			this._div.innerHTML = 'Hover over a country';
+			this._div.innerHTML = 'Hover over a state to see the number of its anti-Asian hate incidents from March 2020 to March 2021.';
 		}
 	};
 
