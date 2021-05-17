@@ -31,6 +31,7 @@ body {
 	padding:10px;
 	background-color: white;
 	overflow: auto;
+	font-size: large;
 }
 
 .content {
