@@ -62,7 +62,9 @@ function mapGeoJSON(field){
 
 	// based on the provided field, enter each value into the array
 	geojson_data.features.forEach(function(item,index){
-		values.push(item.properties[field])
+		if(item.properties[field] != undefined){
+			values.push(item.properties[field])
+		}
 	})
 
 	// set up the "brew" options
@@ -81,6 +83,7 @@ function mapGeoJSON(field){
 
 	// create the legend
 	createLegend();
+	createInfoPanel();
 }
 
 function getStyle(feature){
@@ -181,7 +184,7 @@ function createInfoPanel(){
 	info_panel.update = function (properties) {
 		// if feature is highlighted
 		if(properties){
-			this._div.innerHTML = `<b>${properties.name}</b><br>${fieldtomap}: ${properties[fieldtomap]}`;
+			this._div.innerHTML = `<b>${properties.NAME}</b><br>${fieldtomap}: ${properties[fieldtomap]}`;
 		}
 		// if feature is not highlighted
 		else
