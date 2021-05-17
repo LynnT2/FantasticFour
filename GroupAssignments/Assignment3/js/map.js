@@ -6,7 +6,7 @@ let zl = 3;
 let path = '';
 
 // put this in your global variables
-let geojsonPath = 'data/world.json';
+let geojsonPath = 'data/us.geojson';
 let geojson_data;
 let geojson_layer;
 
@@ -43,7 +43,7 @@ function getGeoJSON(){
 		geojson_data = data;
 
 		// call the map function
-		mapGeoJSON('pop_est') // add a field to be used
+		mapGeoJSON('count') // add a field to be used
 	})
 }
 
@@ -67,8 +67,8 @@ function mapGeoJSON(field){
 
 	// set up the "brew" options
 	brew.setSeries(values);
-	brew.setNumClasses(5);
-	brew.setColorCode('YlOrRd');
+	brew.setNumClasses(3);
+	brew.setColorCode('Reds');
 	brew.classify('quantiles');
 
 	// create the layer and add to map
