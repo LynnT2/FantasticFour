@@ -21,16 +21,16 @@ body {
 .header {
 	grid-area: header;
 	padding:10px;
-	background-color: #333;
-	color: white;
+	background-color: white;
+	color: #f55e61;
 	font-size: 2em;
 }
 
 .sidebar {
-	color: white;
+	color: #f55e61;
 	grid-area: sidebar;
 	padding:10px;
-	background-color: #555;
+	background-color: white;
 	overflow: auto;
 }
 
