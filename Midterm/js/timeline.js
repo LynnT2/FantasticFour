@@ -147,6 +147,8 @@ document.addEventListener('DOMContentLoaded', function(){
   
       // Hide the details div (once opened by clicking on circle)
       d3.selectAll('.close-icon').on('click', function() {
+        map.fitBounds(recent.getBounds());
+        map.closePopup();
         d3.select(this.parentNode).style('opacity', 0);
         setTimeout(function() {
           svg.attr('height', 200);
