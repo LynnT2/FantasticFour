@@ -16,6 +16,7 @@ $( document ).ready(function() {
     createMap(lat,lon,zl);
     readCSV(path1);
     readCSV(path2);
+    createLayerControl();
 });
 // create the map
 function createMap(lat,lon,zl){
@@ -84,11 +85,7 @@ function mapCSV(data){
         recent.addTo(map); // add featuregroup to map
         map.fitBounds(recent.getBounds()); // fit markers to map
     }
-    let toggle = {
-        "Asian American History": history,
-		"Recent anti-Asian attacks": recent
-	}
-    L.control.layers(null,toggle).addTo(map);
+    
 }
 
 function panToMarker(index){
@@ -98,3 +95,12 @@ function panToMarker(index){
     //how to open the popup????    
     history.getLayers()[index].openPopup()
 }
+
+function createLayerControl(){
+    let toggle = {
+        "Asian American History": history,
+		"Recent anti-Asian attacks": recent
+	}
+    L.control.layers(null,toggle).addTo(map);
+}
+
