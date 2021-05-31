@@ -309,6 +309,10 @@ function createDashboard(){
 			width: 250,			
 			animations: {
 				enabled: false,
+			// idk if this is right but this is what google is suggesting??
+			events: {
+				click: function({}
+			}
 			}
 		},
 		title: {
