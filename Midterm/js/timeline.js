@@ -8,8 +8,9 @@ document.addEventListener('DOMContentLoaded', function(){
       svg.append('line').attr('class', 'timeline-base')
         .attr("x1", 0)
         .attr("y1", 100)
-        .attr("x2", '95%')
+        .attr("x2", '98%')
         .attr("y2", 100);
+
       // Get the value of the svg to for scaleLinear
       function getLineVal(val) {
         if(val === 'max') {
@@ -20,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function(){
           return 0;
         }
       }
+
       // Convert to UNIX timestamp
       function convertToTimeStamp(date) {
         let parts = date.match(/(\d{4})-(\d{2})-(\d{2})/);
@@ -28,11 +30,11 @@ document.addEventListener('DOMContentLoaded', function(){
   
       let scaleLine = d3.scaleLinear()
         .domain([-4102373222, Date.now()])
-        .range([getLineVal('min') + 900 , getLineVal('max') - 200]); // OFFSET = 20
+        .range([getLineVal('min') + 1000 , getLineVal('max') + 1100]); // OFFSET = 20
   
       let scaleCircle = d3.scaleLinear()
         .domain([moment.duration(3,'d').asMilliseconds(), moment.duration(10,'y').asMilliseconds()])
-        .range([10, 200]);
+        .range([9, 9]);
   
       let allGroups = svg.selectAll('g').data(data);
       let group = allGroups.enter().append('g').attr('id', function(data){return 'group-' + data.id});
@@ -46,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function(){
         .attr('id', function(data) {
           return 'circle-' + data.id
         })
+
         // When hover a circle
         .on('mouseover', function(d, i) {
           d3.select(this).attr('r', function(data) {return scaleCircle(convertToTimeStamp(data.date) - convertToTimeStamp(data.date)) + 20;});
@@ -128,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function(){
       data.map(d => {
         let details = d3.select('#timelineChart').append('div').classed('details', true).classed('details-' + d.category.toLowerCase(), true).attr('id', 'details-' + d.id);
         details.append('i').classed('material-icons close-icon', true).text('close');
-        details.append('div').classed('title', true).append('span').classed('date text-date date-title', true).text(d.date + '-' + d.date);
+        details.append('div').classed('title', true).append('span').classed('date text-date date-title', true).text(d.date);
         details.select(' .title').append('span').classed('position-title text-position', true).text(d.title);
         details.append('div').classed('place-name text-place hovered', true).text(d.location);
         details.append('div')
@@ -147,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function(){
   
       // Hide the details div (once opened by clicking on circle)
       d3.selectAll('.close-icon').on('click', function() {
-        map.fitBounds(recent.getBounds());
+        map.fitBounds(history.getBounds());
         map.closePopup();
         d3.select(this.parentNode).style('opacity', 0);
         setTimeout(function() {

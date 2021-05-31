@@ -4,19 +4,25 @@ let lat = 0;
 let lon = 0;
 let zl = 3;
 let path1 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRnVOK4HkRT25vJ0OSiibELheQHSsQKf7CYy4TZ2r0N_AO_4UKcmHZIxQMa16sBxeNfqkyh80Dm0Drd/pub?gid=0&single=true&output=csv"; // path to csv data
-let path2 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ9rkI1x6LST8qoxYSMvaqH_1mdRvhzDkfyroO4jNeh2O4YaexTSdJ0EhaEKTCJu3WeA3Z-H3yKTSgF/pub?gid=1470389687&single=true&output=csv";
-let markers = L.featureGroup();
-let recent = L.markerClusterGroup();
 let history = L.featureGroup();
 let csvdata;
+
+let geojsonPath = 'data/us.geojson';
+let geojson_data;
+let geojson_layer;
+
+let brew = new classyBrew();
+let fieldtomap; 
+
+let legend = L.control({position: 'bottomright'});
+let info_panel = L.control();
 
 
 // initialize
 $( document ).ready(function() {
     createMap(lat,lon,zl);
-    getGeoJSON();
     readCSV(path1);
-    readCSV(path2);
+	getGeoJSON();
     createLayerControl();
 });
 // create the map
@@ -63,30 +69,8 @@ function mapCSV(data){
             history.addLayer(marker)
         })
         history.addTo(map); // add featuregroup to map
+		map.fitBounds(history.getBounds());
     }
-    console.log(data.meta.fields.length)
-    if (data.meta.fields.length === 15) { //create map for the recent anti-Asian attacks data
-        let circleOptions2 = {
-            radius: 8,
-            weight: 1,
-            color: 'white',
-            fillColor: '#f55e61',
-            fillOpacity: 1,
-        }
-        // loop through each entry
-        data.data.forEach(function(item,index){
-            console.log('here')
-            let marker = L.circleMarker([item.latitude,item.longitude],circleOptions2).bindPopup(`<h3>Incident</h3><a href=${item.Link} target="_blank">${item.Description}</a><br>Date: ${item.Month}`)
-            .on('mouseover',function(){
-                this.openPopup()
-            })
-            // add marker to featuregroup
-            recent.addLayer(marker)
-        })
-        recent.addTo(map); // add featuregroup to map
-        map.fitBounds(recent.getBounds()); // fit markers to map
-    }
-    
 }
 
 function panToMarker(index){
@@ -100,25 +84,10 @@ function panToMarker(index){
 function createLayerControl(){
     let toggle = {
         "Asian American History": history,
-		"Recent anti-Asian attacks": recent
 	}
     L.control.layers(null,toggle).addTo(map);
 }
-
 let path = '';
-
-// put this in your global variables
-let geojsonPath = 'data/us.geojson';
-let geojson_data;
-let geojson_layer;
-
-let brew = new classyBrew();
-let fieldtomap; 
-
-let legend = L.control({position: 'bottomright'});
-let info_panel = L.control();
-
-
 
 // function to get the geojson data
 function getGeoJSON(){
