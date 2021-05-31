@@ -18,7 +18,7 @@ let fieldtomap;
 
 let legend = L.control({position: 'bottomright'});
 let info_panel = L.control();
-let info = L.control();
+let chart_panel = L.control({position:'bottomleft'});
 
 // initialize
 $( document ).ready(function() {
@@ -135,7 +135,6 @@ function mapGeoJSON(field,num_classes,color,scheme){
 	// create the infopanel
 	//createInfoPanel();
 
-  createInfoCharts();
   createDashboard();
 }
 //function mapGeoJSON(field){
@@ -276,24 +275,22 @@ function zoomToFeature(e) {
 //	info_panel.addTo(map);
 //}
 
-function createInfoCharts(){
-  info.onAdd = function(map){
-    this._div = L.DomUtil.create('div', 'info');
-    return this._div;
-  }
-}
+//function createInfoCharts(){
+  
+//}
 
 function createDashboard(){
-
-	// clear dashboard
-	$('.dashboard').empty();
-
+  chart_panel.onAdd = function(map){
+    this._div = L.DomUtil.create('div', 'pie');
+    return this._div;
+  }
+  chart_panel.addTo(map);
 	// chart title
 	let title = 'Gender';
 
 	// data values
 	let data = [
-        42,49,10
+        44,49,6,
     ];
 
 	// data fields
@@ -302,33 +299,35 @@ function createDashboard(){
     ];
 
 	// set chart options
-    let options = {
+  let options = {
 		chart: {
 			type: 'pie',
 			height: 250,
 			width: 250,			
 			animations: {
-				enabled: false,
-			// idk if this is right but this is what google is suggesting??
-			events: {
-				click: function({}
-			}
-			}
-		},
-		title: {
-			text: title,
-		},
-		series: data,
-		labels: fields,
-		legend: {
-			position: 'right',
-			offsetY: 0,
-			height: 230,
-		  }
-	};
-
+				enabled: true,
+		  },
+      //events:{
+      //  dataPointSelection:{
+      //    function(event, chartContext, config) {
+      //      console.log(chartContext, config);      
+      //    }
+      //  }
+      //},
+      title: {
+        text: title,
+      },
+      series: data,
+      labels: fields,
+      legend: {
+        position: 'right',
+        offsetY: 0,
+        height: 230,
+      }
+	  }
+  };
 	// create the chart
-	chart = new ApexCharts(document.querySelector('.info'), options)
+	let chart = new ApexCharts(document.querySelector('.pie'), options);
 	chart.render()
 }
 
