@@ -48,15 +48,17 @@ function readCSV(path){
     });
 }
 function mapCSV(data){
-    if (data.meta.fields.length === 15) { //create map for the recent anti-Asian attacks data
-        let circleOptions2 = {
-            radius: 8,
-            weight: 1,
-            color: 'white',
-            fillColor: '#f55e61',
-            fillOpacity: 1,
-        }
-        // loop through each entry
+       
+		if (data.meta.fields.length === 15) { //create map for the recent anti-Asian attacks data
+			let circleOptions2 = {
+				radius: 8,
+				weight: 1,
+				color: 'white',
+				fillColor: '#f55e61',
+				fillOpacity: 1,
+			}
+		
+		// loop through each entry
         data.data.forEach(function(item,index){
             console.log('here')
             let marker = L.circleMarker([item.latitude,item.longitude],circleOptions2).bindPopup(`<h3>Incident</h3><a href=${item.Link} target="_blank">${item.Description}</a><br>Date: ${item.Month}`)
@@ -69,8 +71,23 @@ function mapCSV(data){
         recent.addTo(map); // add featuregroup to map
         map.fitBounds(recent.getBounds()); // fit markers to map
     }
-    
 }
+
+/*function mapCSV(gender){
+	
+	gender = gender ||'';
+		
+		//filter data approach from week 8
+		if(gender != ''){
+			console.log('filtering...')
+			filtered_data = csvdata.filter(item => item.victim_gender === gender)
+		}
+		else
+		{
+			// there is no filter, so just map everything
+			filtered_data = csvdata;
+		}	
+}*/
 
 function createLayerControl(){
     let toggle = {
@@ -254,29 +271,29 @@ function zoomToFeature(e) {
 	map.fitBounds(e.target.getBounds());
 }
 
-//function createInfoPanel(){
-//
-//	info_panel.onAdd = function (map) {
-//		this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
-//		this.update();
-//		return this._div;
-//	};
-//
-//	// method that we will use to update the control based on feature properties passed
-//	info_panel.update = function (properties) {
-//		// if feature is highlighted
-//		if(properties){
-//			this._div.innerHTML = `<b>${properties.NAME}</b><br>${fieldtomap}: ${properties[fieldtomap]}`;
-//		}
-//		// if feature is not highlighted
-//		else
-//		{
-//			this._div.innerHTML = 'Hover over a state to see the number of its anti-Asian hate incidents from March 2020 to March 2021.';
-//		}
-//	};
-//
-//	info_panel.addTo(map);
-//}
+/*function createInfoPanel(){
+
+	info_panel.onAdd = function (map) {
+		this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+		this.update();
+		return this._div;
+	};
+
+	// method that we will use to update the control based on feature properties passed
+	info_panel.update = function (properties) {
+		// if feature is highlighted
+		if(properties){
+			this._div.innerHTML = `<b>${properties.NAME}</b><br>${fieldtomap}: ${properties[fieldtomap]}`;
+		}
+		// if feature is not highlighted
+		else
+		{
+			this._div.innerHTML = 'Hover over a state to see the number of its anti-Asian hate incidents from March 2020 to March 2021.';
+		}
+	};
+
+	info_panel.addTo(map);
+}*/
 
 function createInfoCharts(){
   info.onAdd = function(map){
@@ -307,8 +324,8 @@ function createDashboard(){
     let options = {
 		chart: {
 			type: 'pie',
-			height: 250,
-			width: 250,			
+			height: 300,
+			width: 300,			
 			animations: {
 				enabled: false,
 			}
@@ -324,6 +341,10 @@ function createDashboard(){
 			height: 230,
 		  }
 	};
+
+	data.forEach(function(){
+	onclick="mapCSV('${item.victim_gender}')"
+	})
 
 	// create the chart
 	chart = new ApexCharts(document.querySelector('.info'), options)
