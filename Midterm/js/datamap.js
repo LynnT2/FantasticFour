@@ -18,7 +18,7 @@ let fieldtomap;
 
 let legend = L.control({position: 'bottomright'});
 let info_panel = L.control();
-let chart_panel = L.control({position:'bottomleft'});
+let info = L.control();
 
 // initialize
 $( document ).ready(function() {
@@ -135,47 +135,50 @@ function mapGeoJSON(field,num_classes,color,scheme){
 	// create the infopanel
 	//createInfoPanel();
 
+  createInfoCharts();
   createDashboard();
 }
-//function mapGeoJSON(field){
+
+/*function mapGeoJSON(field){
 
 	// clear layers in case it has been mapped already
-	//if (geojson_layer){
-	//	geojson_layer.clearLayers()
-	//}
-	//
-	//// globalize the field to map
-	//fieldtomap = field;
+	if (geojson_layer){
+		geojson_layer.clearLayers()
+	}
+	
+	// globalize the field to map
+	fieldtomap = field;
 
 	// create an empty array
-	//let values = [];
+	let values = [];
 
 	// based on the provided field, enter each value into the array
-	//geojson_data.features.forEach(function(item,index){
-	//	if(item.properties[field] != undefined){
-	//		values.push(item.properties[field])
-	//	}
-	//})
+	geojson_data.features.forEach(function(item,index){
+		if(item.properties[field] != undefined){
+			values.push(item.properties[field])
+		}
+	})
 
 	// set up the "brew" options
-	//brew.setSeries(values);
-	//brew.setNumClasses(4);
-	//brew.setColorCode('Reds');
-	//brew.classify('quantiles');
+	brew.setSeries(values);
+	brew.setNumClasses(4);
+	brew.setColorCode('Reds');
+	brew.classify('quantiles');
 
 	// create the layer and add to map
-	//geojson_layer = L.geoJson(geojson_data, {
-	//	style: getStyle, //call a function to style each feature
-	//	onEachFeature: onEachFeature //actions on eac feature
-	//}).addTo(map);
+	geojson_layer = L.geoJson(geojson_data, {
+		style: getStyle, //call a function to style each feature
+		onEachFeature: onEachFeature //actions on eac feature
+	}).addTo(map);
 
-	//map.fitBounds(geojson_layer.getBounds())
+	map.fitBounds(geojson_layer.getBounds())
 
 	// create the legend
-	//createLegend();
-	//createInfoPanel();
-  //createInfoCharts();
-//}
+	createLegend();
+	createInfoPanel();
+  createInfoCharts();
+}
+*/
 
 function getStyle(feature){
 	return {
@@ -275,22 +278,24 @@ function zoomToFeature(e) {
 //	info_panel.addTo(map);
 //}
 
-//function createInfoCharts(){
-  
-//}
-
-function createDashboard(){
-  chart_panel.onAdd = function(map){
-    this._div = L.DomUtil.create('div', 'pie');
+function createInfoCharts(){
+  info.onAdd = function(map){
+    this._div = L.DomUtil.create('div', 'info');
     return this._div;
   }
-  chart_panel.addTo(map);
+}
+
+function createDashboard(){
+
+	// clear dashboard
+	$('.dashboard').empty();
+
 	// chart title
 	let title = 'Gender';
 
 	// data values
 	let data = [
-        44,49,6,
+        42,49,10
     ];
 
 	// data fields
@@ -299,35 +304,29 @@ function createDashboard(){
     ];
 
 	// set chart options
-  let options = {
+    let options = {
 		chart: {
 			type: 'pie',
 			height: 250,
 			width: 250,			
 			animations: {
-				enabled: true,
-		  },
-      //events:{
-      //  dataPointSelection:{
-      //    function(event, chartContext, config) {
-      //      console.log(chartContext, config);      
-      //    }
-      //  }
-      //},
-      title: {
-        text: title,
-      },
-      series: data,
-      labels: fields,
-      legend: {
-        position: 'right',
-        offsetY: 0,
-        height: 230,
-      }
-	  }
-  };
+				enabled: false,
+			}
+		},
+		title: {
+			text: title,
+		},
+		series: data,
+		labels: fields,
+		legend: {
+			position: 'right',
+			offsetY: 0,
+			height: 230,
+		  }
+	};
+
 	// create the chart
-	let chart = new ApexCharts(document.querySelector('.pie'), options);
+	chart = new ApexCharts(document.querySelector('.info'), options)
 	chart.render()
 }
 
