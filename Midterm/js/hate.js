@@ -80,12 +80,12 @@ function mapCSV(data){
 		//filter data approach from week 8
 		if(gender != ''){
 			console.log('filtering...')
-			filtered_data = csvdata.filter(item => item.victim_gender === gender)
+			filtered_data = csvdata.data.filter(item => item.victim_gender === gender)
 		}
 		else
 		{
 			// there is no filter, so just map everything
-			filtered_data = csvdata;
+			filtered_data = csvdata.data;
 		}	
 }*/
 
@@ -341,10 +341,6 @@ function createDashboard(){
 			height: 230,
 		  }
 	};
-
-	data.forEach(function(){
-	onclick="mapCSV('${item.victim_gender}')"
-	})
 
 	// create the chart
 	chart = new ApexCharts(document.querySelector('.info'), options)
