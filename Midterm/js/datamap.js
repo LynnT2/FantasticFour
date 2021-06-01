@@ -19,6 +19,7 @@ let fieldtomap;
 let legend = L.control({position: 'bottomright'});
 let info_panel = L.control();
 let info = L.control();
+let filtered_data;
 
 // initialize
 $( document ).ready(function() {
@@ -49,7 +50,7 @@ function readCSV(path){
 }
 function mapCSV(data){
        
-		if (data.meta.fields.length === 15) { //create map for the recent anti-Asian attacks data
+		if (data.meta.fields.lenth === 15) { //create map for the recent anti-Asian attacks data
 			let circleOptions2 = {
 				radius: 8,
 				weight: 1,
@@ -73,21 +74,25 @@ function mapCSV(data){
     }
 }
 
-/*function mapCSV(gender){
-	
-	gender = gender ||'';
-		
-		//filter data approach from week 8
-		if(gender != ''){
-			console.log('filtering...')
-			filtered_data = csvdata.filter(item => item.victim_gender === gender)
-		}
-		else
-		{
-			// there is no filter, so just map everything
-			filtered_data = csvdata;
-		}	
-}*/
+function mapFilterd(data,color){
+  let circleOptions2 = {
+    radius: 8,
+    weight: 1,
+    color: color,
+    fillColor: color,
+    fillOpacity: 1,
+  }
+	data.forEach(function(item,index){
+    let marker = L.circleMarker([item.latitude,item.longitude],circleOptions2).bindPopup(`<h3>Incident</h3><a href=${item.Link} target="_blank">${item.Description}</a><br>Date: ${item.Month}`)
+    .on('mouseover',function(){
+        this.openPopup()
+    })
+    // add marker to featuregroup
+    recent.addLayer(marker)
+  })
+  recent.addTo(map); // add featuregroup to map
+  map.fitBounds(recent.getBounds()); // fit markers to map
+}
 
 function createLayerControl(){
     let toggle = {
@@ -328,7 +333,28 @@ function createDashboard(){
 			width: 300,			
 			animations: {
 				enabled: false,
-			}
+			},
+      events: {
+        dataPointSelection: function (event, chartContext, config){
+          if (config.dataPointIndex === 0){
+            filtered_data = csvdata.data.filter(item => item.victim_gender === 'male');
+            recent.clearLayers();
+            mapFilterd(filtered_data,'blue')
+          }
+          if (config.dataPointIndex === 1){
+            filtered_data = csvdata.data.filter(item => item.victim_gender === 'female');
+            recent.clearLayers();
+            mapFilterd(filtered_data,'green')
+          }
+          if (config.dataPointIndex === 2){
+            filtered_data = csvdata.data.filter(item => item.victim_gender === 'unknown');
+            recent.clearLayers();
+            mapFilterd(filtered_data,'yellow')
+          }
+
+
+        }
+      }
 		},
 		title: {
 			text: title,
