@@ -74,6 +74,7 @@ function mapCSV(data){
     }
 }
 
+<<<<<<< HEAD:Midterm/js/datamap.js
 function mapFilterd(data,color){
   let circleOptions2 = {
     radius: 8,
@@ -93,6 +94,23 @@ function mapFilterd(data,color){
   recent.addTo(map); // add featuregroup to map
   map.fitBounds(recent.getBounds()); // fit markers to map
 }
+=======
+/*function mapCSV(gender){
+	
+	gender = gender ||'';
+		
+		//filter data approach from week 8
+		if(gender != ''){
+			console.log('filtering...')
+			filtered_data = csvdata.data.filter(item => item.victim_gender === gender)
+		}
+		else
+		{
+			// there is no filter, so just map everything
+			filtered_data = csvdata.data;
+		}	
+}*/
+>>>>>>> 03deeb35d3f4813e76ed884079c0ca4250c1ff72:Midterm/js/hate.js
 
 function createLayerControl(){
     let toggle = {
@@ -367,10 +385,6 @@ function createDashboard(){
 			height: 230,
 		  }
 	};
-
-	data.forEach(function(){
-	onclick="mapCSV('${item.victim_gender}')"
-	})
 
 	// create the chart
 	chart = new ApexCharts(document.querySelector('.info'), options)
