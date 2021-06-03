@@ -26,7 +26,6 @@ $( document ).ready(function() {
     createMap(lat,lon,zl);
     readCSV(path2);
 	getGeoJSON();
-    createLayerControl();
 });
 // create the map
 function createMap(lat,lon,zl){
@@ -96,10 +95,13 @@ function mapFilterd(data,color){
 
 function createLayerControl(){
     let toggle = {
-		"Recent anti-Asian attacks": recent
+		"Recent anti-Asian attacks": recent,
+		"choropleth": geojson_layer,
 	}
     L.control.layers(null,toggle).addTo(map);
 }
+
+
 
 
 // function to get the geojson data
@@ -147,6 +149,8 @@ function mapGeoJSON(field,num_classes,color,scheme){
 		style: getStyle, //call a function to style each feature
 		onEachFeature: onEachFeature // actions on each feature
 	}).addTo(map);
+	createLayerControl();
+
 
 	// turning off fit bounds so that we stay in mainland USA
 	// map.fitBounds(geojson_layer.getBounds())
@@ -157,8 +161,8 @@ function mapGeoJSON(field,num_classes,color,scheme){
 	// create the infopanel
 	//createInfoPanel();
 
-  createInfoCharts();
-  createDashboard();
+  	createInfoCharts();
+  	createDashboard();
 }
 
 /*function mapGeoJSON(field){
@@ -365,7 +369,10 @@ function createDashboard(){
 			position: 'right',
 			offsetY: 0,
 			height: 230,
-		  }
+		  },
+		theme: {
+			palette: 'palette3' // upto palette10
+		}
 	};
 
 	// create the chart
@@ -384,3 +391,4 @@ function resetHighlight(e) {
 function zoomToFeature(e) {
 	map.fitBounds(e.target.getBounds());
 }
+

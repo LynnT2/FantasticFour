@@ -212,8 +212,8 @@ body {
 	background: rgba(255,255,255,0.8);
 	box-shadow: 0 0 15px rgba(0,0,0,0.2);
 	border-radius: 5px;
-	min-width: 100px;
-	min-height: 50px;
+	width: 300px;
+	height: 300px;
 }
 .info h4 {
 	margin: 0 0 5px;
@@ -223,6 +223,8 @@ body {
 .legend {
 	line-height: 18px;
 	color: #555;
+  width: 100px;
+	height: 100%;
 }
 .legend i {
 	width: 15px;
