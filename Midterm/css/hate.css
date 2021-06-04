@@ -84,9 +84,10 @@ body {
     color: #db3e34ff;
   }
 
-  .current-link {
-    color: #f55e61;
- }
+  .navigation a.active {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
 
 /* legend styles */
 .info {

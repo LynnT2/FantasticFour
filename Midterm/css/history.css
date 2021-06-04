@@ -79,14 +79,11 @@ body {
     color: #db3e34ff;
   }
   
-  a:active {
+  .navigation a.active {
     text-decoration: none;
-    color: #db3e34ff;
+    color: rgb(0, 0, 0);
   }
 
-  .current-link {
-    color: #f55e61;
- }
 
  /*timeline*/
 
@@ -186,7 +183,6 @@ body {
   .close-icon {
     color: #ccc;
     cursor: pointer;
-    float: right;
     font-size: 38px;
     display: inline-block;
     vertical-align: middle;
