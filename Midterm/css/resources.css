@@ -9,6 +9,7 @@ body,html {
 
 body {
     display: grid;
+    font-family:'PLayfair-Display, sans-serif';
     grid-template-rows: 60px 1fr 100px;
     grid-template-columns: 50% 50%;
     grid-template-areas: 
@@ -112,17 +113,17 @@ body {
   }
   
   #map {
-      height: 100%;
+    height: 100%;
   }
   
   
   #home {
     display: grid;
-      grid-template-rows: 80px 1fr;
-      grid-template-columns: 250px 1fr;
-      grid-template-areas: 
-      "header navigation"
-      "sidebar content";
+    grid-template-rows: 80px 1fr;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas: 
+    "header navigation"
+    "sidebar content";
   }
   
   .footer {
@@ -132,6 +133,16 @@ body {
       color: white;
   }
 
+  #resources {
+    display: grid;
+	  grid-template-columns: auto ;
+    grid-template-rows: 30px 1fr;
+	  grid-template-areas: 
+  	"header navigation"
+	  "resources"
+  }
+
+ 
   .info {
     font-family: 'Roboto';
     font-size: 15px;
@@ -140,4 +151,18 @@ body {
     margin: 10px;
   }
 
- 
+
+.row {
+  display: flex;
+  text-align: center;
+
+  }
+
+.donate {
+  font-family: 'Roboto';
+}
+  
+.column {
+  padding: 5px;
+  text-align: center;
+}
