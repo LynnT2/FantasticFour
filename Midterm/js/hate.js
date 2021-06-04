@@ -18,7 +18,7 @@ let fieldtomap;
 
 let legend = L.control({position: 'bottomright'});
 let info_panel = L.control();
-let info = L.control();
+let info = L.control({position:'bottomleft'});
 let filtered_data;
 
 // initialize
@@ -147,7 +147,10 @@ function mapGeoJSON(field,num_classes,color,scheme){
 	// create the layer and add to map
 	geojson_layer = L.geoJson(geojson_data, {
 		style: getStyle, //call a function to style each feature
-		onEachFeature: onEachFeature // actions on each feature
+		onEachFeature: onEachFeature, // actions on each feature
+		onEachFeature: function (feature,layer){
+			layer.bindTooltip(feature.properties.NAME + '<' + 'br' + '>' + +feature.properties.count) //change count to population
+		}
 	}).addTo(map);
 	createLayerControl();
 
@@ -161,8 +164,8 @@ function mapGeoJSON(field,num_classes,color,scheme){
 	// create the infopanel
 	//createInfoPanel();
 
-  	createInfoCharts();
-  	createDashboard();
+  	createGenderChart();
+	createEthnicityChart();
 }
 
 /*function mapGeoJSON(field){
@@ -240,6 +243,7 @@ function createLegend(){
 		};
 		
 		legend.addTo(map);
+	  
 }
 
 // Function that defines what will happen on user interactions with each feature
@@ -304,17 +308,7 @@ function zoomToFeature(e) {
 	info_panel.addTo(map);
 }*/
 
-function createInfoCharts(){
-  info.onAdd = function(map){
-    this._div = L.DomUtil.create('div', 'info');
-    return this._div;
-  }
-}
-
-function createDashboard(){
-
-	// clear dashboard
-	$('.dashboard').empty();
+function createGenderChart(){
 
 	// chart title
 	let title = 'Gender';
@@ -336,7 +330,7 @@ function createDashboard(){
 			height: 300,
 			width: 300,			
 			animations: {
-				enabled: false,
+				enabled: true,
 			},
       events: {
         dataPointSelection: function (event, chartContext, config){
@@ -355,8 +349,6 @@ function createDashboard(){
             recent.clearLayers();
             mapFilterd(filtered_data,'yellow')
           }
-
-
         }
       }
 		},
@@ -371,13 +363,85 @@ function createDashboard(){
 			height: 230,
 		  },
 		theme: {
-			palette: 'palette3' // upto palette10
+			palette: 'palette3' 
 		}
 	};
 
 	// create the chart
-	chart = new ApexCharts(document.querySelector('.info'), options)
-	chart.render()
+	info.onAdd = function(map){
+		this._div = L.DomUtil.create('div', 'info');
+		return this._div;
+	};
+	info.addTo(map);
+	gender = new ApexCharts(document.querySelector('.info'), options);
+	gender.render();
+
+}
+
+function createEthnicityChart(){
+
+	// chart title
+	let title = 'Ethnicity';
+
+	// data values
+	let data = [
+        20,12,4,1
+    ];
+
+	// data fields
+	let fields = [
+        'Chinese','Korean','Japanese','Unknown'
+    ];
+
+	// set chart options
+    let options = {
+		chart: {
+			type: 'pie',
+			height: 300,
+			width: 300,			
+			animations: {
+				enabled: true,
+			},
+      /*events: {
+        dataPointSelection: function (event, chartContext, config){
+          if (config.dataPointIndex === 0){
+            filtered_data = csvdata.data.filter(item => item.victim_gender === 'male');
+            recent.clearLayers();
+            mapFilterd(filtered_data,'blue')
+          }
+          if (config.dataPointIndex === 1){
+            filtered_data = csvdata.data.filter(item => item.victim_gender === 'female');
+            recent.clearLayers();
+            mapFilterd(filtered_data,'green')
+          }
+          if (config.dataPointIndex === 2){
+            filtered_data = csvdata.data.filter(item => item.victim_gender === 'unknown');
+            recent.clearLayers();
+            mapFilterd(filtered_data,'yellow')
+          }
+        }
+      }*/
+		},
+		title: {
+			text: title,
+		},
+		series: data,
+		labels: fields,
+		legend: {
+			position: 'right',
+			offsetY: 0,
+			height: 230,
+		  },
+		theme: {
+			palette: 'palette3' 
+		}
+	};
+
+	// create the chart
+
+	ethnicity = new ApexCharts(document.querySelector('.info'),options);
+	ethnicity.render();
+
 }
 
 
