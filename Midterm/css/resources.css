@@ -30,7 +30,7 @@ body {
     grid-area: header;
       padding: 10px;
     color: black;
-    background-color:white;
+    background-color:transparent;
     font-family:'PLayfair-Display, sans-serif';
     font-weight: bold;
     font-size: 2.5em;
@@ -72,6 +72,8 @@ body {
    margin: 0;
    padding: 0;
    overflow: hidden;
+   font-family: 'Lato';
+
   }
   
   li {
@@ -153,7 +155,6 @@ body {
 
 
 .row {
-  
   text-align: center;
 
   }
@@ -161,11 +162,44 @@ body {
   background-color: transparent;
 }
 .donate {
-  display: flex;
   font-family: 'Roboto';
 }
   
 .column {
   padding: 5px;
   text-align: center;
+}
+/*background*/
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgb(254, 229, 217) 50%, rgb(255, 255, 255) 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
 }
