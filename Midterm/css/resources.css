@@ -153,12 +153,15 @@ body {
 
 
 .row {
-  display: flex;
+  
   text-align: center;
 
   }
-
+.box {
+  background-color: transparent;
+}
 .donate {
+  display: flex;
   font-family: 'Roboto';
 }
   
