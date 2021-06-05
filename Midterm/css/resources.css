@@ -109,7 +109,9 @@ body {
     text-decoration: none;
     color: #db3e34ff;
   }
-  
+  .navigation{
+    grid-auto-flow: inherit;
+  }
   .navigation a.active {
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -155,7 +157,14 @@ body {
     margin: 10px;
 
   }
-
+.story{
+  background-color: transparent;
+  font-family: 'Roboto';
+  display: grid;
+  text-align: center;
+  margin: 10px;
+  }
+  
   .box {
   background-color: transparent;
   font-family: 'Roboto';
