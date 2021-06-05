@@ -9,7 +9,7 @@ let recent = L.markerClusterGroup();
 let csvdata;
 let path = '';
 
-let geojsonPath = 'data/us.geojson';
+let geojsonPath = 'data/merged_population.geojson';
 let geojson_data;
 let geojson_layer;
 
@@ -60,7 +60,6 @@ function mapCSV(data){
 		
 		// loop through each entry
         data.data.forEach(function(item,index){
-            console.log('here')
             let marker = L.circleMarker([item.latitude,item.longitude],circleOptions2).bindPopup(`<h3>Incident</h3><a href=${item.Link} target="_blank">${item.Description}</a><br>Date: ${item.Month}`)
             .on('mouseover',function(){
                 this.openPopup()
@@ -114,7 +113,7 @@ function getGeoJSON(){
 		geojson_data = data;
 
 		// call the map function
-		mapGeoJSON('count',4,'Reds','quantiles') // add a field to be used
+		mapGeoJSON('AsianTotal',4,'Reds','quantiles') // add a field to be used
 	})
 }
 
@@ -149,14 +148,14 @@ function mapGeoJSON(field,num_classes,color,scheme){
 		style: getStyle, //call a function to style each feature
 		onEachFeature: onEachFeature, // actions on each feature
 		onEachFeature: function (feature,layer){
-			layer.bindTooltip(feature.properties.NAME + '<' + 'br' + '>' + +feature.properties.count) //change count to population
+			layer.bindTooltip(feature.properties.NAME + '<' + 'br' + '>' + +feature.properties.AsianTotal) //change count to population
 		}
 	}).addTo(map);
 	createLayerControl();
 
 
 	// turning off fit bounds so that we stay in mainland USA
-	// map.fitBounds(geojson_layer.getBounds())
+	//map.fitBounds(geojson_layer.getBounds());
 
 	// create the legend
 	createLegend();
@@ -168,46 +167,6 @@ function mapGeoJSON(field,num_classes,color,scheme){
 	createEthnicityChart();
 }
 
-/*function mapGeoJSON(field){
-
-	// clear layers in case it has been mapped already
-	if (geojson_layer){
-		geojson_layer.clearLayers()
-	}
-	
-	// globalize the field to map
-	fieldtomap = field;
-
-	// create an empty array
-	let values = [];
-
-	// based on the provided field, enter each value into the array
-	geojson_data.features.forEach(function(item,index){
-		if(item.properties[field] != undefined){
-			values.push(item.properties[field])
-		}
-	})
-
-	// set up the "brew" options
-	brew.setSeries(values);
-	brew.setNumClasses(4);
-	brew.setColorCode('Reds');
-	brew.classify('quantiles');
-
-	// create the layer and add to map
-	geojson_layer = L.geoJson(geojson_data, {
-		style: getStyle, //call a function to style each feature
-		onEachFeature: onEachFeature //actions on eac feature
-	}).addTo(map);
-
-	map.fitBounds(geojson_layer.getBounds())
-
-	// create the legend
-	createLegend();
-	createInfoPanel();
-  createInfoCharts();
-}
-*/
 
 function getStyle(feature){
 	return {
@@ -216,7 +175,7 @@ function getStyle(feature){
 		weight: 1,
 		fill: true,
 		fillColor: brew.getColorInRange(feature.properties[fieldtomap]),
-		fillOpacity: 0.8
+		fillOpacity: 0.7
 	}
 }
 
@@ -226,7 +185,7 @@ function createLegend(){
 		breaks = brew.getBreaks(),
 		labels = [],
 		from, to;
-		labels.push('Number of Hate Crimes')
+		labels.push('Asian Population')
 		
 		for (var i = 0; i < breaks.length; i++) {
 			from = breaks[i];
