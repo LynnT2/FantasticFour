@@ -145,7 +145,7 @@ body {
 	  "resources"
   }
 
- 
+
   .info {
     display: grid;
     font-family: 'Roboto';
@@ -153,11 +153,12 @@ body {
     font-weight: bold;
     padding:2px;
     margin: 10px;
-    
+
   }
 
   .box {
   background-color: transparent;
+  font-family: 'Roboto';
   display: grid;
   margin-bottom: 20em;
   }
@@ -201,9 +202,7 @@ body {
   animation-duration:5s;
 }
 
-h1 {
-  font-family:monospace;
-}
+
 
 @keyframes slide {
   0% {
