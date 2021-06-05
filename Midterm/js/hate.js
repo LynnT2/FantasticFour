@@ -49,13 +49,13 @@ function readCSV(path){
 }
 function mapCSV(data){
        
-		if (data.meta.fields.lenth === 15) { //create map for the recent anti-Asian attacks data
-			let circleOptions2 = {
-				radius: 8,
-				weight: 1,
-				color: 'white',
-				fillColor: '#f55e61',
-				fillOpacity: 1,
+		//if (data.meta.fields.lenth === 15) { //create map for the recent anti-Asian attacks data
+		let circleOptions2 = {
+			radius: 8,
+			weight: 1,
+			color: 'white',
+			fillColor: '#f55e61',
+			fillOpacity: 1,
 			}
 		
 		// loop through each entry
@@ -69,7 +69,6 @@ function mapCSV(data){
         })
         recent.addTo(map); // add featuregroup to map
         map.fitBounds(recent.getBounds()); // fit markers to map
-    }
 }
 
 function mapFilterd(data,color){
@@ -113,7 +112,7 @@ function getGeoJSON(){
 		geojson_data = data;
 
 		// call the map function
-		mapGeoJSON('AsianTotal',4,'Reds','quantiles') // add a field to be used
+		mapGeoJSON('AsianTotal',5,'Reds','quantiles') // add a field to be used
 	})
 }
 
@@ -180,7 +179,7 @@ function getStyle(feature){
 }
 
 function createLegend(){
-	legend.onAdd = function (map) {
+	/*legend.onAdd = function (map) {
 		var div = L.DomUtil.create('div', 'info legend'),
 		breaks = brew.getBreaks(),
 		labels = [],
@@ -201,8 +200,26 @@ function createLegend(){
 			return div;
 		};
 		
-		legend.addTo(map);
-	  
+		legend.addTo(map);*/
+	
+	legend.onAdd = function (map) {
+		var div = L.DomUtil.create('div', 'info legend');
+		colors = brew.getBreaks();
+		labels = [];
+		
+		/* Add min & max*/
+		div.innerHTML = '<div><h4 style="font-size:larger;">Asian Population</h4></div><div class="labels"><div class="min">Low</div> \
+	  <div class="max">High</div></div>';
+	
+	  for (i = 1; i < colors.length; i++) {
+		  labels.push('<li style="background-color: ' + brew.getColorInRange(colors[i]) + '"></li>')
+		}
+	
+		div.innerHTML += '<ul style="list-style-type:none;display:flex">' + labels.join('') + '</ul>';
+		return div
+	  }
+	
+	  legend.addTo(map);
 }
 
 // Function that defines what will happen on user interactions with each feature
