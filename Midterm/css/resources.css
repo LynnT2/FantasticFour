@@ -162,7 +162,7 @@ body {
   font-family: 'Roboto';
   display: grid center;
   text-align: center;
-  margin: 10px;
+  margin:10px;
   }
   
   .box {
@@ -268,7 +268,7 @@ body {
   background-color: transparent;
   perspective: 1000px;
   border-radius: 50%;
-  margin:1em;
+  
 }
   
   
@@ -306,13 +306,9 @@ body {
   text-align:justify;
   transform: rotateY(180deg);
   font-stretch: semi-condensed;
-  font-size: small;
+  font-size:small;
   border-radius: 50%;
   position:absolute;
   background-size: cover;
-
-  top:10px
- }
-.dt{
-  float:left
+  top:3pt;
 }
