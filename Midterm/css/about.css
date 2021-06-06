@@ -149,15 +149,17 @@ a:active {
   grid-area: bio;
   font-weight: bold;
   text-align: center;
+  background-color: white;
 }
 
 .project {
   font-family: 'Roboto';
-  font-size: 15px;
+  font-size: 18px;
   float: right;
   padding: 15px;
   grid-area: project;
   text-align: justify;
+  background-color: white;
     
 }
 
