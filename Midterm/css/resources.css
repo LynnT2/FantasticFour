@@ -228,6 +228,7 @@ body {
   grid-area: bio;
   font-weight: bold;
   text-align: center;
+  border-width: 10px;
 }
 
 
@@ -267,9 +268,6 @@ body {
 /*flipping images*/
 .flip-box {
   background-color: transparent;
-  perspective: 1000px;
-  border-radius: 50%;
-  
 }
   
   
@@ -284,32 +282,43 @@ body {
  }
   
 .flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
+  transform: rotateX(180deg);
   color: #db3e34ff;
 }
   
 .flip-box-front, .flip-box-back {
+  display: grid;
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   color: #db3e34ff;
+
+
+
 }
   
 .flip-box-front {
   color: #db3e34ff;
-  border-radius: 50%;
+  border-width: 7px;
+  border-radius: 10%;
+  border-style:double;
  }
   
 .flip-box-back {
   background-color:transparent;
   color: #db3e34ff;
   text-align:justify;
-  transform: rotateY(180deg);
+  transform: rotateX(180deg);
   font-stretch: semi-condensed;
   font-size:small;
   border-radius: 50%;
   position:absolute;
+  top:0;
   background-size: cover;
-  top:3pt;
+  border-width: 7px;
+  border-radius: 10%;
+  border-style:double;
 }
+
+
