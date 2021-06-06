@@ -244,6 +244,7 @@ body {
 
 .row1 {
   display: grid center;
+  border-spacing: 1em;
   
   }
   
