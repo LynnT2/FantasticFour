@@ -9,7 +9,7 @@ let recent = L.markerClusterGroup();
 let csvdata;
 let path = '';
 
-let geojsonPath = 'data/us.geojson';
+let geojsonPath = 'data/merged_population.geojson';
 let geojson_data;
 let geojson_layer;
 
@@ -49,18 +49,17 @@ function readCSV(path){
 }
 function mapCSV(data){
        
-		if (data.meta.fields.lenth === 15) { //create map for the recent anti-Asian attacks data
-			let circleOptions2 = {
-				radius: 8,
-				weight: 1,
-				color: 'white',
-				fillColor: '#f55e61',
-				fillOpacity: 1,
+		//if (data.meta.fields.lenth === 15) { //create map for the recent anti-Asian attacks data
+		let circleOptions2 = {
+			radius: 8,
+			weight: 1,
+			color: 'white',
+			fillColor: '#f55e61',
+			fillOpacity: 1,
 			}
 		
 		// loop through each entry
         data.data.forEach(function(item,index){
-            console.log('here')
             let marker = L.circleMarker([item.latitude,item.longitude],circleOptions2).bindPopup(`<h3>Incident</h3><a href=${item.Link} target="_blank">${item.Description}</a><br>Date: ${item.Month}`)
             .on('mouseover',function(){
                 this.openPopup()
@@ -70,7 +69,6 @@ function mapCSV(data){
         })
         recent.addTo(map); // add featuregroup to map
         map.fitBounds(recent.getBounds()); // fit markers to map
-    }
 }
 
 function mapFilterd(data,color){
@@ -114,7 +112,7 @@ function getGeoJSON(){
 		geojson_data = data;
 
 		// call the map function
-		mapGeoJSON('count',4,'Reds','quantiles') // add a field to be used
+		mapGeoJSON('AsianTotal',5,'Reds','quantiles') // add a field to be used
 	})
 }
 
@@ -149,14 +147,14 @@ function mapGeoJSON(field,num_classes,color,scheme){
 		style: getStyle, //call a function to style each feature
 		onEachFeature: onEachFeature, // actions on each feature
 		onEachFeature: function (feature,layer){
-			layer.bindTooltip(feature.properties.NAME + '<' + 'br' + '>' + +feature.properties.count) //change count to population
+			layer.bindTooltip(feature.properties.NAME + '<' + 'br' + '>' + +feature.properties.AsianTotal) //change count to population
 		}
 	}).addTo(map);
 	createLayerControl();
 
 
 	// turning off fit bounds so that we stay in mainland USA
-	// map.fitBounds(geojson_layer.getBounds())
+	//map.fitBounds(geojson_layer.getBounds());
 
 	// create the legend
 	createLegend();
@@ -168,46 +166,6 @@ function mapGeoJSON(field,num_classes,color,scheme){
 	createEthnicityChart();
 }
 
-/*function mapGeoJSON(field){
-
-	// clear layers in case it has been mapped already
-	if (geojson_layer){
-		geojson_layer.clearLayers()
-	}
-	
-	// globalize the field to map
-	fieldtomap = field;
-
-	// create an empty array
-	let values = [];
-
-	// based on the provided field, enter each value into the array
-	geojson_data.features.forEach(function(item,index){
-		if(item.properties[field] != undefined){
-			values.push(item.properties[field])
-		}
-	})
-
-	// set up the "brew" options
-	brew.setSeries(values);
-	brew.setNumClasses(4);
-	brew.setColorCode('Reds');
-	brew.classify('quantiles');
-
-	// create the layer and add to map
-	geojson_layer = L.geoJson(geojson_data, {
-		style: getStyle, //call a function to style each feature
-		onEachFeature: onEachFeature //actions on eac feature
-	}).addTo(map);
-
-	map.fitBounds(geojson_layer.getBounds())
-
-	// create the legend
-	createLegend();
-	createInfoPanel();
-  createInfoCharts();
-}
-*/
 
 function getStyle(feature){
 	return {
@@ -216,17 +174,17 @@ function getStyle(feature){
 		weight: 1,
 		fill: true,
 		fillColor: brew.getColorInRange(feature.properties[fieldtomap]),
-		fillOpacity: 0.8
+		fillOpacity: 0.7
 	}
 }
 
 function createLegend(){
-	legend.onAdd = function (map) {
+	/*legend.onAdd = function (map) {
 		var div = L.DomUtil.create('div', 'info legend'),
 		breaks = brew.getBreaks(),
 		labels = [],
 		from, to;
-		labels.push('Number of Hate Crimes')
+		labels.push('Asian Population')
 		
 		for (var i = 0; i < breaks.length; i++) {
 			from = breaks[i];
@@ -242,8 +200,26 @@ function createLegend(){
 			return div;
 		};
 		
-		legend.addTo(map);
-	  
+		legend.addTo(map);*/
+	
+	legend.onAdd = function (map) {
+		var div = L.DomUtil.create('div', 'info legend');
+		colors = brew.getBreaks();
+		labels = [];
+		
+		/* Add min & max*/
+		div.innerHTML = '<div><h4 style="font-size:larger;">Asian Population</h4></div><div class="labels"><div class="min">Low</div> \
+	  <div class="max">High</div></div>';
+	
+	  for (i = 1; i < colors.length; i++) {
+		  labels.push('<li style="background-color: ' + brew.getColorInRange(colors[i]) + '"></li>')
+		}
+	
+		div.innerHTML += '<ul style="list-style-type:none;display:flex">' + labels.join('') + '</ul>';
+		return div
+	  }
+	
+	  legend.addTo(map);
 }
 
 // Function that defines what will happen on user interactions with each feature

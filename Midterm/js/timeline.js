@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function(){
           let details = d3.select('#details-' + currId);
           details.style('display', 'block');
           details.style('opacity', 1);
-          $.getScript('js/map.js',function(){panToMarker(d.id);
+          $.getScript('js/history.js',function(){panToMarker(d.id);
           });
         })
 
