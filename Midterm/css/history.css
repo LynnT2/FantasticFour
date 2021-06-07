@@ -29,7 +29,7 @@ body {
   grid-area: sidebar;
   color: black;
 	padding:20px;
-	overflow: auto;
+	overflow: scroll;
 	padding-top: 2px;
 }
 
@@ -59,9 +59,9 @@ body {
 
 .footer {
 	grid-area: footer;
-	padding:10px;
+	padding:15px;
 	background-color:white;
-	color: #db3e34ff;
+	color: black;
   position:relative;
   box-shadow: 5px -2px 5px -2px #888;
 }
