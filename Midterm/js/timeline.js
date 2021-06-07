@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function(){
   
       let scaleLine = d3.scaleLinear()
         .domain([-4102373222, Date.now()])
-        .range([getLineVal('min') + 1000 , getLineVal('max') + 1100]); // OFFSET = 20
+        .range([getLineVal('min') + 990 , getLineVal('max') -100]); // OFFSET = 20
   
       let scaleCircle = d3.scaleLinear()
         .domain([moment.duration(3,'d').asMilliseconds(), moment.duration(10,'y').asMilliseconds()])
@@ -152,7 +152,6 @@ document.addEventListener('DOMContentLoaded', function(){
       // Hide the details div (once opened by clicking on circle)
       d3.selectAll('.close-icon').on('click', function() {
         map.fitBounds(history.getBounds());
-        map.closePopup();
         d3.select(this.parentNode).style('opacity', 0);
         setTimeout(function() {
           svg.attr('height', 200);
