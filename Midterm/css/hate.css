@@ -9,11 +9,12 @@ body,html {
 
 body {
   display: grid;
-  grid-template-rows: 60px auto;
+  grid-template-rows: 60px auto 60px;
   grid-template-columns: 50% 50%;
   grid-template-areas: 
   "header navigation"
-  "content content";
+  "content content"
+  "slider slider";
 }
 
 .content {
@@ -105,17 +106,6 @@ body {
 	color: #777;
 }
 
-/*.legend {
-	line-height: 18px;
-	color: #555;
-}
-.legend i {
-	width: 15px;
-	height: 18px;
-	float: left;
-	margin-right: 8px;
-	opacity: 0.7;
-}*/
 
 .legend {
   color: #555;
@@ -161,7 +151,7 @@ body {
 	color: #777;
 }
 
-.info1 {
+.info {
 	padding: 6px 8px;
 	font: 14px/16px Arial, Helvetica, sans-serif;
 	background: white;
@@ -170,8 +160,16 @@ body {
 	border-radius: 5px;
 	min-width: 100px;
 	min-height: 50px;
+  display: inline-block;
 }
-.info1 h4 {
+.info h4 {
 	margin: 0 0 5px;
 	color: #777;
+}
+
+.slider {
+  max-width: 200px;
+  grid-area: slider;
+  position: absolute;
+  display: block;
 }
