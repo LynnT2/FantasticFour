@@ -28,7 +28,7 @@ body {
   
   .header {
     grid-area: header;
-      padding: 10px;
+    padding: 10px;
     color: black;
     background-color:transparent;
     font-family:'PLayfair-Display, sans-serif';
@@ -171,6 +171,7 @@ body {
   text-align: center;
   font-size: 16px;
   margin:10px;
+
   }
   
   .box {
