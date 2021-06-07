@@ -160,7 +160,7 @@ body {
     border-width: 7px;
     border-style:double;
     -ms-transform:translate(100px,100px); /* IE 9 */
-    transform: translate(0px,5px); /* Standard syntax */
+    transform: translate(0px,-10px); /* Standard syntax */
   
 
   }
@@ -175,6 +175,7 @@ body {
   .box {
   background-color: transparent;
   font-family: 'Roboto';
+  font-size:19px;
   display: block;
   margin-top: 10px;
   margin-left:30px;
@@ -192,7 +193,7 @@ body {
   border-style:double;
   float:center;
   -ms-transform:translate(100px,100px); /* IE 9 */
-  transform: translate(0px,20px); 
+  transform: translate(0px,7px); 
 }
 .row {
   display: flex;
@@ -304,6 +305,7 @@ body {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   color: #db3e34ff;
+  padding:6px;
 
 }
   
@@ -312,13 +314,16 @@ body {
   border-width: 7px;
   border-radius: 0%;
   border-style:double;
+  -ms-transform: translate(50px,100px);
+  transform:translate(0px,0px);
  }
   
 .flip-box-back {
   background-color:transparent;
   color: #db3e34ff;
   text-align:justify;
-  transform: rotateX(180deg);
+  -ms-transform: translate(50px,100px);
+  transform: rotateX(180deg) translate(0px,27px);
   font-stretch: semi-condensed;
   font-size:small;
   border-radius: 50%;
