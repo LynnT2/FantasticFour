@@ -161,7 +161,7 @@ body {
 	color: #777;
 }
 
-.info1 {
+.info {
 	padding: 6px 8px;
 	font: 14px/16px Arial, Helvetica, sans-serif;
 	background: white;
@@ -170,8 +170,9 @@ body {
 	border-radius: 5px;
 	min-width: 100px;
 	min-height: 50px;
+  display: inline-block;
 }
-.info1 h4 {
+.info h4 {
 	margin: 0 0 5px;
 	color: #777;
 }

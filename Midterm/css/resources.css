@@ -197,6 +197,7 @@ body {
   float:center;
   -ms-transform:translate(100px,100px); /* IE 9 */
   transform: translate(0px,5px); 
+  background-color: white;
 }
 .row {
   display: flex;
