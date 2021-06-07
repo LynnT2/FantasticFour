@@ -160,7 +160,7 @@ body {
     border-width: 7px;
     border-style:double;
     -ms-transform:translate(100px,100px); /* IE 9 */
-    transform: translate(0px,-10px); /* Standard syntax */
+    transform: translate(0px,5px); /* Standard syntax */
   
 
   }
@@ -169,6 +169,7 @@ body {
   font-family: 'Roboto';
   display: grid center;
   text-align: center;
+  font-size: 16px;
   margin:10px;
   }
   
@@ -180,7 +181,9 @@ body {
   margin-top: 10px;
   margin-left:30px;
   }
-
+  h1{
+    font-size: 30px;
+  }
   h1.entry-title{
     margin-left:30px;
   }
@@ -193,7 +196,7 @@ body {
   border-style:double;
   float:center;
   -ms-transform:translate(100px,100px); /* IE 9 */
-  transform: translate(0px,7px); 
+  transform: translate(0px,14px); 
 }
 .row {
   display: flex;
