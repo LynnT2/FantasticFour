@@ -159,6 +159,9 @@ body {
     border-radius: 0%;
     border-width: 7px;
     border-style:double;
+    -ms-transform:translate(100px,100px); /* IE 9 */
+    transform: translate(0px,5px); /* Standard syntax */
+  
 
   }
 .story{
@@ -188,6 +191,8 @@ body {
   border-radius: 0%;
   border-style:double;
   float:center;
+  -ms-transform:translate(100px,100px); /* IE 9 */
+  transform: translate(0px,20px); 
 }
 .row {
   display: flex;
