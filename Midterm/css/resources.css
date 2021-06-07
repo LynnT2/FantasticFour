@@ -30,6 +30,7 @@ body {
     grid-area: header;
     padding: 10px;
     color: black;
+    position: relative;
     background-color:transparent;
     font-family:'PLayfair-Display, sans-serif';
     font-weight: bold;
@@ -170,8 +171,10 @@ body {
   display: grid center;
   text-align: center;
   font-size: 16px;
-  margin:10px;
-
+  margin-top:40px;
+  margin-left:20px;
+  float:right;
+  position:absolute;
   }
   
   .box {
@@ -179,8 +182,9 @@ body {
   font-family: 'Roboto';
   font-size:19px;
   display: block;
-  margin-top: 10px;
-  margin-left:30px;
+  margin-top: 40px;
+  margin-left:350px;
+  position:absolute;
   }
   h1{
     font-size: 30px;

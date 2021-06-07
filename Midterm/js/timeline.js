@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function(){
   
       let scaleLine = d3.scaleLinear()
         .domain([-4102373222, Date.now()])
-        .range([getLineVal('min') + 990 , getLineVal('max') -100]); // OFFSET = 20
+        .range([getLineVal('min') + 250, getLineVal('max' + 1) ]); // OFFSET = 20
   
       let scaleCircle = d3.scaleLinear()
         .domain([moment.duration(3,'d').asMilliseconds(), moment.duration(10,'y').asMilliseconds()])

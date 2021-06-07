@@ -32,16 +32,9 @@ body {
     font-weight: bold;
     font-size: 2.5em;
     color: #db3e34ff;
+    box-shadow: -5px 0 5px -2px #888;
 }
 
-
-.footer {
-	grid-area: footer;
-	padding:20px;
-	background-color:#333;
-	color: white;
-  position:relative;
-}
 
 /*navigation*/
   ul

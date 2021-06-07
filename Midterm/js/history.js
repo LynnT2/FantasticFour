@@ -6,8 +6,9 @@ let zl = 3;
 let path1 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRnVOK4HkRT25vJ0OSiibELheQHSsQKf7CYy4TZ2r0N_AO_4UKcmHZIxQMa16sBxeNfqkyh80Dm0Drd/pub?gid=0&single=true&output=csv"; // path to csv data
 let history = L.featureGroup();
 let csvdata;
+let path = '';
 
-let geojsonPath = 'data/us.geojson';
+let geojsonPath = 'data/merged_population.geojson';
 let geojson_data;
 let geojson_layer;
 
@@ -60,10 +61,12 @@ function mapCSV(data){
 
         // loop through each entry
         data.data.forEach(function(item,index){
-            let marker = L.circleMarker([item.latitude,item.longitude],circleOptions1).bindPopup("<h3>" + item.title + " (" + item.date + ")" + "</h3>" + "<center><img src ='" + item.reference_url + "'width=100%'/></center>" +
-                item.description)
-            .on('mouseover',function(){
+            let marker = L.circleMarker([item.latitude,item.longitude],circleOptions1).bindPopup("<h3>" + item.title + "</h3>" + "<center><img src ='" + item.reference_url + "'height=250px'/></center>",{
+				maxWidth: "auto"
+			})
+            .on('click',function(){
                 this.openPopup()
+				
             })
             // add marker to featuregroup
             history.addLayer(marker)
@@ -84,10 +87,11 @@ function panToMarker(index){
 function createLayerControl(){
     let toggle = {
         "Asian American History": history,
+		"Asian Population per State": geojson_layer,
 	}
     L.control.layers(null,toggle).addTo(map);
 }
-let path = '';
+
 
 // function to get the geojson data
 function getGeoJSON(){
@@ -99,11 +103,11 @@ function getGeoJSON(){
 		geojson_data = data;
 
 		// call the map function
-		mapGeoJSON('count') // add a field to be used
+		mapGeoJSON('AsianTotal',5,'Reds','quantiles') // add a field to be used
 	})
 }
 
-function mapGeoJSON(field){
+function mapGeoJSON(field,num_classes,color,scheme){
 
 	// clear layers in case it has been mapped already
 	if (geojson_layer){
@@ -118,29 +122,31 @@ function mapGeoJSON(field){
 
 	// based on the provided field, enter each value into the array
 	geojson_data.features.forEach(function(item,index){
-		if(item.properties[field] != undefined){
+		if((item.properties[field] != undefined ) ){
 			values.push(item.properties[field])
 		}
 	})
 
 	// set up the "brew" options
 	brew.setSeries(values);
-	brew.setNumClasses(4);
-	brew.setColorCode('Reds');
-	brew.classify('quantiles');
+	brew.setNumClasses(num_classes);
+	brew.setColorCode(color);
+	brew.classify(scheme);
 
 	// create the layer and add to map
 	geojson_layer = L.geoJson(geojson_data, {
 		style: getStyle, //call a function to style each feature
-		onEachFeature: onEachFeature //actions on eac feature
+		onEachFeature: onEachFeature, // actions on each feature
+		onEachFeature: function (feature,layer){
+			layer.bindTooltip(feature.properties.NAME + '<' + 'br' + '>' + +feature.properties.AsianTotal) //change count to population
+		}
 	}).addTo(map);
-
-	map.fitBounds(geojson_layer.getBounds())
+	createLayerControl();
 
 	// create the legend
 	createLegend();
-	createInfoPanel();
 }
+
 
 function getStyle(feature){
 	return {
@@ -149,33 +155,30 @@ function getStyle(feature){
 		weight: 1,
 		fill: true,
 		fillColor: brew.getColorInRange(feature.properties[fieldtomap]),
-		fillOpacity: 0.8
+		fillOpacity: 0.7
 	}
 }
 
 function createLegend(){
+	
 	legend.onAdd = function (map) {
-		var div = L.DomUtil.create('div', 'info legend'),
-		breaks = brew.getBreaks(),
-		labels = [],
-		from, to;
-		labels.push('Number of Hate Crimes')
+		var div = L.DomUtil.create('div', 'info legend');
+		colors = brew.getBreaks();
+		labels = [];
 		
-		for (var i = 0; i < breaks.length; i++) {
-			from = breaks[i];
-			to = breaks[i + 1];
-			if(to) {
-				labels.push(
-					'<i style="background:' + brew.getColorInRange(to) + '"></i> ' +
-					from + ' &ndash; ' + to);
-				}
-			}
-			
-			div.innerHTML = labels.join('<br>');
-			return div;
-		};
-		
-		legend.addTo(map);
+		/* Add min & max*/
+		div.innerHTML = '<div><h4 style="font-size:larger;">Asian Population</h4></div><div class="labels"><div class="min">Low</div> \
+	  <div class="max">High</div></div>';
+	
+	  for (i = 1; i < colors.length; i++) {
+		  labels.push('<li style="background-color: ' + brew.getColorInRange(colors[i]) + '"></li>')
+		}
+	
+		div.innerHTML += '<ul style="list-style-type:none;display:flex">' + labels.join('') + '</ul>';
+		return div
+	  }
+	
+	  legend.addTo(map);
 }
 
 // Function that defines what will happen on user interactions with each feature
@@ -202,40 +205,16 @@ function highlightFeature(e) {
 		layer.bringToFront();
 	}
 
-	info_panel.update(layer.feature.properties)
+	//info_panel.update(layer.feature.properties)
 }
 
 // on mouse out, reset the style, otherwise, it will remain highlighted
 function resetHighlight(e) {
 	geojson_layer.resetStyle(e.target);
-	info_panel.update() // resets infopanel
+	//info_panel.update() // resets infopanel
 }
 
 // on mouse click on a feature, zoom in to it
 function zoomToFeature(e) {
 	map.fitBounds(e.target.getBounds());
-}
-
-function createInfoPanel(){
-
-	info_panel.onAdd = function (map) {
-		this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
-		this.update();
-		return this._div;
-	};
-
-	// method that we will use to update the control based on feature properties passed
-	info_panel.update = function (properties) {
-		// if feature is highlighted
-		if(properties){
-			this._div.innerHTML = `<b>${properties.NAME}</b><br>${fieldtomap}: ${properties[fieldtomap]}`;
-		}
-		// if feature is not highlighted
-		else
-		{
-			this._div.innerHTML = 'Hover over a state to see the number of its anti-Asian hate incidents from March 2020 to March 2021.';
-		}
-	};
-
-	info_panel.addTo(map);
 }
