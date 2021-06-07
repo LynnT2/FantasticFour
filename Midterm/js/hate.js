@@ -540,3 +540,24 @@ function zoomToFeature(e) {
 	map.fitBounds(e.target.getBounds());
 }
 
+
+    
+$(".slider").ionRangeSlider({
+	skin: "flat",
+	values: [
+		"March 2020", "April 2020", "May 2020", "June 2020",
+		"July 2020", "August 2020", "September 2020", "October 2020", "November 2020", "December 2020", "January 2021", "February 2021","March 2021"
+	],
+	from: 0,
+	to: 11,
+});
+
+$(".slider").on("change", function () {
+	var $inp = $(this);
+	var from = $inp.prop("value"); // reading input value
+	recent.clearLayers();
+	filtered_data = csvdata.data.filter(item => item.Month==from);
+	mapFilterd(filtered_data)
+	}
+);
+
