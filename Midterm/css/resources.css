@@ -153,8 +153,12 @@ body {
     font-family: 'Roboto';
     font-size: 15px;
     font-weight: bold;
-    padding:2px;
+    padding:30px;
+    top:0pt;
     margin: 10px;
+    border-radius: 0%;
+    border-width: 7px;
+    border-style:double;
 
   }
 .story{
@@ -168,15 +172,26 @@ body {
   .box {
   background-color: transparent;
   font-family: 'Roboto';
-  display: grid;
+  display: block;
+  margin-top: 10px;
+  margin-left:30px;
   }
 
+  h1.entry-title{
+    margin-left:30px;
+  }
 .donate {
   margin: 10px;
+  padding:30px;
   font-family: 'Roboto';
+  border-width: 7px;
+  border-radius: 0%;
+  border-style:double;
+  float:center;
 }
 .row {
   display: flex;
+  
   }
   
 .column {
@@ -221,6 +236,7 @@ body {
   }
 }
 
+/*flipping images text*/
 .bio {
   
   font-family: 'Roboto';
@@ -257,6 +273,7 @@ body {
 /*flipping images*/
 .flip-box {
   background-color: transparent;
+  padding:5px;
 }
   
   
@@ -283,14 +300,12 @@ body {
   backface-visibility: hidden;
   color: #db3e34ff;
 
-
-
 }
   
 .flip-box-front {
   color: #db3e34ff;
   border-width: 7px;
-  border-radius: 10%;
+  border-radius: 0%;
   border-style:double;
  }
   
@@ -302,11 +317,11 @@ body {
   font-stretch: semi-condensed;
   font-size:small;
   border-radius: 50%;
-  position:fixed;
+  position:absolute;
   top:0px;
   background-size: cover;
   border-width: 7px;
-  border-radius: 10%;
+  border-radius: 0%;
   border-style:double;
 }
 
