@@ -164,6 +164,10 @@ a:active {
     
 }
 
+.project a:visited {
+  color:#f5d95e;
+}
+
 .bio img {
   border-radius: 50%;
   width: 270px;
