@@ -28,7 +28,7 @@ body {
   
   .header {
     grid-area: header;
-      padding: 10px;
+    padding: 10px;
     color: black;
     position: relative;
     background-color:transparent;
@@ -40,7 +40,7 @@ body {
   
   .header a:visited { 
       text-decoration: none; 
-      color: #db3e34ff; 
+      color: #33bdfd; 
      }
   
   .header a:focus {
@@ -98,7 +98,7 @@ body {
   
   a:visited {
     text-decoration: none;
-    color: #f55e61;
+    color: #33bdfd;
   }
   
   a:hover {
@@ -302,12 +302,12 @@ img {
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  color: #db3e34ff;
+  color: #446372;
  }
   
 .flip-box:hover .flip-box-inner {
   transform: rotateX(180deg);
-  color: #db3e34ff;
+  color: #2f4047
 }
   
 .flip-box-front, .flip-box-back {
@@ -316,13 +316,12 @@ img {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  color: #db3e34ff;
   padding:6px;
 
 }
   
 .flip-box-front {
-  color: #db3e34ff;
+  color: #33bdfd;
   border-width: 7px;
   border-radius: 0%;
   border-style:double;
@@ -332,7 +331,7 @@ img {
   
 .flip-box-back {
   background-color:transparent;
-  color: #db3e34ff;
+  color: #33bdfd;
   text-align:justify;
   -ms-transform: translate(50px,100px);
   transform: rotateX(180deg) translate(0px,25px);
