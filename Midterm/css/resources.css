@@ -196,7 +196,7 @@ body {
   border-style:double;
   float:center;
   -ms-transform:translate(100px,100px); /* IE 9 */
-  transform: translate(0px,14px); 
+  transform: translate(0px,5px); 
 }
 .row {
   display: flex;
@@ -321,7 +321,7 @@ img {
   border-radius: 0%;
   border-style:double;
   -ms-transform: translate(50px,100px);
-  transform:translate(0px,0px);
+  transform:translate(0px,-1px);
  }
   
 .flip-box-back {
@@ -329,7 +329,7 @@ img {
   color: #db3e34ff;
   text-align:justify;
   -ms-transform: translate(50px,100px);
-  transform: rotateX(180deg) translate(0px,27px);
+  transform: rotateX(180deg) translate(0px,25px);
   font-stretch: semi-condensed;
   font-size:small;
   border-radius: 50%;
