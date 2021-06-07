@@ -40,7 +40,7 @@ body {
   
   .header a:visited { 
       text-decoration: none; 
-      color: #33bdfd; 
+      color: #f55e61; 
      }
   
   .header a:focus {
@@ -98,7 +98,7 @@ body {
   
   a:visited {
     text-decoration: none;
-    color: #33bdfd;
+    color: #f55e61;
   }
   
   a:hover {
@@ -302,12 +302,12 @@ img {
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  color: #446372;
+  color: #f55e61;
  }
   
 .flip-box:hover .flip-box-inner {
   transform: rotateX(180deg);
-  color: #2f4047
+  color: #f55e61
 }
   
 .flip-box-front, .flip-box-back {
@@ -321,7 +321,7 @@ img {
 }
   
 .flip-box-front {
-  color: #33bdfd;
+  color: #f55e61;
   border-width: 7px;
   border-radius: 0%;
   border-style:double;
@@ -331,7 +331,7 @@ img {
   
 .flip-box-back {
   background-color:transparent;
-  color: #33bdfd;
+  color: #f55e61;
   text-align:justify;
   -ms-transform: translate(50px,100px);
   transform: rotateX(180deg) translate(0px,25px);
