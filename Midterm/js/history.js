@@ -22,7 +22,7 @@ let info_panel = L.control();
 $( document ).ready(function() {
     createMap(lat,lon,zl);
     readCSV(path1);
-	getGeoJSON();
+	//getGeoJSON();
     createLayerControl();
 });
 // create the map
@@ -48,7 +48,7 @@ function readCSV(path){
 function mapCSV(data){
     if (data.meta.fields.length === 10) { //create map for the history data
         // circle options
-        let circleOptions1 = {
+        let circleOptions = {
             radius: 10,
             weight: 1,
             color: 'white',
@@ -60,17 +60,28 @@ function mapCSV(data){
 
         // loop through each entry
         data.data.forEach(function(item,index){
-            let marker = L.circleMarker([item.latitude,item.longitude],circleOptions1).bindPopup("<h3>" + item.title + " (" + item.date + ")" + "</h3>" + "<center><img src ='" + item.reference_url + "'width=100%'/></center>" +
-                item.description)
-            .on('mouseover',function(){
+            let marker = L.circleMarker([item.latitude,item.longitude],circleOptions)
+            .on('click',function(e){
                 this.openPopup()
             })
             // add marker to featuregroup
             history.addLayer(marker)
+
+			//fly to location and show/hide paragraph when clicked
+			$('.sidebar').append(`<div class="sidebar-item" onclick="flyToIndex(${index});">${item.title} <br><i>(${item.date})</i></div>`)
         })
         history.addTo(map); // add featuregroup to map
 		map.fitBounds(history.getBounds());
     }
+}
+
+
+function flyToIndex(index){
+	// zoom to level 12 first
+	map.setZoom(12);
+	// pan to the marker
+	map.flyTo(history.getLayers()[index]._latlng);
+	history.getLayers()[index].openPopup();
 }
 
 function panToMarker(index){
@@ -78,7 +89,7 @@ function panToMarker(index){
 	// pan to the marker
 	map.panTo(history.getLayers()[index]._latlng);
     //how to open the popup????    
-    history.getLayers()[index].openPopup()
+    history.getLayers()[index].openPopup();
 }
 
 function createLayerControl(){
@@ -89,7 +100,7 @@ function createLayerControl(){
 }
 let path = '';
 
-// function to get the geojson data
+/*// function to get the geojson data
 function getGeoJSON(){
 
 	$.getJSON(geojsonPath,function(data){
@@ -152,6 +163,7 @@ function getStyle(feature){
 		fillOpacity: 0.8
 	}
 }
+*/
 
 function createLegend(){
 	legend.onAdd = function (map) {
@@ -226,14 +238,21 @@ function createInfoPanel(){
 
 	// method that we will use to update the control based on feature properties passed
 	info_panel.update = function (properties) {
+		
+		/*this._div.innerHTML = `${item.title} <br><i>(${item.date})</i>`;
+
+		//add paragraph div to sidebar
+		$('.sidebar').append(`<div id = "${index}" style="display: none">${item.description}<br><center><img src="${item.reference_url}"></center><br>${item.caption}</div>`)*/
+
+
 		// if feature is highlighted
 		if(properties){
-			this._div.innerHTML = `<b>${properties.NAME}</b><br>${fieldtomap}: ${properties[fieldtomap]}`;
+			this._div.innerHTML = `<b>${item.title}</b><br>${fieldtomap}: ${item[fieldtomap]}`;
 		}
 		// if feature is not highlighted
 		else
 		{
-			this._div.innerHTML = 'Hover over a state to see the number of its anti-Asian hate incidents from March 2020 to March 2021.';
+			this._div.innerHTML = `${item.title} <br><i>(${item.date})</i>`;
 		}
 	};
 

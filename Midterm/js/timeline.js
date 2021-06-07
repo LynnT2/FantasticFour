@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function(){
           let details = d3.select('#details-' + currId);
           details.style('display', 'block');
           details.style('opacity', 1);
-          $.getScript('js/map.js',function(){panToMarker(d.id);
+          $.getScript('js/history.js',function(){panToMarker(d.id);
           });
         })
 
@@ -129,11 +129,12 @@ document.addEventListener('DOMContentLoaded', function(){
       .style('opacity', 0);
   
       data.map(d => {
-        let details = d3.select('#timelineChart').append('div').classed('details', true).classed('details-' + d.category.toLowerCase(), true).attr('id', 'details-' + d.id);
+        let details = d3.select('.sidebar').append('div').classed('details', true).classed('details-' + d.category.toLowerCase(), true).attr('id', 'details-' + d.id);
         details.append('i').classed('material-icons close-icon', true).text('close');
+        details.append('div').classed(' .title', true).append('span').classed('position-title text-position', true).text(d.title);
         details.append('div').classed('title', true).append('span').classed('date text-date date-title', true).text(d.date);
-        details.select(' .title').append('span').classed('position-title text-position', true).text(d.title);
         details.append('div').classed('place-name text-place hovered', true).text(d.location);
+        details.selectAll('.img').style('display', 'none');
         details.append('div')
           .attr('class', 'text-desc')
           .attr('id', 'descriptionId-'+ d.id)

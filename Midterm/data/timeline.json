@@ -11,6 +11,42 @@
         "referenceurl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Manjiro_Nakahama_circa_1880%2C_Millicent_Library_collection.jpg/800px-Manjiro_Nakahama_circa_1880%2C_Millicent_Library_collection.jpg"
     },
     {
+        "id": 23,
+        "date": "1850-04-13",
+        "description": "California imposes Foreign Miner's Tax and enforces it mainly against Chinese miners, who were often forced to pay more than once.",
+        "title": "Foreign Miner's Tax",
+        "category": "Government",
+        "location": "Sacremento, California",
+        "latitude": 38.5816,
+        "longitude": -121.4944,
+        "referenceurl": "https://immigrationtounitedstates.org/uploads/posts/2011-11/1322680419_chinese-mine-workers.png",
+        "caption": "http://www.cetel.org/timeline.html"
+    },
+    {
+        "id": 24,
+        "date": "1867-06-25",
+        "description": "Two thousand Chinese railroad workers (shown above) strike for a week, demanding an end to beatings, increased wages and work hours equal with whites. Central Pacific breaks the strike when they withhold food supplies to the Chinese, isolated as they were in the high mountains of the Sierras.",
+        "title": "Chinese Railroad Workers strike",
+        "category": "Strike",
+        "location": "Sierra County, California",
+        "latitude": 39.514295,
+        "longitude": -120.05148,
+        "referenceurl": "http://criticalraceinitiative.weebly.com/uploads/2/9/3/9/29390463/published/302586583.jpg?1488468919",
+        "caption": "https://www.pbs.org/ancestorsintheamericas/time_17.html#:~:text=In%20June%20of%201867%2C%20two,high%20mountains%20of%20the%20Sierras."
+    },
+    {
+        "id": 25,
+        "date": "1868-06-19",
+        "description": "Eugene Van Reed illegally ships 149 Japanese laborers to Hawaii and Joseph Heco (both men shown above) was the first Japanese person to be naturalized as a United States citizen and the first to publish a Japanese language newspaper. These were the first Japanese immigrants to Hawaii, known as the gannen mono (first-year arrivals).",
+        "title": "Illegal Transport of Japanese Laborers",
+        "category": "Immigration",
+        "location": "Honolulu, Hawaii",
+        "latitude": 21.3069,
+        "longitude": -157.8583,
+        "referenceurl": "https://www.fmyokohama.jp/nemuranai/.assets/thumbnail/%E3%83%A6%E3%83%BC%E3%82%B8%E3%83%B3%E3%83%BB%E3%83%B4%E3%82%A1%E3%83%B3%E3%83%BB%E3%83%AA%E3%83%BC%E3%83%89Eugene-Miller-Van-Reed-640wri.jpg",
+        "caption": "https://publishing.cdlib.org/ucpressebooks/view?docId=ft9290090n&chunk.id=d0e378&toc.id=&brand=ucpress"
+    },
+    {
         "id": 1,
         "date": "1875-03-03",
         "description": "The Page Act of 1875 is enacted, prohibiting the recruitment of laborers from “China, Japan or any Oriental country” who were not brought to the United States of their own will or who were brought for “lewd and immoral purposes.” The law explicitly bars “the importation of women for the purposes of prostitution.” The act, based on stereotypes and scapegoating, is enforced by invasive and humiliating interrogations at the Angel Island Immigration Station outside San Francisco. It effectively blocks Chinese women from entering the country and stifles the ability of Chinese American men to start families in America.",
@@ -20,6 +56,30 @@
         "latitude": 37.09024,
         "longitude": -95.712891,
         "referenceurl": "https://www.history.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_700/MTc5NzEyNDgyNjE1NTAyMTA0/chinese-immigration-gettyimages-931231846.webp"
+    },
+    {
+        "id": 26,
+        "date": "1877-02-01",
+        "description": "White gunmen shot and killed four Chinese men in Chico, California in February 1877 and later unsuccessfully attempted to burn the town's Chinatown to the ground.",
+        "title": "Anti-Chinese Violence",
+        "category": "Violence",
+        "location": "Chico, California",
+        "latitude": 39.7285,
+        "longitude": -121.8375,
+        "referenceurl": "https://remezcla.com/wp-content/uploads/2017/06/LatinAmerica_Gonzalez.jpg",
+        "caption": "https://cdnc.ucr.edu/?a=d&d=SDU18770329.2.12&e=-------en--20--1--txt-txIN--------1"
+    },
+    {
+        "id": 27,
+        "date": "1878-04-29",
+        "description": "In re Ah Yup was an 1878 landmark court decision in the United States that deemed residents of Asian descent ineligible for naturalization. Since the existing laws allowed only for the naturalization of white people and black people, the Chinese plaintiff Ah Yup attempted to argue that Chinese people were white.",
+        "title": "In re Ah Yup",
+        "category": "Immigration",
+        "location": "San Francisco, California",
+        "latitude": 37.78,
+        "longitude": -122.409722,
+        "referenceurl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Lorenzo_Sawyer.jpg/330px-Lorenzo_Sawyer.jpg",
+        "caption": "http://smithsonianapa.org/now/this-month-in-history-in-re-ah-yup-rules-chinese-ineligible-for-naturalized-citizenship-on-april-29-1878/"
     },
     {
         "id": 2,
@@ -80,6 +140,42 @@
         "referenceurl": "https://raregoldnuggets.com/wp-content/uploads/2004.18.11_edit_1-e1505873835523.jpg"
     },
     {
+        "id": 34,
+        "date": "1905-05-28",
+        "description": "More than 130,000 refugees enter the U.S. from Vietnam, Kampuchea, and Laos as Communist governments are established there following the end of the Indochina War. (Indochina Refugee Crisis)",
+        "title": "New Wave of Immigrants after Communist Governments Established",
+        "category": "Immigration",
+        "location": "USA",
+        "latitude": 33.3178,
+        "longitude": -117.3205,
+        "referenceurl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Vietnamese_refugees_on_US_carrier%2C_Operation_Frequent_Wind.jpg/240px-Vietnamese_refugees_on_US_carrier%2C_Operation_Frequent_Wind.jpg",
+        "caption": "http://www.cetel.org/timeline.html#4,"
+    },
+    {
+        "id": 28,
+        "date": "1906-10-11",
+        "description": "A policy adopted by the San Francisco Board of Education intended to restrict Japanese students to ‘Oriental schools’ in San Francisco and directed school principals in San Fransisco to send \"all Chinese, Japanese, and Korean children to newly formed Oriental School.\" The policy marked the first time that Japanese students experienced enforced segregation by school officials in the city. ",
+        "title": "Segregation of Japanese School Children in San Francisco",
+        "category": "Government",
+        "location": "San Francisco, California",
+        "latitude": 37.773972,
+        "longitude": -122.431297,
+        "referenceurl": "https://s.hdnux.com/photos/56/54/57/12241914/5/rawImage.jpg",
+        "caption": "http://www.cetel.org/timeline.html#4, https://caselib.stanford.edu/sites/default/files/cases/Eng_case.pdf"
+    },
+    {
+        "id": 29,
+        "date": "1907-02-24",
+        "description": "Japan and the U.S. reach \"Gentlemen's Agreement\" whereby Japan stops issuing passports to laborers desiring to emigrate to the US. President Roosevelt summoned the San Francisco mayor and school board to the White House in February 1907 and persuaded them to rescind the segregation order, promising that the federal government would itself address the question of immigration. On February 24, the Gentlemen’s Agreement with Japan was concluded in the form of a Japanese note agreeing to deny passports to laborers intending to enter the United States and recognizing the U.S. right to exclude Japanese immigrants holding passports originally issued for other countries. ",
+        "title": "Gentlemen's Agreement",
+        "category": "Immigration",
+        "location": "USA",
+        "latitude": 37.809326,
+        "longitude": -122.409981,
+        "referenceurl": "https://immigrationhistory.org/wp-content/uploads/2018/05/111006l.jpg",
+        "caption": "http://www.cetel.org/timeline.html#4, https://www.history.com/topics/immigration/gentlemens-agreement"
+    },
+    {
         "id": 7,
         "date": "1910-01-21",
         "description": "The immigration station Angel Island opens in California’s San Francisco Bay, serving as the country’s major port of entry for Asian immigrants, with some 100,000 Chinese and 70,000 Japanese being processed through the station over the next 30 years. Known as the “Ellis Island of the West” and located 6 miles off San Francisco’s coast, the island was a military reserve during the Civil War. Immigrants without proper documentation were quarantined there (shown above) for days to years in a “prison-like environment,” according to the National Parks Service. Closed in 1940, it’s now a California state park.",
@@ -100,6 +196,42 @@
         "latitude": 37.09024,
         "longitude": -95.712891,
         "referenceurl": "https://immigrationhistory.org/wp-content/uploads/2018/05/3b00563r.jpg"
+    },
+    {
+        "id": 30,
+        "date": "1922-11-11",
+        "description": "Takao Ozawa v. U.S. declares Japanese ineligible for naturalized citizenship. Takao Ozawa was born in Japan but had lived in the U.S. for 20 years. Ozawa filed for citizenship under the Naturalization Act of 1906, caliming that Japanese people were classified as \"free white persons.\" The Supreme Court asserted that Japanese were not considered to be part of the Caucasian race, and therefor, were not \"free white persons\" under the law. ",
+        "title": "Takao Ozawa v. U.S.",
+        "category": "Immigration",
+        "location": "Hawaii",
+        "latitude": 19.741755,
+        "longitude": -155.844437,
+        "referenceurl": "https://aaregistry.org/wp-content/uploads/2016/02/Takao-Ozawa-web.jpg",
+        "caption": "http://www.cetel.org/timeline.html#4, https://www.law.cornell.edu/supremecourt/text/260/178"
+    },
+    {
+        "id": 31,
+        "date": "1923-02-19",
+        "description": "Bhagat Singh Thind v. U.S. declares Asian Indians ineligible for naturalized citizenship. Although Thind was racially white, the Supreme Court found that he would not be considered “white” in the eyes of the “common man,” despite scientific race categories, and was therefore also ineligible for citizenship. The Thind decision led to the denaturalization of about fifty Asian Indian Americans who had earlier successfully applied for and received U.S. citizenship.\n",
+        "title": "U.S. v. Bhagat Singh Thind",
+        "category": "Immigration",
+        "location": "Oregon",
+        "latitude": 44,
+        "longitude": -120.5,
+        "referenceurl": "https://immigrationhistory.org/wp-content/uploads/2018/05/Bhagatsinghthind-189x300.jpg",
+        "caption": "http://www.cetel.org/timeline.html#4, https://www.pbs.org/rootsinthesand/i_bhagat1.html"
+    },
+    {
+        "id": 32,
+        "date": "1924-05-26",
+        "description": "The Immigration Act of 1924 denies entry to virtually all Asians. Designed to limit all immigration to the United States, the act was particularly restrictive for Eastern and Southern Europeans and Asians. Congress passed the first highly restrictive immigration law in 1917, requiring immigrants over age sixteen to pass literacy tests and excluding immigrants from the “Asiatic Barred Zone.” Immigrants from China had been barred since the Chinese Exclusion Act of 1882, and this law expanded that ban to include many other Asian countries. The Act of 1924 eliminated immigration from Japan, violating the so-called “Gentleman’s Agreement” that had previously protected Japanese immigration from legal restrictions.",
+        "title": "Immigration Act of 1924",
+        "category": "Immigration",
+        "location": "USA",
+        "latitude": 38.889248,
+        "longitude": -77.050636,
+        "referenceurl": "https://i0.wp.com/werehistory.org/wp-content/uploads/2018/05/JohnsonReedAct.jpg?zoom=2&resize=700%2C511",
+        "caption": "http://www.cetel.org/timeline.html#4, https://history.state.gov/milestones/1921-1936/immigration-act"
     },
     {
         "id": 9,
@@ -169,6 +301,18 @@
         "referenceurl": "https://www.history.com/.image/t_share/MTY2MDI5MzU5MTc2NDkzMDAz/immigration-act-of-1965-gettyimages-615297060.jpg"
     },
     {
+        "id": 33,
+        "date": "1968-11-06",
+        "description": "Students strike at San Francisco State University to demand establishment of ethnic studies programs. In 1968 and 1969 the Black Student Union, Third World Liberation Front, select staff and faculty, and members from the larger Bay Area community, organized and lead a series of actions against systematic discrimination. Protestors spoke out against lack of access, misrepresentation, and the overall neglect of indigenous peoples and people of color within the university's curriculum and programs\n",
+        "title": "Ethnic Studies Strike",
+        "category": "Strike",
+        "location": "San Francisco, California",
+        "latitude": 37.720663784,
+        "longitude": -122.474498102,
+        "referenceurl": "https://ethnicstudies.sfsu.edu/sites/default/files/assets/images/strike_1.jpg",
+        "caption": "http://www.cetel.org/timeline.html#4, https://ethnicstudies.sfsu.edu/history"
+    },
+    {
         "id": 15,
         "date": "1973-08-19",
         "description": "Martial arts movie Enter the Dragon premieres (shown above), three weeks after its action star, Bruce Lee, dies from an allergic reaction to pain medication in Hong Kong. In his first starring role in a Hollywood film, the box office hit cements Lee, born in 1940 in San Francisco and raised in Hong Kong, as a film icon.",
@@ -225,183 +369,6 @@
         "caption": "Maya Lin displaying the final design for the Vietnam Memorial, 1981. Bettmann Archive/Getty Images"
     },
     {
-        "id": 20,
-        "date": "2000-07-21",
-        "description": "President Bill Clinton swears in Norman Mineta (shown above) as the U.S. secretary of commerce, making him the first Asian American to serve in a presidential cabinet. Mineta, a Japanese American who had been sent to a World War II internment camp in 1942, was the first Asian American mayor of a major city, San Jose, Calif., served in the U.S. House of Representatives from 1975 to 1999 and, in 2001, was named transportation secretary under George W. Bush. Bush also appoints Elaine Chao secretary of labor, the first female Asian American to serve in a presidential cabinet. President Donald Trump names her secretary of transportation in 2017.",
-        "title": "First Asian-American to Serve in a Presidential Cabinet",
-        "category": "Government",
-        "location": "Washington, DC",
-        "latitude": 38.9071923,
-        "longitude": -77.0368707,
-        "referenceurl": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Norman_Mineta%2C_official_portrait%2C_DOT.jpg"
-    },
-    {
-        "id": 21,
-        "date": "2018-10-01",
-        "description": "Director Jon M. Chu's Crazy Rich Asians (shown above) breaks box office records, becoming North America's highest-earning romantic comedy in a decade. It's also the first Hollywood studio movie since 1993's Joy Luck Club starring an \"all-Westernized Asian American cast,\" according to the Hollywood Reporter. Based on the novel by Kevin Kwan, the film, made for $30 million, has grossed more than $238 million.",
-        "title": "Crazy Rich Asians",
-        "category": "Art",
-        "location": "Hollywood, California",
-        "latitude": 34.0928092,
-        "longitude": -118.3286614,
-        "referenceurl": "https://m.media-amazon.com/images/M/MV5BMTYxNDMyOTAxN15BMl5BanBnXkFtZTgwMDg1ODYzNTM@._V1_.jpg"
-    },
-    {
-        "id": 22,
-        "date": "2021-01-20",
-        "description": "Kamala D. Harris (shown above) is sworn in as the first female, first Black and first Asian American vice president of the United States. Serving with President Joe Biden, the former U.S. senator from California is the daughter of an Indian mother and Jamaican father and is sworn in by U.S. Supreme Court Justice Elena Sotomayor, the court's first female Latina justice. In 2019, Harris, tech entrepreneur Andrew Yang and Hawaii Rep. Tulsi Gabbard became the first Asian Americans to run for president on the Democrat ticket (Gabbard has Pacific Islander heritage).",
-        "title": "First Asian American Vice President",
-        "category": "Government",
-        "location": "Washington, DC",
-        "latitude": 38.9071923,
-        "longitude": -77.0368707,
-        "referenceurl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Kamala_Harris_Vice_Presidential_Portrait.jpg"
-    },
-    {
-        "id": 23,
-        "date": "1850-04-13",
-        "description": "California imposes Foreign Miner's Tax and enforces it mainly against Chinese miners, who were often forced to pay more than once.",
-        "title": "Foreign Miner's Tax",
-        "category": "Government",
-        "location": "Sacremento, California",
-        "latitude": 38.5816,
-        "longitude": -121.4944,
-        "referenceurl": "https://immigrationtounitedstates.org/uploads/posts/2011-11/1322680419_chinese-mine-workers.png",
-        "caption": "http://www.cetel.org/timeline.html"
-    },
-    {
-        "id": 24,
-        "date": "1867-06-25",
-        "description": "Two thousand Chinese railroad workers (shown above) strike for a week, demanding an end to beatings, increased wages and work hours equal with whites. Central Pacific breaks the strike when they withhold food supplies to the Chinese, isolated as they were in the high mountains of the Sierras.",
-        "title": "Chinese Railroad Workers strike",
-        "category": "Strike",
-        "location": "Sierra County, California",
-        "latitude": 39.514295,
-        "longitude": -120.05148,
-        "referenceurl": "http://criticalraceinitiative.weebly.com/uploads/2/9/3/9/29390463/published/302586583.jpg?1488468919",
-        "caption": "https://www.pbs.org/ancestorsintheamericas/time_17.html#:~:text=In%20June%20of%201867%2C%20two,high%20mountains%20of%20the%20Sierras."
-    },
-    {
-        "id": 25,
-        "date": "1868-06-19",
-        "description": "Eugene Van Reed illegally ships 149 Japanese laborers to Hawaii and Joseph Heco (both men shown above) was the first Japanese person to be naturalized as a United States citizen and the first to publish a Japanese language newspaper. These were the first Japanese immigrants to Hawaii, known as the gannen mono (first-year arrivals).",
-        "title": "Illegal Transport of Japanese Laborers",
-        "category": "Immigration",
-        "location": "Honolulu, Hawaii",
-        "latitude": 21.3069,
-        "longitude": -157.8583,
-        "referenceurl": "https://www.fmyokohama.jp/nemuranai/.assets/thumbnail/%E3%83%A6%E3%83%BC%E3%82%B8%E3%83%B3%E3%83%BB%E3%83%B4%E3%82%A1%E3%83%B3%E3%83%BB%E3%83%AA%E3%83%BC%E3%83%89Eugene-Miller-Van-Reed-640wri.jpg",
-        "caption": "https://publishing.cdlib.org/ucpressebooks/view?docId=ft9290090n&chunk.id=d0e378&toc.id=&brand=ucpress"
-    },
-    {
-        "id": 26,
-        "date": "1877-02-01",
-        "description": "White gunmen shot and killed four Chinese men in Chico, California in February 1877 and later unsuccessfully attempted to burn the town's Chinatown to the ground.",
-        "title": "Anti-Chinese Violence",
-        "category": "Violence",
-        "location": "Chico, California",
-        "latitude": 39.7285,
-        "longitude": -121.8375,
-        "referenceurl": "https://remezcla.com/wp-content/uploads/2017/06/LatinAmerica_Gonzalez.jpg",
-        "caption": "https://cdnc.ucr.edu/?a=d&d=SDU18770329.2.12&e=-------en--20--1--txt-txIN--------1"
-    },
-    {
-        "id": 27,
-        "date": "1878-04-29",
-        "description": "In re Ah Yup was an 1878 landmark court decision in the United States that deemed residents of Asian descent ineligible for naturalization. Since the existing laws allowed only for the naturalization of white people and black people, the Chinese plaintiff Ah Yup attempted to argue that Chinese people were white.",
-        "title": "In re Ah Yup",
-        "category": "Immigration",
-        "location": "San Francisco, California",
-        "latitude": 37.78,
-        "longitude": -122.409722,
-        "referenceurl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Lorenzo_Sawyer.jpg/330px-Lorenzo_Sawyer.jpg",
-        "caption": "http://smithsonianapa.org/now/this-month-in-history-in-re-ah-yup-rules-chinese-ineligible-for-naturalized-citizenship-on-april-29-1878/"
-    },
-    {
-        "id": 28,
-        "date": "1906-10-11",
-        "description": "A policy adopted by the San Francisco Board of Education intended to restrict Japanese students to ‘Oriental schools’ in San Francisco and directed school principals in San Fransisco to send \"all Chinese, Japanese, and Korean children to newly formed Oriental School.\" The policy marked the first time that Japanese students experienced enforced segregation by school officials in the city. ",
-        "title": "Segregation of Japanese School Children in San Francisco",
-        "category": "Government",
-        "location": "San Francisco, California",
-        "latitude": 37.773972,
-        "longitude": -122.431297,
-        "referenceurl": "https://s.hdnux.com/photos/56/54/57/12241914/5/rawImage.jpg",
-        "caption": "http://www.cetel.org/timeline.html#4, https://caselib.stanford.edu/sites/default/files/cases/Eng_case.pdf"
-    },
-    {
-        "id": 29,
-        "date": "1907-02-24",
-        "description": "Japan and the U.S. reach \"Gentlemen's Agreement\" whereby Japan stops issuing passports to laborers desiring to emigrate to the US. President Roosevelt summoned the San Francisco mayor and school board to the White House in February 1907 and persuaded them to rescind the segregation order, promising that the federal government would itself address the question of immigration. On February 24, the Gentlemen’s Agreement with Japan was concluded in the form of a Japanese note agreeing to deny passports to laborers intending to enter the United States and recognizing the U.S. right to exclude Japanese immigrants holding passports originally issued for other countries. ",
-        "title": "Gentlemen's Agreement",
-        "category": "Immigration",
-        "location": "USA",
-        "latitude": 37.809326,
-        "longitude": -122.409981,
-        "referenceurl": "https://immigrationhistory.org/wp-content/uploads/2018/05/111006l.jpg",
-        "caption": "http://www.cetel.org/timeline.html#4, https://www.history.com/topics/immigration/gentlemens-agreement"
-    },
-    {
-        "id": 30,
-        "date": "1922-11-11",
-        "description": "Takao Ozawa v. U.S. declares Japanese ineligible for naturalized citizenship. Takao Ozawa was born in Japan but had lived in the U.S. for 20 years. Ozawa filed for citizenship under the Naturalization Act of 1906, caliming that Japanese people were classified as \"free white persons.\" The Supreme Court asserted that Japanese were not considered to be part of the Caucasian race, and therefor, were not \"free white persons\" under the law. ",
-        "title": "Takao Ozawa v. U.S.",
-        "category": "Immigration",
-        "location": "Hawaii",
-        "latitude": 19.741755,
-        "longitude": -155.844437,
-        "referenceurl": "https://aaregistry.org/wp-content/uploads/2016/02/Takao-Ozawa-web.jpg",
-        "caption": "http://www.cetel.org/timeline.html#4, https://www.law.cornell.edu/supremecourt/text/260/178"
-    },
-    {
-        "id": 31,
-        "date": "1923-02-19",
-        "description": "Bhagat Singh Thind v. U.S. declares Asian Indians ineligible for naturalized citizenship. Although Thind was racially white, the Supreme Court found that he would not be considered “white” in the eyes of the “common man,” despite scientific race categories, and was therefore also ineligible for citizenship. The Thind decision led to the denaturalization of about fifty Asian Indian Americans who had earlier successfully applied for and received U.S. citizenship.\n",
-        "title": "U.S. v. Bhagat Singh Thind",
-        "category": "Immigration",
-        "location": "Oregon",
-        "latitude": 44,
-        "longitude": -120.5,
-        "referenceurl": "https://immigrationhistory.org/wp-content/uploads/2018/05/Bhagatsinghthind-189x300.jpg",
-        "caption": "http://www.cetel.org/timeline.html#4, https://www.pbs.org/rootsinthesand/i_bhagat1.html"
-    },
-    {
-        "id": 32,
-        "date": "1924-05-26",
-        "description": "The Immigration Act of 1924 denies entry to virtually all Asians. Designed to limit all immigration to the United States, the act was particularly restrictive for Eastern and Southern Europeans and Asians. Congress passed the first highly restrictive immigration law in 1917, requiring immigrants over age sixteen to pass literacy tests and excluding immigrants from the “Asiatic Barred Zone.” Immigrants from China had been barred since the Chinese Exclusion Act of 1882, and this law expanded that ban to include many other Asian countries. The Act of 1924 eliminated immigration from Japan, violating the so-called “Gentleman’s Agreement” that had previously protected Japanese immigration from legal restrictions.",
-        "title": "Immigration Act of 1924",
-        "category": "Immigration",
-        "location": "USA",
-        "latitude": 38.889248,
-        "longitude": -77.050636,
-        "referenceurl": "https://i0.wp.com/werehistory.org/wp-content/uploads/2018/05/JohnsonReedAct.jpg?zoom=2&resize=700%2C511",
-        "caption": "http://www.cetel.org/timeline.html#4, https://history.state.gov/milestones/1921-1936/immigration-act"
-    },
-    {
-        "id": 33,
-        "date": "1968-11-06",
-        "description": "Students strike at San Francisco State University to demand establishment of ethnic studies programs. In 1968 and 1969 the Black Student Union, Third World Liberation Front, select staff and faculty, and members from the larger Bay Area community, organized and lead a series of actions against systematic discrimination. Protestors spoke out against lack of access, misrepresentation, and the overall neglect of indigenous peoples and people of color within the university's curriculum and programs\n",
-        "title": "Ethnic Studies Strike",
-        "category": "Strike",
-        "location": "San Francisco, California",
-        "latitude": 37.720663784,
-        "longitude": -122.474498102,
-        "referenceurl": "https://ethnicstudies.sfsu.edu/sites/default/files/assets/images/strike_1.jpg",
-        "caption": "http://www.cetel.org/timeline.html#4, https://ethnicstudies.sfsu.edu/history"
-    },
-    {
-        "id": 34,
-        "date": "1905-05-28",
-        "description": "More than 130,000 refugees enter the U.S. from Vietnam, Kampuchea, and Laos as Communist governments are established there following the end of the Indochina War. (Indochina Refugee Crisis)",
-        "title": "New Wave of Immigrants after Communist Governments Established",
-        "category": "Immigration",
-        "location": "USA",
-        "latitude": 33.3178,
-        "longitude": -117.3205,
-        "referenceurl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Vietnamese_refugees_on_US_carrier%2C_Operation_Frequent_Wind.jpg/240px-Vietnamese_refugees_on_US_carrier%2C_Operation_Frequent_Wind.jpg",
-        "caption": "http://www.cetel.org/timeline.html#4,"
-    },
-    {
         "id": 35,
         "date": "1987-05-03",
         "description": "President Reagan completes formal signing of the Proclamation of Asian Pacific American Heritage Week by the White House.",
@@ -436,5 +403,38 @@
         "longitude": -118.3009,
         "referenceurl": "https://static.rogerebert.com/redactor_assets/pictures/59061039e9fbc3f4810000b6/SaIGu.jpg",
         "caption": "http://www.cetel.org/timeline.html#4,"
+    },
+    {
+        "id": 20,
+        "date": "2000-07-21",
+        "description": "President Bill Clinton swears in Norman Mineta (shown above) as the U.S. secretary of commerce, making him the first Asian American to serve in a presidential cabinet. Mineta, a Japanese American who had been sent to a World War II internment camp in 1942, was the first Asian American mayor of a major city, San Jose, Calif., served in the U.S. House of Representatives from 1975 to 1999 and, in 2001, was named transportation secretary under George W. Bush. Bush also appoints Elaine Chao secretary of labor, the first female Asian American to serve in a presidential cabinet. President Donald Trump names her secretary of transportation in 2017.",
+        "title": "First Asian-American to Serve in a Presidential Cabinet",
+        "category": "Government",
+        "location": "Washington, DC",
+        "latitude": 38.9071923,
+        "longitude": -77.0368707,
+        "referenceurl": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Norman_Mineta%2C_official_portrait%2C_DOT.jpg"
+    },
+    {
+        "id": 21,
+        "date": "2018-10-01",
+        "description": "Director Jon M. Chu's Crazy Rich Asians (shown above) breaks box office records, becoming North America's highest-earning romantic comedy in a decade. It's also the first Hollywood studio movie since 1993's Joy Luck Club starring an \"all-Westernized Asian American cast,\" according to the Hollywood Reporter. Based on the novel by Kevin Kwan, the film, made for $30 million, has grossed more than $238 million.",
+        "title": "Crazy Rich Asians",
+        "category": "Art",
+        "location": "Hollywood, California",
+        "latitude": 34.0928092,
+        "longitude": -118.3286614,
+        "referenceurl": "https://m.media-amazon.com/images/M/MV5BMTYxNDMyOTAxN15BMl5BanBnXkFtZTgwMDg1ODYzNTM@._V1_.jpg"
+    },
+    {
+        "id": 22,
+        "date": "2021-01-20",
+        "description": "Kamala D. Harris (shown above) is sworn in as the first female, first Black and first Asian American vice president of the United States. Serving with President Joe Biden, the former U.S. senator from California is the daughter of an Indian mother and Jamaican father and is sworn in by U.S. Supreme Court Justice Elena Sotomayor, the court's first female Latina justice. In 2019, Harris, tech entrepreneur Andrew Yang and Hawaii Rep. Tulsi Gabbard became the first Asian Americans to run for president on the Democrat ticket (Gabbard has Pacific Islander heritage).",
+        "title": "First Asian American Vice President",
+        "category": "Government",
+        "location": "Washington, DC",
+        "latitude": 38.9071923,
+        "longitude": -77.0368707,
+        "referenceurl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Kamala_Harris_Vice_Presidential_Portrait.jpg"
     }
 ]
