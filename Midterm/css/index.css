@@ -95,9 +95,10 @@ top: 10em;
     color: #db3e34ff;
   }
 
-  .current-link {
-    color: #f55e61;
- }
+  .header a.active {
+    text-decoration: none;
+    color: white;
+  }
 /*button*/
 .button { 
   text-decoration: none;

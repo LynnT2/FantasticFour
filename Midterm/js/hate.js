@@ -9,7 +9,7 @@ let recent = L.markerClusterGroup();
 let csvdata;
 let path = '';
 
-let geojsonPath = 'data/us.geojson';
+let geojsonPath = 'data/merged_population.geojson';
 let geojson_data;
 let geojson_layer;
 
@@ -18,7 +18,7 @@ let fieldtomap;
 
 let legend = L.control({position: 'bottomright'});
 let info_panel = L.control();
-let info = L.control();
+let info = L.control({position:'bottomleft'});
 let filtered_data;
 
 // initialize
@@ -26,7 +26,6 @@ $( document ).ready(function() {
     createMap(lat,lon,zl);
     readCSV(path2);
 	getGeoJSON();
-    createLayerControl();
 });
 // create the map
 function createMap(lat,lon,zl){
@@ -50,18 +49,17 @@ function readCSV(path){
 }
 function mapCSV(data){
        
-		if (data.meta.fields.lenth === 15) { //create map for the recent anti-Asian attacks data
-			let circleOptions2 = {
-				radius: 8,
-				weight: 1,
-				color: 'white',
-				fillColor: '#f55e61',
-				fillOpacity: 1,
+		//if (data.meta.fields.lenth === 15) { //create map for the recent anti-Asian attacks data
+		let circleOptions2 = {
+			radius: 8,
+			weight: 1,
+			color: 'white',
+			fillColor: '#f55e61',
+			fillOpacity: 1,
 			}
 		
 		// loop through each entry
         data.data.forEach(function(item,index){
-            console.log('here')
             let marker = L.circleMarker([item.latitude,item.longitude],circleOptions2).bindPopup(`<h3>Incident</h3><a href=${item.Link} target="_blank">${item.Description}</a><br>Date: ${item.Month}`)
             .on('mouseover',function(){
                 this.openPopup()
@@ -71,7 +69,6 @@ function mapCSV(data){
         })
         recent.addTo(map); // add featuregroup to map
         map.fitBounds(recent.getBounds()); // fit markers to map
-    }
 }
 
 function mapFilterd(data,color){
@@ -96,10 +93,13 @@ function mapFilterd(data,color){
 
 function createLayerControl(){
     let toggle = {
-		"Recent anti-Asian attacks": recent
+		"Recent anti-Asian attacks": recent,
+		"choropleth": geojson_layer,
 	}
     L.control.layers(null,toggle).addTo(map);
 }
+
+
 
 
 // function to get the geojson data
@@ -112,7 +112,7 @@ function getGeoJSON(){
 		geojson_data = data;
 
 		// call the map function
-		mapGeoJSON('count',4,'Reds','quantiles') // add a field to be used
+		mapGeoJSON('AsianTotal',5,'Reds','quantiles') // add a field to be used
 	})
 }
 
@@ -145,11 +145,16 @@ function mapGeoJSON(field,num_classes,color,scheme){
 	// create the layer and add to map
 	geojson_layer = L.geoJson(geojson_data, {
 		style: getStyle, //call a function to style each feature
-		onEachFeature: onEachFeature // actions on each feature
+		onEachFeature: onEachFeature, // actions on each feature
+		onEachFeature: function (feature,layer){
+			layer.bindTooltip(feature.properties.NAME + '<' + 'br' + '>' + +feature.properties.AsianTotal) //change count to population
+		}
 	}).addTo(map);
+	createLayerControl();
+
 
 	// turning off fit bounds so that we stay in mainland USA
-	// map.fitBounds(geojson_layer.getBounds())
+	//map.fitBounds(geojson_layer.getBounds());
 
 	// create the legend
 	createLegend();
@@ -157,50 +162,10 @@ function mapGeoJSON(field,num_classes,color,scheme){
 	// create the infopanel
 	//createInfoPanel();
 
-  createInfoCharts();
-  createDashboard();
+  	createGenderChart();
+	createEthnicityChart();
 }
 
-/*function mapGeoJSON(field){
-
-	// clear layers in case it has been mapped already
-	if (geojson_layer){
-		geojson_layer.clearLayers()
-	}
-	
-	// globalize the field to map
-	fieldtomap = field;
-
-	// create an empty array
-	let values = [];
-
-	// based on the provided field, enter each value into the array
-	geojson_data.features.forEach(function(item,index){
-		if(item.properties[field] != undefined){
-			values.push(item.properties[field])
-		}
-	})
-
-	// set up the "brew" options
-	brew.setSeries(values);
-	brew.setNumClasses(4);
-	brew.setColorCode('Reds');
-	brew.classify('quantiles');
-
-	// create the layer and add to map
-	geojson_layer = L.geoJson(geojson_data, {
-		style: getStyle, //call a function to style each feature
-		onEachFeature: onEachFeature //actions on eac feature
-	}).addTo(map);
-
-	map.fitBounds(geojson_layer.getBounds())
-
-	// create the legend
-	createLegend();
-	createInfoPanel();
-  createInfoCharts();
-}
-*/
 
 function getStyle(feature){
 	return {
@@ -209,17 +174,17 @@ function getStyle(feature){
 		weight: 1,
 		fill: true,
 		fillColor: brew.getColorInRange(feature.properties[fieldtomap]),
-		fillOpacity: 0.8
+		fillOpacity: 0.7
 	}
 }
 
 function createLegend(){
-	legend.onAdd = function (map) {
+	/*legend.onAdd = function (map) {
 		var div = L.DomUtil.create('div', 'info legend'),
 		breaks = brew.getBreaks(),
 		labels = [],
 		from, to;
-		labels.push('Number of Hate Crimes')
+		labels.push('Asian Population')
 		
 		for (var i = 0; i < breaks.length; i++) {
 			from = breaks[i];
@@ -235,7 +200,26 @@ function createLegend(){
 			return div;
 		};
 		
-		legend.addTo(map);
+		legend.addTo(map);*/
+	
+	legend.onAdd = function (map) {
+		var div = L.DomUtil.create('div', 'info legend');
+		colors = brew.getBreaks();
+		labels = [];
+		
+		/* Add min & max*/
+		div.innerHTML = '<div><h4 style="font-size:larger;">Asian Population</h4></div><div class="labels"><div class="min">Low</div> \
+	  <div class="max">High</div></div>';
+	
+	  for (i = 1; i < colors.length; i++) {
+		  labels.push('<li style="background-color: ' + brew.getColorInRange(colors[i]) + '"></li>')
+		}
+	
+		div.innerHTML += '<ul style="list-style-type:none;display:flex">' + labels.join('') + '</ul>';
+		return div
+	  }
+	
+	  legend.addTo(map);
 }
 
 // Function that defines what will happen on user interactions with each feature
@@ -300,17 +284,7 @@ function zoomToFeature(e) {
 	info_panel.addTo(map);
 }*/
 
-function createInfoCharts(){
-  info.onAdd = function(map){
-    this._div = L.DomUtil.create('div', 'info');
-    return this._div;
-  }
-}
-
-function createDashboard(){
-
-	// clear dashboard
-	$('.dashboard').empty();
+function createGenderChart(){
 
 	// chart title
 	let title = 'Gender';
@@ -332,7 +306,7 @@ function createDashboard(){
 			height: 300,
 			width: 300,			
 			animations: {
-				enabled: false,
+				enabled: true,
 			},
       events: {
         dataPointSelection: function (event, chartContext, config){
@@ -351,8 +325,6 @@ function createDashboard(){
             recent.clearLayers();
             mapFilterd(filtered_data,'yellow')
           }
-
-
         }
       }
 		},
@@ -365,12 +337,87 @@ function createDashboard(){
 			position: 'right',
 			offsetY: 0,
 			height: 230,
-		  }
+		  },
+		theme: {
+			palette: 'palette3' 
+		}
 	};
 
 	// create the chart
-	chart = new ApexCharts(document.querySelector('.info'), options)
-	chart.render()
+	info.onAdd = function(map){
+		this._div = L.DomUtil.create('div', 'info');
+		return this._div;
+	};
+	info.addTo(map);
+	gender = new ApexCharts(document.querySelector('.info'), options);
+	gender.render();
+
+}
+
+function createEthnicityChart(){
+
+	// chart title
+	let title = 'Ethnicity';
+
+	// data values
+	let data = [
+        20,12,4,1
+    ];
+
+	// data fields
+	let fields = [
+        'Chinese','Korean','Japanese','Unknown'
+    ];
+
+	// set chart options
+    let options = {
+		chart: {
+			type: 'pie',
+			height: 300,
+			width: 300,			
+			animations: {
+				enabled: true,
+			},
+      /*events: {
+        dataPointSelection: function (event, chartContext, config){
+          if (config.dataPointIndex === 0){
+            filtered_data = csvdata.data.filter(item => item.victim_gender === 'male');
+            recent.clearLayers();
+            mapFilterd(filtered_data,'blue')
+          }
+          if (config.dataPointIndex === 1){
+            filtered_data = csvdata.data.filter(item => item.victim_gender === 'female');
+            recent.clearLayers();
+            mapFilterd(filtered_data,'green')
+          }
+          if (config.dataPointIndex === 2){
+            filtered_data = csvdata.data.filter(item => item.victim_gender === 'unknown');
+            recent.clearLayers();
+            mapFilterd(filtered_data,'yellow')
+          }
+        }
+      }*/
+		},
+		title: {
+			text: title,
+		},
+		series: data,
+		labels: fields,
+		legend: {
+			position: 'right',
+			offsetY: 0,
+			height: 230,
+		  },
+		theme: {
+			palette: 'palette3' 
+		}
+	};
+
+	// create the chart
+
+	ethnicity = new ApexCharts(document.querySelector('.info'),options);
+	ethnicity.render();
+
 }
 
 
@@ -384,3 +431,4 @@ function resetHighlight(e) {
 function zoomToFeature(e) {
 	map.fitBounds(e.target.getBounds());
 }
+

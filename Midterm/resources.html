@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>About</title>
+    <title>Resources</title>
     <meta charset="utf-8" />
     <!-- style sheets -->
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/resources.css">
     <!-- leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
@@ -16,15 +17,438 @@
     <!-- favIcon -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 </head>
-<body id='about'>
+
+<body id='resources'>
+    <!--background-->
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="content">
+    </div>
+
     <div class="header">
-        <a href='index.html' >Mapping Heritage</a>
+        <a href='index.html'>Mapping Heritage</a>
     </div>
     <div class="navigation">
         <ul>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="resources.html">Resources</a></li> 
-            <li><a href= "hate.html">Hate</a></li>
+            <li><a class="active" href="resources.html">Resources</a></li>
+            <li><a href="hate.html">Hate</a></li>
             <li><a href="history.html">History</a></li>
-          </ul>
+        </ul>
     </div>
+    <div class='story'>
+        <h1>Their Stories</h1>
+        <div class='bio'>
+            <div class="row1">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2>Yunhan Zhang <br>Washington D.C.</h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <p>“I don’t know what to say anymore, this type of hate crime happened to us again… I
+                                got sprayed on the face, arm, cloth. Some got in my mouth. I was choking badly when
+                                I called 911. I’m not injured. However, the burning has not stopped after hours.” <br><i><a href="https://www.washingtonpost.com/local/public-safety/covid-attack-chinese-dc-tea-shop/2020/11/11/b723db0a-2451-11eb-a688-5298ad5d580a_story.html
+                                "target="_blank" rel="noopener noreferrer">Read More Here</a></i>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2>Noriko Nasu<br> Seattle</h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <p>“I do definitely believe it was a hate crime, the suspect came to Chinatown with a
+                                weapon in his pocket to look for victims. When he found me, as you can see in the
+                                video, he didn’t strike my boyfriend even though my boyfriend was between me and the
+                                suspect. He deliberately went around Michael to hit me first.” <br> <i><a href="https://komonews.com/news/local/victim-of-attack-in-chinatown-international-district-says-assault-was-hate-crime"target="_blank" rel="noopener noreferrer">Read More Here</a></i>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2>Denny Kim<br> Los Angeles </h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <p> “Throughout my career, I experienced a lot of micro-aggressions because of my race.
+                            I never felt like I fit in. I never felt like I belonged.” <br> <i><a href="https://www.nbclosangeles.com/news/local/attack-asian-american-air-force-veteran-koreatown-violence-hate-crime/2534393/"target="_blank" rel="noopener noreferrer">Read More Here</a></i>
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2>Subhakar Khadka<br> San Francisco</h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <p> “She started taunting me, cursing me, questioning me about being a man. The ladies
+                            were even talking about shooting me, calling their cousins to shoot me. They were
+                            making fun of my race.” <br> <i><a href="https://abc7news.com/uber-driver-attacked-by-passenger-mask-assaulted-subhakar/10401067/"target="_blank" rel="noopener noreferrer">Read More Here</a></i>
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2>Lai<br>Miami</h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <p> “It’s demoralizing. It’s like they view you as subhuman. Like you don’t belong, but I do
+                            belong. Diversity is what makes this country so strong, so for someone to say something like
+                            that it’s honestly so heartbreaking.” <br> <i><a href="https://www.nbcmiami.com/news/local/miami-woman-called-anti-asian-slurs-during-encounter-over-masks-on-county-bus/2412739/"target="_blank" rel="noopener noreferrer">Read More Here</a> </i>
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2>Hanna L<br> Los Angeles</h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <p> “I’m already prepared mentally for this kind of situation. It’s not the first time it
+                            happened to Asians. Someday it has to come to an end. Keeping silent is not the way to deal
+                            with it.” <br> <i><a href="https://ktla.com/news/local-news/racist-rant-caught-on-video-in-tustin-parking-lot-after-victim-says-she-asked-man-to-social-distance/"target="_blank" rel="noopener noreferrer">Read More Here</a></i>
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2>Sophia Chang<br> Newport Beach</h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <p> “I feel so fortunate that I have a platform where I am able to share my experience and shine
+                            a light on racism against Asians. I know I am just one person, but I hope shedding a light
+                            on this encourages anyone who deals with racial harassment to SPEAK UP.”
+                            <br><i><a href="https://www.nbcnews.com/news/us-news/man-who-allegedly-told-korean-american-entrepreneur-go-back-wuhan-n1240937"target="_blank" rel="noopener noreferrer">Read More Here</a>
+                            </i>
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2>Anonymous<br>Submitted<br>May 14, 2021</h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <p>My sister and I were walking to get in line for an Asian grocery market in Berkeley when an unmasked man from a nearby auto repair shop walked up directly to us and said, "F*ck you CCP (Chinese Communist Party), it's your fault for bringing the virus here, go back to your country!" We yelled back at him for spewing racial slurs at us and he continued to taunt us. 
+                        <br><i><a href="https://www.standagainsthatred.org/stories"target="_blank" rel="noopener noreferrer">Read More Here</a></i>
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2>Anonymous<br>Submitted<br>March 8, 2021</h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <p>My 11-year-old daughter came home crying from school repeatedly because children in her class said they hoped COVID would go back to China and kill all the Chinese people. They also said Chinese people are dirty, lying cheaters who can't be trusted. I reported it to the school administration and never even got a response to my email asking for support. We have never felt more invisible.  <br><i><a href="https://www.standagainsthatred.org/stories?offset=1615840242888"target="_blank" rel="noopener noreferrer">Read More Here</a></i>
+
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2>Anonymous<br>Submitted<br>November 20, 2020</h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <p>It's disheartening to me the normalization of racism toward Asians. Even my close friends often make stereotypical racist jokes regarding my eyes, food, and academics. The other day phrases such as "So you're Asian, do you eat dogs?" made an appearance on a call with a friend. When I confronted them about their racism, they replied with, "Stop being so sensitive. It's just a joke." I am sick and tired of these so-called jokes.
+
+                            <br><i><a href="https://www.standagainsthatred.org/stories?offset=1598802660721&reversePaginate=true"target="_blank" rel="noopener noreferrer">Read More Here</a></i>
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+    <div class='box'>
+        <h1 class="entry-title">Ways You Can Help</h1>
+        <div class='info'>
+            <p>Below are lists of resources that Asian and non-Asian communites can utilize.
+            These resources allow us to support Asian communities during this time of elevated violence,
+            and offer various resources that Asian communites can take advantage of:
+            <li>Monetary donations can be made to the various donation pages provided, including a GoFundMe and six
+                other meaningful
+                organizations. </li>
+            <li>Discrimination has major impacts on one's physical and mental well-being. If you or someone you know is
+                struggling
+                with mental health related to rising anti-Asian hate, explore the different AAPI mental health resources
+                available.</li>
+            <li>Additional resource and awareness pages are provided to learn more about Asian American experiences,
+                hate, and history. These
+                additional pages also provide further opportunities to get involved through donations, organizations,
+                and volunteering.</li>
+            <li>Reporting Anti-Asian discrimination is extremely important. Three websites are listed for you to report
+                discrimination you personally experience or witness
+                someone experience.
+            </li>
+            <li>Get involved on social media! Follow the instagram pages provided to get regular updates on supporting
+                Asian communities and fighting against hate.</li>
+           
+
+
+        </div>
+
+        <div class='donate'>
+            <h2>Donate</h2>
+            <div class="row">
+
+                <div class="column">
+                    <a href="https://www.gofundme.com/f/asianwomenalliance?utm_campaign=p_cp+share-sheet&utm_medium=copy_link_all&utm_source=customer"
+                        target="_blank" rel="noopener noreferrer"><img src="img/asianwomensalliance.jpg" alt="icon"
+                            style="width:100px"> <br>
+                        Asian
+                        Women Alliance</a>
+                </div>
+
+
+                <div class="column">
+                    <a href="https://hateisavirus.org/" target="_blank" rel="noopener noreferrer"><img
+                            src="img/hateisavirus.jpg" alt="icon" style="width:100px"> <br>
+                        Hate Is A Virus</a>
+                </div>
+
+
+                <div class="column">
+                    <a href="https://apienc.org/" target="_blank" rel="noopener noreferrer"><img src="img/APIENC.jpg"
+                            alt="icon" style="width:100px"> <br>
+                        API Equality- Northern California (APIENC)</a>
+                </div>
+
+                <div class="column">
+                    <a href="https://apen4ej.org/" target="_blank" rel="noopener noreferrer"><img src="img/APEN.jpg"
+                            alt="icon" style="width:100px"> <br>
+                        Asian Pacific Environmental Network (APEN)</a>
+                </div>
+
+                <div class="column">
+                    <a href="https://heartofdinner.org/" target="_blank" rel="noopener noreferrer"><img
+                            src="img/heartofdinner.jpg" alt="icon" style="width:100px"> <br>
+                        Heart of Dinner</a>
+                </div>
+
+
+                <div class="column">
+                    <a href="https://donate.givedirect.org/?cid=13982&n=434817" target="_blank"
+                        rel="noopener noreferrer">
+                <img src=" img/AsianPrisonerComm.jpg" alt="icon" style="width:100px"> <br>
+                        Asian Prisoner Support Committee</a>
+                </div>
+            </div>
+
+            <div class='mentalhealth'>
+                <h2>AAPI Mental Health Resources</h2>
+                <div class="row">
+
+                    <div class="column">
+                        <a href="https://aahiinfo.org/" target="_blank" rel="noopener noreferrer"><img
+                                src="img/AAHI.jpg" alt="icon" style="width:100px"> <br>
+                            Asian American Health Initiative</a>
+                    </div>
+
+
+                    <div class="column">
+                        <a href="https://acrs.org/" target="_blank" rel="noopener noreferrer"><img src="img/ACRS.jpg"
+                                alt="icon" style="width:100px"> <br>
+                            Asian Counseling and Referral Service</a>
+                    </div>
+
+
+                    <div class="column">
+                        <a href="https://asianmentalhealthproject.com/" target="_blank" rel="noopener noreferrer"><img
+                                src="img/AMHP.jpg" alt="icon" style="width:100px"> <br>
+                            Asian Mental Health Project</a>
+                    </div>
+
+                    <div class="column">
+                        <a href="https://www.naapimha.org/" target="_blank" rel="noopener noreferrer"><img
+                                src="img/naapimha.jpg" alt="icon" style="width:100px"> <br>
+                            National Asian American Native Hawaiian Pacific Islander
+                            Mental Health Association</a>
+                    </div>
+
+                    <div class="column">
+                        <a href="https://www.nqapia.org/wpp/healthandhealing/" target="_blank"
+                            rel="noopener noreferrer"><img src="img/NQAPIA.jpg" alt="icon" style="width:100px"> <br>
+                            National Queer Asian Pacific Islander
+                            Alliance (NQAPIA)</a>
+                    </div>
+
+
+                    <div class="column">
+                        <a href="https://southasiantherapists.org/" target="_blank" rel="noopener noreferrer"><img
+                                src="img/southasiantherapist.jpg" alt="icon" style="width:100px"> <br>
+
+                            South Asian Therapists</a>
+                    </div>
+                </div>
+
+                <div class="additionalresources">
+                    <h2>Resource and Awareness Pages</h2>
+                    <div class="row">
+
+                        <div class="column">
+                            <a href="https://asianawarenessproj.wixsite.com/asianawarenesspjct" target="_blank"
+                                rel="noopener noreferrer"><img src="img/aap.jpg" alt="icon" style="width:100px"> <br>
+                                Asian Awareness
+                                Project</a>
+                        </div>
+
+
+                        <div class="column">
+                            <a href="https://stopaapihate.org/resources/" target="_blank" rel="noopener noreferrer"><img
+                                    src="img/stopaapihate.jpg" alt="icon" style="width:100px"> <br>
+                                Stop AAPI Hate Resource Page</a>
+                        </div>
+
+
+                        <div class="column">
+                            <a href="https://nymag.com/strategist/article/where-to-donate-to-help-asian-communities-2021.html"
+                                target="_blank" rel="noopener noreferrer"><img src="img/nystrategist.jpg" alt="icon"
+                                    style="width:100px"> <br>
+                                68
+                                Ways to Donate in Support of Asian Communities
+                            </a>
+                        </div>
+
+                        <div class="column">
+                            <a href="https://movementhub.org/" target="_blank" rel="noopener noreferrer"><img
+                                    src="img/movementhub.jpg" alt="icon" style="width:100px"> <br>
+                                Movement Hub</a>
+                        </div>
+
+                        <div class="column">
+                            <a href="https://docs.google.com/document/d/1CGLrII9ycdPPcavGkatzGpoqGsdwJm46AgDXVWla3H8/mobilebasic#id.c3cppxmqcuoj"
+                                target="_blank" rel="noopener noreferrer"><img src="img/activedonopost.jpg" alt="icon"
+                                    style="width:100px"> <br>
+                                Active:
+                                Asian American Community Resource/Dono Post</a>
+                        </div>
+
+
+                        <div class="column">
+                            <a href="https://www.newyorker.com/culture/cultural-comment/the-muddled-history-of-anti-asian-violence"
+                                target="_blank" rel="noopener noreferrer"><img src="img/historyofviolence.jpg"
+                                    alt="icon" style="width:100px"> <br>
+                                History
+                                of Anti-Asian Violence</a>
+                        </div>
+                        
+                        <div class="column">
+                            <a href="https://international.ucla.edu/apc/event/14977"
+                                target="_blank" rel="noopener noreferrer"><img src="img/ucla.jpg"
+                                    alt="icon" style="width:100px"> <br>
+                                UCLA Town Hall Discussion #STOPASIANHATE </a>
+                        </div>
+
+                    </div>
+
+                    <div class="reporthate">
+                        <h2>Report Anti-Asian Discrimination</h2>
+                        <div class="row">
+
+                            <div class="column">
+                                <a href="https://stopaapihate.org/" target="_blank" rel="noopener noreferrer"><img
+                                        src="img/stopaapihate2.jpg" alt="icon" style="width:100px"> <br>
+                                    Stop APPI Hate</a>
+                            </div>
+
+
+                            <div class="column">
+                                <a href="https://standagainsthatred.org " target="_blank" rel="noopener noreferrer"><img
+                                        src="img/standagainsthatred.jpg" alt="icon" style="width:100px"> <br>
+                                    Stand Against Hatred</a>
+                            </div>
+
+
+                            <div class="column">
+                                <a href="https://www.napaba.org/page/HateCrimeResources" target="_blank"
+                                    rel="noopener noreferrer"><img src="img/napaba.jpg" alt="icon" style="width:100px">
+                                    <br>
+                                    National Asian Pacific American
+                                    Bar Association (NAPABA)
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="instagram">
+                            <h2>Instagram Pages to Follow</h2>
+                            <div class="row">
+
+                                <div class="column">
+                                    <a href="https://www.instagram.com/asians4antiracism/" target="_blank"
+                                        rel="noopener noreferrer"><img src="img/insta.jpg" alt="icon"
+                                            style="width:100px"> <br>
+                                        @asians4antiracism</a>
+                                </div>
+
+
+                                <div class="column">
+                                    <a href="https://www.instagram.com/stopaapihate/" target="_blank"
+                                        rel="noopener noreferrer"><img src="img/insta.jpg" alt="icon"
+                                            style="width:100px"> <br>
+                                        @stopaapihate</a>
+                                </div>
+
+
+                                <div class="column">
+                                    <a href="https://www.instagram.com/advancing_justice_atl/" target="_blank"
+                                        rel="noopener noreferrer"><img src="img/insta.jpg" alt="icon"
+                                            style="width:100px"> <br>
+                                        @advancing_justice_atl
+                                    </a>
+                                </div>
+
+
+                                <div class="column">
+                                    <a href="https://www.instagram.com/asiansformentalhealth/" target="_blank"
+                                        rel="noopener noreferrer"><img src="img/insta.jpg" alt="icon"
+                                            style="width:100px"> <br>
+                                        @asiansformentalhealth</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
